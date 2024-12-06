@@ -2203,7 +2203,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-sidebar .ampstart-sidebar-nav:after {
-  content: "";
+  content: none;
   height: 100px;
   width: 100%;
   position: absolute;
