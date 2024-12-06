@@ -10,8 +10,8 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "../img/land-see/content/gi.gif",
-              "src-placeholder": "../img/land-see/content/studio-310px.jpg"
+              "src": "./img/land-see/content/gi.gif",
+              "src-placeholder": "./img/land-see/content/studio-310px.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -29,7 +29,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "../img/land-see/content/retail-shop-370px.jpg"
+              "src": "./img/land-see/content/retail-shop-370px.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -47,7 +47,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "../img/land-see/content/travel-accessories-outfits-2-400px.jpg"
+              "src": "./img/land-see/content/travel-accessories-outfits-2-400px.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -81,7 +81,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "../img/land-see/content/shoe-designer.jpg"
+              "src": "./img/land-see/content/shoe-designer.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -99,7 +99,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "../img/land-see/content/tiny-houses-resized.jpg"
+              "src": "./img/land-see/content/tiny-houses-resized.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -117,7 +117,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "../img/land-see/content/books-you-need-resize-medium.jpg"
+              "src": "./img/land-see/content/books-you-need-resize-medium.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -135,7 +135,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "../img/land-see/content/burger-resize-medium.jpg"
+              "src": "./img/land-see/content/burger-resize-medium.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
