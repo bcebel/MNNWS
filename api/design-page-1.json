@@ -11,7 +11,7 @@
               "height": 305,
               "layout": "responsive",
               "src": "./img/land-see/content/gi.gif",
-              "src-placeholder": "./img/land-see/content/studio-310px.jpg"
+              "src-placeholder": "./img/land-see/content/studio-310px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -29,7 +29,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/timeless-design-350px.jpg"
+              "src": "./img/land-see/content/timeless-design-350px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",

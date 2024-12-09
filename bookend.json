@@ -1,10 +1,6 @@
 {
   "bookendVersion": "v1.0",
-  "shareProviders": [
-    "facebook",
-    "twitter",
-    "email"
-  ],
+  "shareProviders": ["facebook", "twitter", "email"],
   "components": [
     {
       "type": "heading",
@@ -14,20 +10,20 @@
       "type": "small",
       "title": "Learn about cats",
       "url": "https://wikipedia.org/wiki/Cat",
-      "image": "assets/bookend_cats.jpg"
+      "image": "assets/bookend_cats.webp"
     },
     {
       "type": "landscape",
       "title": "Learn about border collies",
       "url": "https://wikipedia.org/wiki/Border_Collie",
-      "image": "assets/bookend_dogs.jpg",
+      "image": "assets/bookend_dogs.webp",
       "category": "Dogs"
     },
     {
       "type": "portrait",
       "title": "Learn about macaws",
       "url": "https://wikipedia.org/wiki/Macaw",
-      "image": "assets/bookend_birds.jpg",
+      "image": "assets/bookend_birds.webp",
       "category": "birds"
     },
     {

@@ -10,7 +10,7 @@
               "width": 670,
               "height": 599,
               "layout": "responsive",
-              "src": "./img/blackdoves/Black_Peace_Dove.svg.png"
+              "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -28,7 +28,7 @@
               "width": 300,
               "height": 300,
               "layout": "responsive",
-              "src": "./img/tea/pexels-minan1398-1629185.jpg"
+              "src": "./img/tea/pexels-minan1398-1629185.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -47,7 +47,7 @@
               "height": 305,
               "layout": "responsive",
               "src": "./img/land-see/content/gi.gif",
-              "src-placeholder": "./img/land-see/content/studio-310px.jpg"
+              "src-placeholder": "./img/land-see/content/studio-310px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -65,7 +65,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/retail-shop-370px.jpg"
+              "src": "./img/land-see/content/retail-shop-370px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -83,7 +83,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/travel-accessories-outfits-2-400px.jpg"
+              "src": "./img/land-see/content/travel-accessories-outfits-2-400px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -117,7 +117,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/shoe-designer.jpg"
+              "src": "./img/land-see/content/shoe-designer.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -135,7 +135,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/tiny-houses-resized.jpg"
+              "src": "./img/land-see/content/tiny-houses-resized.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -153,7 +153,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/books-you-need-resize-medium.jpg"
+              "src": "./img/land-see/content/books-you-need-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -171,7 +171,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/burger-resize-medium.jpg"
+              "src": "./img/land-see/content/burger-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",

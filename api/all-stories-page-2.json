@@ -10,7 +10,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/tiny-houses-resized.jpg"
+              "src": "./img/land-see/content/tiny-houses-resized.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
@@ -28,7 +28,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/books-you-need-resize-medium.jpg"
+              "src": "./img/land-see/content/books-you-need-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
@@ -46,7 +46,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/burger-resize-medium.jpg"
+              "src": "./img/land-see/content/burger-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
@@ -64,7 +64,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/black-white-2-resize-medium.jpg"
+              "src": "./img/land-see/content/black-white-2-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -82,7 +82,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/maine.jpg"
+              "src": "./img/land-see/content/maine.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
@@ -100,7 +100,7 @@
               "width": 409,
               "height": 370,
               "layout": "responsive",
-              "src": "./img/land-see/content/kaneko-resize-medium.jpg"
+              "src": "./img/land-see/content/kaneko-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -118,7 +118,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/fall-festivals-resize-medium.jpg"
+              "src": "./img/land-see/content/fall-festivals-resize-medium.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
@@ -136,7 +136,7 @@
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/shoe-designer-centered.jpg"
+              "src": "./img/land-see/content/shoe-designer-centered.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",

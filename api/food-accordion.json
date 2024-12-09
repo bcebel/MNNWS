@@ -10,7 +10,7 @@
               "width": 196,
               "height": 249,
               "layout": "responsive",
-              "src": "./img/land-see/content/burger-200px.jpg"
+              "src": "./img/land-see/content/burger-200px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-food-anim",
@@ -28,7 +28,7 @@
               "width": 196,
               "height": 187,
               "layout": "responsive",
-              "src": "./img/land-see/content/kaneko-200px.jpg"
+              "src": "./img/land-see/content/kaneko-200px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-food-anim",
@@ -46,7 +46,7 @@
               "width": 196,
               "height": 249,
               "layout": "responsive",
-              "src": "./img/land-see/content/black-white-2-250px.jpg"
+              "src": "./img/land-see/content/black-white-2-250px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-food-anim xs-hide",
@@ -64,7 +64,7 @@
               "width": 196,
               "height": 187,
               "layout": "responsive",
-              "src": "./img/land-see/content/fall-festivals-200px.jpg"
+              "src": "./img/land-see/content/fall-festivals-200px.webp"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-food-anim xs-hide sm-hide",

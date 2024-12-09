@@ -10,7 +10,7 @@
               "width": 196,
               "height": 249,
               "layout": "responsive",
-              "src": "./img/land-see/content/tiny-houses-200px.jpg"
+              "src": "./img/land-see/content/tiny-houses-200px.webp"
             }
           ],
           "post-classes": "land-see-post-item",
@@ -28,7 +28,7 @@
               "width": 196,
               "height": 187,
               "layout": "responsive",
-              "src": "./img/land-see/content/maine.jpg"
+              "src": "./img/land-see/content/maine.webp"
             }
           ],
           "post-classes": "land-see-post-item",

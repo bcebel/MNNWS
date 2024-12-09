@@ -10,7 +10,7 @@
               "width": 196,
               "height": 249,
               "layout": "responsive",
-              "src": "./img/land-see/content/studio-310px.jpg"
+              "src": "./img/land-see/content/studio-310px.webp"
             }
           ],
           "post-classes": "land-see-post-item",
@@ -28,7 +28,7 @@
               "width": 196,
               "height": 187,
               "layout": "responsive",
-              "src": "./img/land-see/content/timeless-design-350px.jpg"
+              "src": "./img/land-see/content/timeless-design-350px.webp"
             }
           ],
           "post-classes": "land-see-post-item",
