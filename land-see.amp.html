@@ -2816,7 +2816,7 @@ limitations under the License.
     }
 
     .land-see-paging,
-    .land-see-popular-content,
+    .land-see-entertainment-content,
     .land-see-recent-content,
     .land-see-story-nav {
       max-width: 850px
@@ -2834,7 +2834,7 @@ limitations under the License.
       background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat 50%
     }
 
-    .land-see-popular-content .amp-carousel-button {
+    .land-see-entertainment-content .amp-carousel-button {
       top: 97px;
       background-size: 35%
     }
@@ -2852,13 +2852,13 @@ limitations under the License.
     }
 
     @media (min-width:40.06rem) and (max-width:52rem) {
-      .land-see-popular-content {
+      .land-see-entertainment-content {
         max-width: 636px
       }
     }
 
     @media (max-width:40rem) {
-      .land-see-popular-content {
+      .land-see-entertainment-content {
         max-width: 424px
       }
     }
@@ -3344,7 +3344,7 @@ limitations under the License.
 </head>
 
 <body class="land-see">
-  <amp-animation id="popularSlideIn" layout="nodisplay">
+  <amp-animation id="entertainmentSlideIn" layout="nodisplay">
     <script type="application/json">
         {
           "duration": ".4s",
@@ -3353,7 +3353,7 @@ limitations under the License.
           "direction": "alternate",
           "animations": [
             {
-              "selector": ".land-see-popular",
+              "selector": ".land-see-entertainment",
               "delay": "calc(100ms * index())",
               "keyframes": [
                 {"transform": "translateY(0)", "opacity": 1}
@@ -3485,10 +3485,11 @@ limitations under the License.
                     class="text-decoration-none">Fashion</a></li>
                 <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=interiors#land-see-interiors"
                     class="text-decoration-none">Interiors</a></li>
-                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=arts-culture#land-see-food"
-                    class="text-decoration-none">Arts &amp; Culture</a></li>
-                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=popular#land-see-popular"
-                    class="text-decoration-none">Popular</a></li>
+                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=food#land-see-food"
+                    class="text-decoration-none">Food</a></li>
+                <li class="ampstart-dropdown-item"><a
+                    href="stories.amp.html?category=entertainment#land-see-entertainment"
+                    class="text-decoration-none">entertainment</a></li>
               </ul>
             </section>
           </amp-accordion>
@@ -3553,10 +3554,11 @@ limitations under the License.
                     class="text-decoration-none">Fashion</a></li>
                 <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=interiors#land-see-interiors"
                     class="text-decoration-none">Interiors</a></li>
-                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=arts-culture#land-see-food"
-                    class="text-decoration-none">Arts &amp; Culture</a></li>
-                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=popular#land-see-popular"
-                    class="text-decoration-none">Popular</a></li>
+                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=food#land-see-food"
+                    class="text-decoration-none">Food</a></li>
+                <li class="ampstart-dropdown-item"><a
+                    href="stories.amp.html?category=entertainment#land-see-entertainment"
+                    class="text-decoration-none">entertainment</a></li>
               </ul>
             </section>
           </amp-accordion>
@@ -3849,12 +3851,12 @@ limitations under the License.
   </section>
 
 
-  <section class="land-see-popular-content mx-auto">
-    <h4 class="land-see-section-header ml1">Popular</h4>
+  <section class="land-see-entertainment-content mx-auto">
+    <h4 class="land-see-section-header ml1">entertainment</h4>
     <div class="clearfix pt2">
-      <amp-list class="center justify-center" src="./api/popular.json" height="450" layout="fixed-height">
+      <amp-list class="center justify-center" src="./api/entertainment.json" height="450" layout="fixed-height">
         <template type="amp-mustache">
-          <amp-position-observer on="enter:popularSlideIn.start" layout="nodisplay">
+          <amp-position-observer on="enter:entertainmentSlideIn.start" layout="nodisplay">
           </amp-position-observer>
           {{#land-see-category}}
           <amp-carousel media="{{media-query}}" width="{{width}}" height="{{height}}" layout="{{layout}}" controls=""
@@ -4004,9 +4006,9 @@ limitations under the License.
   <section class="land-see-story-categories center items-center">
     <amp-accordion layout="container" disable-session-states="">
       <section expanded="" class="land-see-stories land-see-food">
-        <h3 class="max-width-4 mx-auto">Arts &amp; Culture</h3>
+        <h3 class="max-width-4 mx-auto">Food</h3>
         <div class="max-width-4 mx-auto">
-          <amp-list src="./api/arts-culture-accordion.json" height="430" layout="fixed-height">
+          <amp-list src="./api/food-accordion.json" height="430" layout="fixed-height">
             <template type="amp-mustache">
               <amp-position-observer on="enter:accordionSlideIn.start" layout="nodisplay">
               </amp-position-observer>

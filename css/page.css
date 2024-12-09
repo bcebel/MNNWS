@@ -2702,7 +2702,7 @@ h4 {
 }
 
 .land-see-paging,
-.land-see-popular-content,
+.land-see-entertainment-content,
 .land-see-recent-content,
 .land-see-story-nav {
   max-width: 850px;
@@ -2722,7 +2722,7 @@ h4 {
     no-repeat 50%;
 }
 
-.land-see-popular-content .amp-carousel-button {
+.land-see-entertainment-content .amp-carousel-button {
   top: 97px;
   background-size: 35%;
 }
@@ -2740,13 +2740,13 @@ h4 {
 }
 
 @media (min-width: 40.06rem) and (max-width: 52rem) {
-  .land-see-popular-content {
+  .land-see-entertainment-content {
     max-width: 636px;
   }
 }
 
 @media (max-width: 40rem) {
-  .land-see-popular-content {
+  .land-see-entertainment-content {
     max-width: 424px;
   }
 }

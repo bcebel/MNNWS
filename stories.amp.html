@@ -2815,7 +2815,7 @@ limitations under the License.
     }
 
     .land-see-paging,
-    .land-see-popular-content,
+    .land-see-entertainment-content,
     .land-see-recent-content,
     .land-see-story-nav {
       max-width: 850px;
@@ -2833,7 +2833,7 @@ limitations under the License.
       background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat 50%;
     }
 
-    .land-see-popular-content .amp-carousel-button {
+    .land-see-entertainment-content .amp-carousel-button {
       top: 97px;
       background-size: 35%;
     }
@@ -2851,13 +2851,13 @@ limitations under the License.
     }
 
     @media (min-width: 40.06rem) and (max-width: 52rem) {
-      .land-see-popular-content {
+      .land-see-entertainment-content {
         max-width: 636px;
       }
     }
 
     @media (max-width: 40rem) {
-      .land-see-popular-content {
+      .land-see-entertainment-content {
         max-width: 424px;
       }
     }
@@ -3465,10 +3465,11 @@ limitations under the License.
                     class="text-decoration-none">Interiors</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=arts-culture#land-see-food" class="text-decoration-none">Food</a>
+                  <a href="stories.amp.html?category=food#land-see-food" class="text-decoration-none">Food</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=popular#land-see-popular" class="text-decoration-none">Popular</a>
+                  <a href="stories.amp.html?category=entertainment#land-see-entertainment"
+                    class="text-decoration-none">entertainment</a>
                 </li>
               </ul>
             </section>
@@ -3543,10 +3544,11 @@ limitations under the License.
                     class="text-decoration-none">Interiors</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=arts-culture#land-see-food" class="text-decoration-none">Food</a>
+                  <a href="stories.amp.html?category=food#land-see-food" class="text-decoration-none">Food</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=popular#land-see-popular" class="text-decoration-none">Popular</a>
+                  <a href="stories.amp.html?category=entertainment#land-see-entertainment"
+                    class="text-decoration-none">entertainment</a>
                 </li>
               </ul>
             </section>
@@ -3655,18 +3657,18 @@ limitations under the License.
         </div>
         <div class="inline-block px3">
           <button id="land-see-food"
-            [class]="selectedCategory &#x3D;&#x3D; &#39;arts-culture&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
+            [class]="selectedCategory &#x3D;&#x3D; &#39;food&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
             class="land-see-categories-button"
-            on="tap:AMP.pushState({height: 1650, mobile_height: 2750, src: &#39;./api/arts-culture-page-1.json&#39;, selectedCategory: &#39;arts-culture&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
+            on="tap:AMP.pushState({height: 1650, mobile_height: 2750, src: &#39;./api/food-page-1.json&#39;, selectedCategory: &#39;food&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
             Food
           </button>
         </div>
         <div class="inline-block px3">
-          <button id="land-see-popular"
-            [class]="selectedCategory &#x3D;&#x3D; &#39;popular&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
+          <button id="land-see-entertainment"
+            [class]="selectedCategory &#x3D;&#x3D; &#39;entertainment&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
             class="land-see-categories-button"
-            on="tap:AMP.pushState({height: 1100, mobile_height: 2200, src: &#39;./api/popular-page-1.json&#39;, selectedCategory: &#39;popular&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
-            Popular
+            on="tap:AMP.pushState({height: 1100, mobile_height: 2200, src: &#39;./api/entertainment-page-1.json&#39;, selectedCategory: &#39;entertainment&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
+            entertainment
           </button>
         </div>
       </amp-carousel>
