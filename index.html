@@ -31,8 +31,8 @@ limitations under the License.
     data-cmp-host="c.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-<!-- AMP Analytics -->
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <!-- AMP Analytics -->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <style amp-boilerplate="">
     body {
@@ -3360,6 +3360,21 @@ limitations under the License.
 
 <body class="land-see">
 
+  <amp-analytics type="googleanalytics" id="analytics1">
+    <script type="application/json">
+  {
+    "vars": {
+      "account": "469952699"  // Replace with your property ID.
+    },
+    "triggers": {
+      "trackPageview": {  // Trigger names can be any string. trackPageview is not a required name.
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+  </amp-analytics>
   <!-- Google Tag Manager -->
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
