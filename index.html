@@ -3361,8 +3361,35 @@ limitations under the License.
 <body class="land-see">
 
   <!-- Google Tag Manager -->
-  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
-    data-credentials="include"></amp-analytics>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+  {
+    "vars": {
+      "gtag_id": "G-V3TNNSX3H4",
+      "config": {
+        "G-V3TNNSX3H4": {
+          "groups": "default"
+        }
+      }
+    },
+  
+  "triggers": {
+    "iniLoad": {
+      "on": "ini-load",
+      "request": "request"
+    },
+     "scrollPings": {
+      "on": "scroll",
+      "scrollSpec": {
+        "verticalBoundaries": [25, 50, 90],
+        "horizontalBoundaries": [10,20,30,40,50,60,70,80,90]
+      },
+      "request": "event"
+    }
+  }
+  }
+  </script>
+  </amp-analytics>
 
 
 
