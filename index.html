@@ -3857,6 +3857,27 @@ limitations under the License.
       </amp-list>
     </div>
   </section>
+<form method="post" action-xhr="https://vercel.com/bcebels-projects/amp-email-collector/subscribe" target="_top">
+  <div class="ampstart-input inline-block relative m0 p0 mb3">
+    <input type="email" name="email" id="email" class="block border-none p0 m0"
+      placeholder="Enter email address to subscribe" required />
+  </div>
+  <button type="submit" class="ampstart-btn caps">Subscribe</button>
+
+  <!-- Success message -->
+  <div submit-success>
+    <template type="amp-mustache">
+      Subscription successful! Thank you for subscribing.
+    </template>
+  </div>
+
+  <!-- Error message -->
+  <div submit-error>
+    <template type="amp-mustache">
+      Something went wrong: {{message}}.
+    </template>
+  </div>
+</form>
 
   <div class="land-see-subscribe center items-center max-width-4 mx-auto m0 mb3 z1">
     <div class="land-see-subscribe-form z2">
