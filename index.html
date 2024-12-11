@@ -3348,21 +3348,10 @@ limitations under the License.
 
 <body class="land-see">
 
-  <amp-analytics type="googleanalytics" id="analytics1">
-    <script type="application/json">
-  {
-    "vars": {
-      "account": "UA-XXXXX-Y"  // Replace with your property ID.
-    },
-    "triggers": {
-      "trackPageview": {  // Trigger names can be any string. trackPageview is not a required name.
-        "on": "visible",
-        "request": "pageview"
-      }
-    }
-  }
-  </script>
-  </amp-analytics>
+<!-- Google Tag Manager -->
+<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+  data-credentials="include"></amp-analytics>
+
   <!-- Google Tag Manager -->
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
