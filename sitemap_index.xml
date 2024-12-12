@@ -1,25 +1,67 @@
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap>
-<loc>https://wwww.minnowspace.com</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/index.html</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/tea.html</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/home.amp.html</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/land-see.amp.html</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/stories.amp.html</loc>
-</sitemap>
-<sitemap>
-<loc>https://www.minnowspace.com/robots.txt</loc>
-</sitemap><sitemap>
-<loc>https://www.minnowspace.com/ads.txt</loc>
-</sitemap>
-</sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://minnowspace.com/</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/index.html</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category=design</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category=fashion</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category=interiors</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category=food</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category=entertainment</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/home.amp.html</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/stories.amp.html?category&amp;#x3D;fashion</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://minnowspace.com/menu.amp.html</loc>
+  <lastmod>2024-12-12T18:35:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
