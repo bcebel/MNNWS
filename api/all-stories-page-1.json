@@ -55,7 +55,25 @@
           "post-category-url": "stories.amp.html?category=food#land-see-food",
           "post-title": "Lost in Las Vegas",
           "post-copy": "What happens in Vegas stays in Vegas"
-        }
+        },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Coffee.",
+                      "width": 409,
+                      "height": 305,
+                      "layout": "responsive",
+                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+                  "post-url": "https://www.minnowspace.com/coffee",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "17 Easy & Affordable Coffee Drinks",
+                  "post-copy": "From the classic espresso to the trendy cold brew, we've got you covered."
+                }
       ]
     },
     {
