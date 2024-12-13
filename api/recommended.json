@@ -63,7 +63,23 @@
                   "post-category-url": "stories.amp.html?category=food#land-see-food",
                   "post-title": "Lost in Las Vegas",
                   "post-copy": "What happens in Vegas, stays in Vegas."
-                }
+                },
+                              {
+                      "classes": "cover",
+                      "alt-text": "Coffee",
+                      "width": 49,
+                      "height": 74,
+                      "layout": "responsive",
+                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
+                  "post-url": "https://minnowspace.com/coffee",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "Black Doves Review",
+                  "post-copy": "What is the actual deal with this show?"
+                },
               
               ]
             }
