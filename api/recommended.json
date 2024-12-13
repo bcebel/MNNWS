@@ -64,7 +64,9 @@
                   "post-title": "Lost in Las Vegas",
                   "post-copy": "What happens in Vegas, stays in Vegas."
                 },
-                              {
+                {
+                  "image": [
+                    {
                       "classes": "cover",
                       "alt-text": "Coffee",
                       "width": 49,
@@ -77,10 +79,9 @@
                   "post-url": "https://minnowspace.com/coffee",
                   "post-category": "Food",
                   "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Black Doves Review",
-                  "post-copy": "What is the actual deal with this show?"
-                },
-              
+                  "post-title": "17 Ways to sample coffee",
+                  "post-copy": "From the bean to the cup, we've got you covered."
+                }
               ]
             }
           ]

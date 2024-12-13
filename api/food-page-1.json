@@ -24,109 +24,19 @@
           "image": [
             {
               "classes": "cover",
-              "alt-text": "The Unsplash Book.",
+              "alt-text": "Coffee.",
               "width": 409,
               "height": 305,
               "layout": "responsive",
-              "src": "./img/land-see/content/books-you-need-resize-medium.webp"
+              "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
+          "post-url": "https://www.minnowspace.com/coffee",
           "post-category": "Food",
           "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "Nightstand-Worthy Books",
-          "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "Good eats.",
-              "width": 409,
-              "height": 370,
-              "layout": "responsive",
-              "src": "./img/land-see/content/burger-resize-medium.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "Food",
-          "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "Quick Bites in the Bay Area",
-          "post-copy": "From Sonoma to Santa Clara, we've found the best spots for quick and delicious bites."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "Silhouettes.",
-              "width": 409,
-              "height": 370,
-              "layout": "responsive",
-              "src": "./img/land-see/content/black-white-2-resize-medium.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "Food",
-          "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "Finding the Essence in Black & White",
-          "post-copy": "Stripped of color, these small glimpses of life more powerfully capture the moment."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "Creating with clay.",
-              "width": 409,
-              "height": 305,
-              "layout": "responsive",
-              "src": "./img/land-see/content/kaneko-resize-medium.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured land-see-post-video col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "Food",
-          "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "The New Exhibit of Jun Kaneko",
-          "post-copy": "Out of three warehouses, Jun Kaneko's dream of an interdisciplinary cultural organization came to life. KANEKO focuses on exploring the act of creating."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "Fall colors.",
-              "width": 409,
-              "height": 305,
-              "layout": "responsive",
-              "src": "./img/land-see/content/fall-festivals-resize-medium.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "Food",
-          "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "Fall Festivals Around the U.S.",
-          "post-copy": "For those of us sad to see the summer leave, autumn has some surprising delights with its creative festivals from one end of the U.S. to the other."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "entertainment producer.",
-              "width": 409,
-              "height": 370,
-              "layout": "responsive",
-              "src": "./img/land-see/content/shoe-designer-centered.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "Food",
-          "post-category-url": "stories.amp.html?category=food#land-see-food",
-          "post-title": "The Artist Behind Your Favorite Songs",
-          "post-copy": "This Los Angeles based producer is the creative genius behind many Top-40 songs."
+          "post-title": "17 Easy & Affordable Coffee Drinks",
+          "post-copy": "From the classic espresso to the trendy cold brew, we've got you covered."
         }
       ]
     },
