@@ -6,37 +6,19 @@
           "image": [
             {
               "classes": "cover",
-              "alt-text": "Birdhouse metaphor.",
-              "width": 409,
-              "height": 305,
+              "alt-text": "Lost in Las Vegas.",
+              "width": 64,
+              "height": 42,
               "layout": "responsive",
               "src": "./img/hotels/pexels-snapwire-165799.jpg"
             }
           ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "travel",
-          "post-category-url": "stories.amp.html?category=travel#land-see-travel",
-          "post-title": "Interior Design for Tiny Homes",
-          "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
-              "alt-text": "Through the mist.",
-              "width": 409,
-              "height": 370,
-              "layout": "responsive",
-              "src": "./img/land-see/content/maine.webp"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.cj.com/",
-          "post-category": "travel",
-          "post-category-url": "stories.amp.html?category=travel#land-see-travel",
-          "post-title": "Bold Coast Cottage in Main",
-          "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
+          "post-url": "https://www.minnowspace.com/hotels/",
+          "post-category": "Travel",
+          "post-category-url": "stories.amp.html?category=food#land-see-food",
+          "post-title": "Lost in Las Vegas",
+          "post-copy": "What happens in Vegas, stays in Vegas."
         }
       ]
     }
