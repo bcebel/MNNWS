@@ -63,25 +63,8 @@
                   "post-category-url": "stories.amp.html?category=food#land-see-food",
                   "post-title": "Lost in Las Vegas",
                   "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Build a killer outfit.",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/land-see/content/retail-shop-370px.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.cj.com/",
-                  "post-category": "Fashion",
-                  "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
-                  "post-title": "New Textile & Basics Shop Opens in Soho",
-                  "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
                 }
+              
               ]
             }
           ]

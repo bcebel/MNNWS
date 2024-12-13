@@ -2700,7 +2700,7 @@ limitations under the License.
       opacity: 0.77;
     }
 
-    .land-see-interiors:before {
+    .land-see-travel:before {
       opacity: 1;
     }
 
@@ -3455,14 +3455,10 @@ limitations under the License.
                   <a href="stories.amp.html" class="text-decoration-none">All</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none">Design</a>
-                </li>
-                <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=interiors#land-see-interiors"
-                    class="text-decoration-none">Interiors</a>
+                  <a href="stories.amp.html?category=travel#land-see-travel" class="text-decoration-none">travel</a>
                 </li>
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=food#land-see-food" class="text-decoration-none">Food</a>
@@ -3533,15 +3529,12 @@ limitations under the License.
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html" class="text-decoration-none">All</a>
                 </li>
-                <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none">Design</a>
-                </li>
+
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a>
                 </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=interiors#land-see-interiors"
-                    class="text-decoration-none">Interiors</a>
+                  <a href="stories.amp.html?category=travel#land-see-travel" class="text-decoration-none">travel</a>
                 </li>
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=food#land-see-food" class="text-decoration-none">Food</a>
@@ -3631,28 +3624,14 @@ limitations under the License.
             All
           </button>
         </div>
+
+
         <div class="inline-block px3">
-          <button id="land-see-design"
-            [class]="selectedCategory &#x3D;&#x3D; &#39;design&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
+          <button id="land-see-travel"
+            [class]="selectedCategory &#x3D;&#x3D; &#39;travel&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
             class="land-see-categories-button"
-            on="tap:AMP.pushState({height: 550, mobile_height: 1100, src: &#39;./api/design-page-1.json&#39;, selectedCategory: &#39;design&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
-            Design
-          </button>
-        </div>
-        <div class="inline-block px3">
-          <button id="land-see-fashion"
-            [class]="selectedCategory &#x3D;&#x3D; &#39;fashion&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
-            class="land-see-categories-button"
-            on="tap:AMP.pushState({height: 1100, mobile_height: 1650, src: &#39;./api/fashion-page-1.json&#39;, selectedCategory: &#39;fashion&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
-            Fashion
-          </button>
-        </div>
-        <div class="inline-block px3">
-          <button id="land-see-interiors"
-            [class]="selectedCategory &#x3D;&#x3D; &#39;interiors&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
-            class="land-see-categories-button"
-            on="tap:AMP.pushState({height: 550, mobile_height: 1100, src: &#39;./api/interiors-page-1.json&#39;, selectedCategory: &#39;interiors&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
-            Interiors
+            on="tap:AMP.pushState({height: 550, mobile_height: 1100, src: &#39;./api/travel-page-1.json&#39;, selectedCategory: &#39;travel&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
+            travel
           </button>
         </div>
         <div class="inline-block px3">
@@ -3842,7 +3821,7 @@ limitations under the License.
           aria-label="Link to AMP HTML TikTok"><amp-img src="./img/land-see/content/tiktok.webp" width="24"
             height="22.2" layout="fixed">
             <title>TikTok</title>
-           </a>
+        </a>
       </li>
       <li>
         <a href="https://www.instagram.com/bcebel/" target="_blank" class="inline-block p1"
