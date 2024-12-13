@@ -39,6 +39,24 @@
           "post-copy": "TikTok is forever debating whether its ok to microwave your tea, like an American."
         },
         {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Lost In Las Vegas",
+              "width": 64,
+              "height": 43,
+              "layout": "responsive",
+              "src": "./img/hotels/pexels-snapwire-165799.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "https://www.minnowspace.com/hotels",
+          "post-category": "Travel",
+          "post-category-url": "stories.amp.html?category=food#land-see-food",
+          "post-title": "Lost in Las Vegas",
+          "post-copy": "What happens in Vegas stays in Vegas"
+        },
+        {
           "image-animated": [
             {
               "classes": "cover",

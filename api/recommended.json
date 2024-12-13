@@ -50,19 +50,19 @@
                   "image": [
                     {
                       "classes": "cover",
-                      "alt-text": "Good eats.",
-                      "width": 196,
-                      "height": 249,
+                      "alt-text": "Lost in Las Vegas.",
+                      "width": 64,
+                      "height": 42,
                       "layout": "responsive",
-                      "src": "./img/land-see/content/burger-resize-medium.webp"
+                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
                     }
                   ],
                   "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.cj.com/",
-                  "post-category": "Food",
+                  "post-url": "https://www.minnowspace.com/hotels/",
+                  "post-category": "Travel",
                   "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Quick Bites in the Bay Area",
-                  "post-copy": "From Sonoma to Santa Clara, we've found the best spots for quick and delicious bites."
+                  "post-title": "Lost in Las Vegas",
+                  "post-copy": "What happens in Vegas, stays in Vegas."
                 },
                 {
                   "image": [
