@@ -3866,6 +3866,31 @@ limitations under the License.
 
 </amp-form>
 
+<form method="post" action-xhr="https://example.com/subscribe" target="_top">
+  <fieldset>
+    <label>
+      <span>Name:</span>
+      <input type="text" name="name" required>
+    </label>
+    <br>
+    <label>
+      <span>Email:</span>
+      <input type="email" name="email" required>
+    </label>
+    <br>
+    <input type="submit" value="Subscribe">
+  </fieldset>
+  <div submit-success>
+    <template type="amp-mustache">
+      Subscription successful!
+    </template>
+  </div>
+  <div submit-error>
+    <template type="amp-mustache">
+      Subscription failed!
+    </template>
+  </div>
+</form>
 
   <div class="land-see-subscribe center items-center max-width-4 mx-auto m0 mb3 z1">
     <div class="land-see-subscribe-form z2">
