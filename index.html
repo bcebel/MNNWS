@@ -3844,28 +3844,29 @@ limitations under the License.
     </div>
   </section>
 
-<form method="POST" action-xhr="https://amp-email-collector.vercel.app/subscribe" target="_top"
-  enctype="application/x-www-form-urlencoded">
-  <label>
-    Email:
-    <input type="email" name="email" required>
-  </label>
-  <button type="submit">Subscribe</button>
-  <div submit-success>
-    <template type="amp-mustache">
-      Success! Thanks for subscribing, {{email}}.
-    </template>
-  </div>
-  <div submit-error>
-    <template type="amp-mustache">
-      Error: {{error}}.
-    </template>
-  </div>
-</form>
+  <form method="POST" action-xhr="https://amp-email-collector.vercel.app/subscribe" target="_top"
+    enctype="application/x-www-form-urlencoded">
+    <label>
+      Email:
+      <input type="email" name="email" required>
+    </label>
+    <button type="submit">Subscribe</button>
+    <div submit-success>
+      <template type="amp-mustache">
+        Success! Thanks for subscribing, {{email}}.
+      </template>
+    </div>
+    <div submit-error>
+      <template type="amp-mustache">
+        Error: {{error}}.
+      </template>
+    </div>
+  </form>
 
   <div class="land-see-subscribe center items-center max-width-4 mx-auto m0 mb3 z1">
     <div class="land-see-subscribe-form z2">
-      <form id="subscribeForm" method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe"  enctype="application/x-www-form-urlencoded" target="_top">
+      <form id="subscribeForm" method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe"
+        enctype="application/x-www-form-urlencoded" target="_top">
         <fieldset class="border-none p0 m0">
           <h2 class="land-see-subs-heading-text">
             Weekly inspiration from <span class="bold">MINNOWSPACE</span>
@@ -3893,20 +3894,21 @@ limitations under the License.
           </div>
       </form>
 
-        <form method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe"  target="_top">
-          <input type="email" name="email" required>
-          <button type="submit">Subscribe</button>
-          <div submit-success>
-            <template type="amp-mustache">
-              Subscription successful! Thank you for subscribing.
-            </template>
-          </div>
-          <div submit-error>
-            <template type="amp-mustache">
-              Subscription failed! Please try again.
-            </template>
-          </div>
-        </form>
+      <form method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe"
+        enctype="application/x-www-form-urlencoded" target="_top">
+        <input type="email" name="email" required>
+        <button type="submit">Subscribe</button>
+        <div submit-success>
+          <template type="amp-mustache">
+            Subscription successful! Thank you for subscribing.
+          </template>
+        </div>
+        <div submit-error>
+          <template type="amp-mustache">
+            Subscription failed! Please try again.
+          </template>
+        </div>
+      </form>
       <!-- End Input-->
 
       <!-- Start Input -->
