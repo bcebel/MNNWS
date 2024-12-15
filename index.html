@@ -3844,45 +3844,21 @@ limitations under the License.
     </div>
   </section>
 
-<amp-form method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe" target="_top"
-  on="submit-success:AMP.setState({successMessage: true})" on="submit-error:AMP.setState({errorMessage: true})"
-  enctype="application/json">
-
-  <div class="ampstart-input inline-block relative m0 p0 mb3">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" class="block border-none p0 m0"
-      placeholder="Enter email address to subscribe" required />
-  </div>
-
-  <button type="submit" class="ampstart-btn caps">Subscribe</button>
-
-  <div submit-success>
-    <p>Subscription successful! Thank you for subscribing.</p>
-  </div>
-
-  <div submit-error>
-    <p>Something went wrong. Please try again.</p>
-  </div>
-
-</amp-form>
-
-<form method="post" action-xhr="https://amp-email-collector.vercel.app/subscribe" target="_top">
-  <fieldset>
-    <label>
-      <span>Email:</span>
-      <input type="email" name="email" required>
-    </label>
-    <br>
-    <input type="submit" value="Subscribe">
-  </fieldset>
+<form method="POST" action-xhr="https://amp-email-collector.vercel.app/subscribe" target="_top"
+  enctype="application/x-www-form-urlencoded">
+  <label>
+    Email:
+    <input type="email" name="email" required>
+  </label>
+  <button type="submit">Subscribe</button>
   <div submit-success>
     <template type="amp-mustache">
-      Subscription successful!
+      Success! Thanks for subscribing, {{email}}.
     </template>
   </div>
   <div submit-error>
     <template type="amp-mustache">
-      Subscription failed!
+      Error: {{error}}.
     </template>
   </div>
 </form>
