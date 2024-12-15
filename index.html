@@ -3893,6 +3893,20 @@ limitations under the License.
           </div>
       </form>
 
+        <form method="post" action-xhr="/api/subscribe" target="_top">
+          <input type="email" name="email" required>
+          <button type="submit">Subscribe</button>
+          <div submit-success>
+            <template type="amp-mustache">
+              Subscription successful! Thank you for subscribing.
+            </template>
+          </div>
+          <div submit-error>
+            <template type="amp-mustache">
+              Subscription failed! Please try again.
+            </template>
+          </div>
+        </form>
       <!-- End Input-->
 
       <!-- Start Input -->
