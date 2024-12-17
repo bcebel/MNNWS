@@ -3660,6 +3660,9 @@ limitations under the License.
         <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="813" height="480"
           layout="responsive" src="./img/hotels/pexels-gsn-travel-29101273.jpg">
         </amp-img>
+              <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="101" height="67.4" layout="responsive"
+                src="./img/plaid/people-man-checkered-flannel-preview.jpg">
+              </amp-img>
         <amp-img class="cover" alt="Those websites are miiiiine.." width="813" height="480" layout="responsive"
           src="./img/tea/pexels-lilartsy-1793035.webp">
         </amp-img>
@@ -3689,6 +3692,12 @@ limitations under the License.
                 src="./img/hotels/pexels-gsn-travel-29101273.jpg">
               </amp-img>
             </button>
+                  <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
+                    <amp-img class="cover land-see-cover-position-bottom land-see-selected-preview-image"
+                      [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;cover land-see-cover-position-bottom land-see-selected-preview-image&#39; : &#39;cover land-see-cover-position-bottom&#39;"
+                      alt="Go to slide 1" width="77" height="58" layout="fixed" src="./img/plaid/people-man-checkered-flannel-preview.jpg">
+                    </amp-img>
+                  </button>
             <button on="tap:AMP.setState({selectedSlide: 1})" class="px0">
               <amp-img class="cover"
                 [class]="selectedSlide &#x3D;&#x3D; 1 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
