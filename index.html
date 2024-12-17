@@ -3377,9 +3377,7 @@ limitations under the License.
       "config": {
         "G-PHX4D1D223": {
           "groups": "default"
-        },
-
-        
+        }
       }
     },
   
@@ -3672,9 +3670,9 @@ limitations under the License.
         <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="813" height="480"
           layout="responsive" src="./img/hotels/pexels-gsn-travel-29101273.jpg">
         </amp-img>
-              <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="101" height="67.4" layout="responsive"
-                src="./img/plaid/people-man-checkered-flannel-preview.jpg">
-              </amp-img>
+        <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="101" height="67.4"
+          layout="responsive" src="./img/plaid/people-man-checkered-flannel-preview.jpg">
+        </amp-img>
         <amp-img class="cover" alt="Those websites are miiiiine.." width="813" height="480" layout="responsive"
           src="./img/tea/pexels-lilartsy-1793035.webp">
         </amp-img>
@@ -3704,12 +3702,13 @@ limitations under the License.
                 src="./img/hotels/pexels-gsn-travel-29101273.jpg">
               </amp-img>
             </button>
-                  <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
-                    <amp-img class="cover land-see-cover-position-bottom land-see-selected-preview-image"
-                      [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;cover land-see-cover-position-bottom land-see-selected-preview-image&#39; : &#39;cover land-see-cover-position-bottom&#39;"
-                      alt="Go to slide 1" width="77" height="58" layout="fixed" src="./img/plaid/people-man-checkered-flannel-preview.jpg">
-                    </amp-img>
-                  </button>
+            <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
+              <amp-img class="cover land-see-cover-position-bottom land-see-selected-preview-image"
+                [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;cover land-see-cover-position-bottom land-see-selected-preview-image&#39; : &#39;cover land-see-cover-position-bottom&#39;"
+                alt="Go to slide 1" width="77" height="58" layout="fixed"
+                src="./img/plaid/people-man-checkered-flannel-preview.jpg">
+              </amp-img>
+            </button>
             <button on="tap:AMP.setState({selectedSlide: 1})" class="px0">
               <amp-img class="cover"
                 [class]="selectedSlide &#x3D;&#x3D; 1 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
@@ -3866,22 +3865,22 @@ limitations under the License.
   </section>
 
 
-      <!-- End Input-->
+  <!-- End Input-->
 
-      <!-- Start Input -->
-      <div class="ampstart-input inline-block relative m0 p0 mb3">
-        <input type="submit" value="" name="submit" id="submit" class="block border-none p0 m0" placeholder="" />
-        <label for="submit" class="absolute top-0 right-0 bottom-0 left-0" aria-hidden="true"></label>
-      </div>
-      <!-- End Input-->
-      </fieldset>
-      </form>
-    </div>
-    <amp-position-observer on="scroll:subscribeBGParallax.seekTo(percent=event.percent)" layout="nodisplay">
-    </amp-position-observer>
-    <amp-img alt="A view of the sea, see?" class="land-see-subscribe-bg cover" layout="fixed-height" height="679"
-      src="./img/land-see/content/khatam-tadayon-107740.webp">
-    </amp-img>
+  <!-- Start Input -->
+  <div class="ampstart-input inline-block relative m0 p0 mb3">
+    <input type="submit" value="" name="submit" id="submit" class="block border-none p0 m0" placeholder="" />
+    <label for="submit" class="absolute top-0 right-0 bottom-0 left-0" aria-hidden="true"></label>
+  </div>
+  <!-- End Input-->
+  </fieldset>
+  </form>
+  </div>
+  <amp-position-observer on="scroll:subscribeBGParallax.seekTo(percent=event.percent)" layout="nodisplay">
+  </amp-position-observer>
+  <amp-img alt="A view of the sea, see?" class="land-see-subscribe-bg cover" layout="fixed-height" height="679"
+    src="./img/land-see/content/khatam-tadayon-107740.webp">
+  </amp-img>
   </div>
 
   <!-- Start Footer -->
