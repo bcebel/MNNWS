@@ -24,6 +24,25 @@
           "image": [
             {
               "classes": "cover",
+              "alt-text": "Send in the Drones",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/drones/drone4sunset.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./drones.html",
+          "post-category": "Entertainment",
+          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-title": "Send in the Drones",
+          "post-copy": "The Ultimate Holiday Gift Soaring Into 2024."
+        },
+
+        {
+          "image": [
+            {
+              "classes": "cover",
               "alt-text": "Black Doves Review",
               "width": 670,
               "height": 599,
@@ -50,7 +69,7 @@
             }
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "https://www.minnowspace.com/tea.html",
+          "post-url": "https://www.minnowspace.com/tea",
           "post-category": "Food",
           "post-category-url": "stories.amp.html?category=food#land-see-food",
           "post-title": "It's OK to Microwave Your Tea",
