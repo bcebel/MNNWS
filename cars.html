@@ -522,6 +522,16 @@ This is a sample template for implementing live blogs in AMP.
 </head>
 
 <body>
+    <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
+      <script id="hello-world" type="text/plain" target="amp-script">
+       window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+    
+          gtag('config', 'G-V3TNNSX3H4');
+    </script>
+    </amp-script>
+
   <section class="heading">
     <h1>Minnow's Auto Blog</h1>
     <p><small class="date">Wed December 5 2024</small></p>
