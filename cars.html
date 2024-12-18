@@ -98,7 +98,7 @@ This is a sample template for implementing live blogs in AMP.
   <!-- Live blog updates can be represented in Google Search results as carousel items of the blog page. [Learn more](https://developers.google.com/search/pilot/open/live-blogs#properties). -->
   <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
+          "@context": "https://schema.org",
           "@type": "LiveBlogPosting",
           "url": "<% hosts.platform %>/documentation/examples/news-publishing/live_blog/",
           "articleBody": "This is the initial text in the blog post",
@@ -522,15 +522,15 @@ This is a sample template for implementing live blogs in AMP.
 </head>
 
 <body>
-    <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
-      <script id="hello-world" type="text/plain" target="amp-script">
+  <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
+    <script id="hello-world" type="text/plain" target="amp-script">
        window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
     
           gtag('config', 'G-V3TNNSX3H4');
     </script>
-    </amp-script>
+  </amp-script>
 
   <section class="heading">
     <h1>Minnow's Auto Blog</h1>
