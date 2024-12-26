@@ -82,8 +82,7 @@
                 }
             </style>
         </noscript>
-        <!--
-        <script>
+     <!---->   <script>
             // Sample video IDs
             const videoIds = [
                 "HL2mRKTVutM",
@@ -110,30 +109,30 @@
             // Load and display videos on page load
             window.addEventListener('DOMContentLoaded', displayVideos);
         </script>
--->
+
     </head>
 
     <body>
-        <amp-script layout="container" src="https://www.minnowspace.com/yotu.js">
             <form id="video-form">
                 <label for="video-id">Enter YouTube Video ID:</label>
                 <input type="text" id="video-id" name="videoId" required>
                 <button type="submit">Add Video</button>
             </form>
-        </amp-script>
+
 
         <!-- Form for Adding Videos -->
 
-<amp-script layout="container" src="https://www.minnowspace.com/yotu.js">
+    <div id="video-list">
+        <!-- Amp-Youtube components will be injected here -->
+    </div>
+
         <!-- Display YouTube Videos Dynamically -->
-        <div id="video-list">
-            <!-- Amp-Youtube components will be injected here -->
-        </div>
-</amp-script>
+ 
+
         <!-- AMP Next-Page for Infinite Scroll -->
         <amp-next-page src="http://localhost:3000/api/next-page-config"></amp-next-page>
 
-  <!--      <script>
+        <script>
             // Handle form submission to add new video ID
             document.getElementById('video-form').addEventListener('submit', function (e) {
                 e.preventDefault();
@@ -146,7 +145,7 @@
                 }
             });
         </script>
--->
+
     </body>
 
     </html>
