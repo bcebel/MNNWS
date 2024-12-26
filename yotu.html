@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-0.1.js"></script>
+    <script>
+        // Sample video IDs
+        const videoIds = [
+            "5xngnT592Kc",
+            "KsMEs6EUDQk",
+            "KsMEs6EUDQk",
+            "KsMEs6EUDQk"
+        ];
+
+        async function displayVideos() {
+            const videoList = document.getElementById('video-list');
+            videoList.innerHTML = ''; // Clear existing videos
+
+            videoIds.forEach(videoId => {
+                const ampYouTube = document.createElement('amp-youtube');
+                ampYouTube.setAttribute('width', '480');
+                ampYouTube.setAttribute('height', '270');
+                ampYouTube.setAttribute('layout', 'responsive');
+                ampYouTube.setAttribute('data-videoid', videoId);
+                videoList.appendChild(ampYouTube);
+            });
+        }
+
+        // Load and display videos on page load
+        window.addEventListener('DOMContentLoaded', displayVideos);
+    </script>
+</head>
+
+<body>
+
+    <!-- Form for Adding Videos -->
+    <form id="video-form">
+        <label for="video-id">Enter YouTube Video ID:</label>
+        <input type="text" id="video-id" name="videoId" required>
+        <button type="submit">Add Video</button>
+    </form>
+
+    <!-- Display YouTube Videos Dynamically -->
+    <div id="video-list">
+        <!-- Amp-Youtube components will be injected here -->
+    </div>
+
+    <!-- AMP Next-Page for Infinite Scroll -->
+    <amp-next-page layout="nodisplay" src="http://localhost:3000/api/next-page-config"></amp-next-page>
+
+    <script>
+        // Handle form submission to add new video ID
+        document.getElementById('video-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const videoId = document.getElementById('video-id').value;
+            if (videoId) {
+                videoIds.push(videoId); // Add new video ID to the array
+                displayVideos(); // Update the video list
+            } else {
+                alert('Video ID is required!');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
