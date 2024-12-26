@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+</head>
+
+<body>
+
+    <!-- Form to Add Video -->
+    <form method="POST" action-xhr="/api/videos" target="_top">
+        <label for="video-id">Enter YouTube Video ID:</label>
+        <input type="text" id="video-id" name="videoId" required>
+        <button type="submit">Add Video</button>
+        <div submit-success>
+            <template type="amp-mustache">
+                Video added successfully!
+            </template>
+        </div>
+        <div submit-error>
+            <template type="amp-mustache">
+                Failed to add video. Please try again.
+            </template>
+        </div>
+    </form>
+
+    <!-- Dynamic Video List -->
+<amp-list width="auto" height="270" layout="fixed-height" src="videos.json">
+    <template type="amp-mustache">
+        <div>
+            <amp-youtube width="480" height="270" layout="responsive" data-videoid="{{.}}">
+            </amp-youtube>
+        </div>
+    </template>
+</amp-list>
+
+</body>
+
+</html>
