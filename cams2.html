@@ -67,6 +67,16 @@
         // Start the camera and connect to a peer
         startCamera();
     </script>
+    <input type="text" id="peerIdInput" placeholder="Enter Peer ID">
+    <button onclick="connectToPeer()">Connect</button>
+    <script>
+        let remotePeerId;
+        function connectToPeer() {
+            remotePeerId = document.getElementById('peerIdInput').value;
+            createOffer(); // Initiate WebRTC offer to the remote peer
+        }
+    </script>
+
 </body>
 
 </html>
