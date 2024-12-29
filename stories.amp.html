@@ -24,8 +24,8 @@ limitations under the License.
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="google-adsense-account" content="ca-pub-3239465181490887">
-<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <style amp-boilerplate="">
     body {
@@ -3354,12 +3354,15 @@ limitations under the License.
 <body class="land-see">
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
-       window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-    
-          gtag('config', 'G-V3TNNSX3H4');
-    </script>
+     window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-V3TNNSX3H4');
+        vars: {
+  'ampHost': '${ampdocHost}'
+  }
+  
+  </script>
   </amp-script>
   <!--maybe delete above-->
   <amp-analytics type="gtag" data-credentials="include">
