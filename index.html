@@ -1495,8 +1495,13 @@ limitations under the License.
     }
 
     body {
-      background: #fff;
-      color: #6d6d6d;
+      background-image: url(./img/main/pexels-chevanon-325045.jpg);
+       background-color: rgba(249, 223, 241, 0.7);
+    background-blend-mode: lighten;
+      background-position:center;
+      background-size:300vh;
+      background-repeat: no-repeat;
+      color: #000000;
       font-family: Crimson Text, times, serif;
       min-width: 315px;
       overflow-x: hidden;
@@ -1515,7 +1520,7 @@ limitations under the License.
     }
 
     .ampstart-accent {
-      color: #808992;
+      color: #000000;
     }
 
     #content:target {
@@ -1547,7 +1552,7 @@ limitations under the License.
     }
 
     .ampstart-subtitle {
-      color: #808992;
+      color: #000000;
       line-height: 1.6;
     }
 
@@ -1556,7 +1561,7 @@ limitations under the License.
     .ampstart-hint,
     .ampstart-label {
       font-size: 1rem;
-      color: #4f4f4f;
+      color: #000000;
       line-height: 1.42857;
       letter-spacing: 0.06rem;
     }
@@ -1739,7 +1744,7 @@ limitations under the License.
       display: inline-block;
       content: '+';
       padding: 0 0 0 1.5rem;
-      color: #808992;
+      color: #000000;
     }
 
     .ampstart-dropdown>[expanded]>header:after {
@@ -1752,7 +1757,7 @@ limitations under the License.
 
     .ampstart-dropdown-item {
       background-color: #fff;
-      color: #808992;
+      color: #000000;
       opacity: 0.9;
     }
 
@@ -1833,7 +1838,7 @@ limitations under the License.
     }
 
     .ampstart-image-with-caption figcaption {
-      color: #4f4f4f;
+      color: #000000;
       line-height: 1.42857;
     }
 
@@ -2161,7 +2166,7 @@ limitations under the License.
     }
 
     .ampstart-nav-dropdown .ampstart-dropdown-item {
-      color: #808992;
+      color: #000000;
     }
 
     .ampstart-sidebar {
@@ -2172,7 +2177,7 @@ limitations under the License.
     }
 
     .ampstart-sidebar .ampstart-icon {
-      fill: #808992;
+      fill: #000000;
     }
 
     .ampstart-sidebar-header {
@@ -2268,7 +2273,7 @@ limitations under the License.
     }
 
     .ampstart-icon {
-      fill: #808992;
+      fill: #000000;
     }
 
     .h1,
@@ -2320,7 +2325,7 @@ limitations under the License.
       font-size: 0.9375rem;
       font-style: italic;
       letter-spacing: normal;
-      color: #808992;
+      color: #000000;
       opacity: 0.8;
     }
 
@@ -2754,7 +2759,7 @@ limitations under the License.
     }
 
     .land-see a.land-see-post-category {
-      color: #808992;
+      color: #000000;
       letter-spacing: 1.4px;
     }
 
@@ -3124,7 +3129,7 @@ limitations under the License.
 
     .land-see-next-page,
     .land-see-prev-page {
-      color: #808992;
+      color: #000000;
       letter-spacing: 1.4px;
       border: none;
       text-transform: uppercase;
@@ -3232,7 +3237,7 @@ limitations under the License.
       font-size: 0.688rem;
       font-style: normal;
       text-transform: uppercase;
-      color: #808992;
+      color: #000000;
     }
 
     .land-see-image-gallery {
@@ -3293,7 +3298,7 @@ limitations under the License.
 
     .land-see-story-social-share-heading {
       float: left;
-      color: #808992;
+      color: #000000;
       text-transform: uppercase;
       padding-top: 0.5rem;
     }
@@ -3627,11 +3632,9 @@ limitations under the License.
         <a class="text-decoration-none" href="index.html">Minnowspace</a>
       </h1>
       <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 px2 mb3">
-        Minnowspace is a place where we can all come together to share our stories, experiences, and ideas.
+        <h2>Minnowspace is a place where we can all come together to share our stories, experiences, and ideas.</h2>
       </p>
-      <amp-img media="(min-width: 25.06rem)" class="cover max-width-4 mx-auto mt2" alt="Minnowspace." width="1000"
-        height="1000" layout="responsive" src="./img/land-see/content/minnowspace.png">
-      </amp-img>
+
       <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
 
       </div>
@@ -3639,6 +3642,9 @@ limitations under the License.
 
     <h2 class="land-see-story-subtitle ampstart-subtitle bold max-width-3 mx-auto pb0 pt4 px4">
       Welcome to MinnowSpace!
+        <div>
+       
+          <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
     </h2>
     <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
       <b>Minnowspace is your destination for creativity, connection, and community. It’s a space where stories,
@@ -3649,7 +3655,11 @@ limitations under the License.
         rewards
         are shared.  We may be small fish but we don't have to play in a small pond. With modern technnology we will build a community platform with video and chat that is co-owned by YOU, not some bazillionaire. 
     </p>
-
+  <amp-fx-flying-carpet height="300px">
+    <amp-img alt="Minnowspace" class="cover" width="340" height="515" layout="fixed"
+      src="./img/main/pexels-chevanon-325045.jpg">
+    </amp-img>
+  </amp-fx-flying-carpet>
     <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
 
       This is just the start of an exciting journey. Minnowspace is built on the idea of collaboration and creativity,
@@ -3662,7 +3672,11 @@ limitations under the License.
       a
       great brand—you’re helping fuel the growth of Minnowspace.
     </p>
-
+  <amp-fx-flying-carpet height="300px">
+    <amp-img alt="Minnowspace" class="cover" width="340" height="515" layout="fixed"
+      src="./img/main/pexels-chevanon-325045.jpg">
+    </amp-img>
+  </amp-fx-flying-carpet>
     <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
       Join us on this journey and stay tuned for exciting developments. Together, we’re building something
       extraordinary..</p>
@@ -3755,7 +3769,7 @@ limitations under the License.
     <div class="land-see-flying-carpet display-none">
       <amp-fx-flying-carpet height="300px">
         <amp-img alt="Minnowspace" class="cover" width="704" height="598" layout="fixed"
-          src="./img/land-see/content/shoe-designer-centered.webp">
+          src="./img/main/pexels-chevanon-325045.jpg">
         </amp-img>
       </amp-fx-flying-carpet>
       <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
