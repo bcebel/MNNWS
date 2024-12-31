@@ -26,7 +26,8 @@ limitations under the License.
   <meta name="google-adsense-account" content="ca-pub-3239465181490887">
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
+<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+<meta name="amp-consent-blocking" content="amp-ad">
   <style amp-boilerplate="">
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -3352,7 +3353,16 @@ limitations under the License.
 </head>
 
 <body class="land-see">
-  
+  <div><amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+            {
+              "postPromptUI": "postPromptUI",
+              "clientConfig": {
+                "cdid": "539b9d9f016c1",
+                "params": ""
+              }
+            }
+          </script></div>
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
      window.dataLayer = window.dataLayer || [];

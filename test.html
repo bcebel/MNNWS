@@ -14,16 +14,18 @@
 </head>
 
 <body>
+<div>
     <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
         <script type="application/json">
-          {
-            "postPromptUI": "postPromptUI",
-            "clientConfig": {
-              "cdid": "539b9d9f016c1",
-              "params": ""
-            }
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
           }
-        </script>
+        }
+      </script>
+</div>
 
     <!-- Form to Add Video -->
     <form method="POST" action-xhr="/api/videos" target="_top">
