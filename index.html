@@ -23,6 +23,8 @@ limitations under the License.
   <meta name="viewport" content="width=device-width" />
   <meta name="description"
     content="MINNOWSPACE is a communal website that encourages decentralized ownership and a shared economy.">
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+    <meta name="amp-consent-blocking" content="amp-ad">
 
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="keywords"
@@ -3358,6 +3360,20 @@ limitations under the License.
 </head>
 
 <body class="land-see">
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+      {
+        "postPromptUI": "postPromptUI",
+        "clientConfig": {
+          "cdid": "539b9d9f016c1",
+          "params": ""
+        }
+      }
+    </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
    window.dataLayer = window.dataLayer || [];
