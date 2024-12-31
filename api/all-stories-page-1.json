@@ -6,7 +6,26 @@
           "image": [
             {
               "classes": "cover",
-              "alt-text": "Big, Tall & Plaid",
+              "alt-text": "Day of the Jackal",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/jackal/_2fbbc43f-fb72-472c-9266-0755fd95fb31.jpeg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./partycity.html",
+          "post-category": "Entertainment",
+          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-title": "The Day Of the Jackal Review",
+          "post-copy": "A great reason to be moody over the holidays"
+        },
+
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Party City",
               "width": 670,
               "height": 599,
               "layout": "responsive",
@@ -15,7 +34,7 @@
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
           "post-url": "./partycity.html",
-          "post-category": "Fashion",
+          "post-category": "Entertainment",
           "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
           "post-title": "Party City",
           "post-copy": "Where you belonged"
@@ -24,7 +43,7 @@
           "image": [
             {
               "classes": "cover",
-              "alt-text": "Big, Tall & Plaid",
+              "alt-text": "Salomon Sneakers",
               "width": 670,
               "height": 599,
               "layout": "responsive",
