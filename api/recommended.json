@@ -14,6 +14,25 @@
                   "image": [
                     {
                       "classes": "cover",
+                      "alt-text": "Shoes.",
+                      "width": 200,
+                      "height": 200,
+                      "layout": "fixed",
+                      "src": "./img/shoes/sal4.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
+                  "post-url": "https://www.minnowspace.com/salshoes.html",
+                  "post-category": "Entertainment",
+                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
+                  "post-title": "These Shoes Rule",
+                  "post-copy": "Salomon Sneakers are retro chic.  Hits all the global 80s futuristic ski slope skaterey crunchy granola athleisure vibes."
+                },
+
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
                       "alt-text": "Drones.",
                       "width": 200,
                       "height": 200,
