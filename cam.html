@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Stream</title>
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+    <meta name="amp-consent-blocking" content="amp-ad">
 </head>
 
 <body>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+        <script type="application/json">
+          {
+            "postPromptUI": "postPromptUI",
+            "clientConfig": {
+              "cdid": "539b9d9f016c1",
+              "params": ""
+            }
+          }
+        </script>
     <h1>Camera Feed</h1>
     <video id="camera" autoplay playsinline></video>
 

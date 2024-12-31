@@ -9,9 +9,21 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+    <meta name="amp-consent-blocking" content="amp-ad">
 </head>
 
 <body>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+        <script type="application/json">
+          {
+            "postPromptUI": "postPromptUI",
+            "clientConfig": {
+              "cdid": "539b9d9f016c1",
+              "params": ""
+            }
+          }
+        </script>
 
     <!-- Form to Add Video -->
     <form method="POST" action-xhr="/api/videos" target="_top">

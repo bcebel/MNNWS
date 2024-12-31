@@ -20,7 +20,7 @@ limitations under the License.
 
 <head>
   <meta charset="utf-8">
-  <title>Black Doves Review</title>
+  <title>Day of the Jackal Review</title>
   <link rel="canonical" href="https://www.minnowspace.com/blackdoves.html">
   <meta name="viewport" content="width=device-width">
   <meta name="amp-google-client-id-api" content="googleanalytics">
@@ -28,6 +28,8 @@ limitations under the License.
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
 
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -2333,6 +2335,16 @@ limitations under the License.
 </head>
 
 <body>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
+          {
+            "postPromptUI": "postPromptUI",
+            "clientConfig": {
+              "cdid": "539b9d9f016c1",
+              "params": ""
+            }
+          }
+        </script>
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
        window.dataLayer = window.dataLayer || [];
