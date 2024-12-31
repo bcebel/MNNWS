@@ -6,24 +6,6 @@
           "image": [
             {
               "classes": "cover",
-              "alt-text": "Big, Tall & Plaid",
-              "width": 670,
-              "height": 599,
-              "layout": "responsive",
-              "src": "./img/shoes/salshoe.jpg"
-            }
-          ],
-          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-          "post-url": "./salshoes.html",
-          "post-category": "Fashion",
-          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
-          "post-title": "These Shoes Rule",
-          "post-copy": "Form = Function"
-        },
-        {
-          "image": [
-            {
-              "classes": "cover",
               "alt-text": "Send in the Drones",
               "width": 670,
               "height": 599,

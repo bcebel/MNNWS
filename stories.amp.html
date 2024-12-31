@@ -3642,6 +3642,14 @@ limitations under the License.
           </button>
         </div>
 
+        <div class="inline-block px3">
+          <button id="land-see-fashion"
+            [class]="selectedCategory &#x3D;&#x3D; &#39;fashion&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
+            class="land-see-categories-button"
+            on="tap:AMP.pushState({height: 550, mobile_height: 1100, src: &#39;./api/fashion-page-1.json&#39;, selectedCategory: &#39;fashion&#39;, selectedContainerClass: &#39;land-see-categories-nav center mb2 mx1 fit relative&#39;})">
+            fashion
+          </button>
+        </div>
 
         <div class="inline-block px3">
           <button id="land-see-travel"
@@ -3651,6 +3659,9 @@ limitations under the License.
             travel
           </button>
         </div>
+
+
+
         <div class="inline-block px3">
           <button id="land-see-food"
             [class]="selectedCategory &#x3D;&#x3D; &#39;food&#39; ? &#39;land-see-categories-button land-see-selected-category&#39; : &#39;land-see-categories-button&#39;"
