@@ -118,8 +118,8 @@
             {
               "classes": "cover",
               "alt-text": "It's OK to Microwave Your Tea.",
-              "width": 300,
-              "height": 300,
+              "width": 670,
+              "height": 599,
               "layout": "responsive",
               "src": "./img/tea/pexels-minan1398-1629185.webp"
             }
@@ -136,8 +136,8 @@
             {
               "classes": "cover",
               "alt-text": "Lost In Las Vegas",
-              "width": 64,
-              "height": 43,
+              "width": 670,
+              "height": 599,
               "layout": "responsive",
               "src": "./img/hotels/pexels-snapwire-165799.jpg"
             }
@@ -154,8 +154,8 @@
             {
               "classes": "cover",
               "alt-text": "Coffee.",
-              "width": 409,
-              "height": 305,
+              "width": 670,
+              "height": 599,
               "layout": "responsive",
               "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
             }
