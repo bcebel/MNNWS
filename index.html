@@ -1497,7 +1497,6 @@ limitations under the License.
     }
 
     body {
-      background-image: url(./img/main/pexels-chevanon-325045.jpg);
       background-color: rgba(249, 223, 241, 0.7);
       background-blend-mode: lighten;
       background-position: center;
@@ -3647,18 +3646,14 @@ limitations under the License.
 
   <section class="land-see-story-detail relative mx-auto mb4 pt2">
     <div class="mx-auto center land-see-post-item land-see-post-item-wide land-see-story">
-      <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 pb1" href="#"></a>
       <h1 class="land-see-hero-title ampstart-title-lg bold pt2 mx2">
         <a class="text-decoration-none" href="index.html">Minnowspace</a>
       </h1>
-      <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 px2 mb3">
-      <h2 style="margin:20vw">Minnowspace is a place where we can all come together to share our stories, experiences,
-        and ideas.</h2>
-      </p>
+          <h2 style="margin-left:20vw; margin-right:20vw">Minnowspace is a place where we can all come together to share our stories, experiences,
+            and ideas.</h2>
 
-      <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
 
-      </div>
+
     </div>
 
     <h2 class="land-see-story-subtitle ampstart-subtitle bold max-width-3 mx-auto pb0 pt4 px4">
@@ -3694,11 +3689,7 @@ limitations under the License.
       a
       great brand—you’re helping fuel the growth of Minnowspace.
     </p>
-    <amp-fx-flying-carpet height="300px">
-      <amp-img alt="Minnowspace" class="cover" width="340" height="515" layout="fixed"
-        src="./img/main/pexels-francesco-ungaro-2289409.jpg">
-      </amp-img>
-    </amp-fx-flying-carpet>
+
     <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
       Join us on this journey and stay tuned for exciting developments. Together, we’re building something
       extraordinary..</p>
@@ -3788,105 +3779,11 @@ limitations under the License.
       </div>
     </section>
 
-    <div class="land-see-flying-carpet display-none">
-      <amp-fx-flying-carpet height="300px">
-        <amp-img alt="Minnowspace" class="cover" width="704" height="598" layout="fixed"
-          src="./img/main/pexels-chevanon-325045.jpg">
-        </amp-img>
-      </amp-fx-flying-carpet>
       <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
 
       </div>
     </div>
 
-    <div class="land-see-image-gallery mx-auto">
-      <amp-carousel id="land-see-kim-carousel" class="mx1" width="813" height="480" layout="responsive"
-        [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" controls="" loop=""
-        type="slides">
-        <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="813" height="480"
-          layout="responsive" src="./img/hotels/pexels-gsn-travel-29101273.jpg">
-        </amp-img>
-        <amp-img class="cover land-see-cover-position-bottom" alt="Omg, websites." width="101" height="67.4"
-          layout="responsive" src="./img/plaid/people-man-checkered-flannel-preview.jpg">
-        </amp-img>
-        <amp-img class="cover" alt="Those websites are miiiiine.." width="813" height="480" layout="responsive"
-          src="./img/tea/pexels-lilartsy-1793035.webp">
-        </amp-img>
-        <amp-img class="cover" alt="These websites are rad.." width="813" height="480" layout="responsive"
-          src="./img/hotels/pexels-zepps-project-837783-2410385.jpg">
-        </amp-img>
-        <amp-img class="cover" alt="Shoe designer self-portrait." width="813" height="480" layout="responsive"
-          src="./img/tea/pexels-minan1398-1624554.webp">
-        </amp-img>
-        <amp-img class="cover" alt="Those websites are rad.." width="813" height="480" layout="responsive"
-          src="./img/tea/pexels-pixabay-460257.webp">
-        </amp-img>
-        <amp-img class="cover" alt="Matching accessories." width="813" height="480" layout="responsive"
-          src="./img/hotels/pexels-snapwire-165799.jpg">
-        </amp-img>
-        <amp-img class="cover" alt="Sigh, having such amazing websites is almost a burden." width="813" height="480"
-          layout="responsive" src="./img/coffee/pexels-lood-goosen-508841-1235706.jpg">
-        </amp-img>
-      </amp-carousel>
-      <div class="mx1">
-        <div class="land-see-gallery-progress mt1 center col-12 overflow-hidden">
-          <div class="land-see-gallery-progress-scroll col-12 nowrap">
-            <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
-              <amp-img class="cover land-see-cover-position-bottom land-see-selected-preview-image"
-                [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;cover land-see-cover-position-bottom land-see-selected-preview-image&#39; : &#39;cover land-see-cover-position-bottom&#39;"
-                alt="Go to slide 1" width="77" height="58" layout="fixed"
-                src="./img/hotels/pexels-gsn-travel-29101273.jpg">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
-              <amp-img class="cover land-see-cover-position-bottom land-see-selected-preview-image"
-                [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;cover land-see-cover-position-bottom land-see-selected-preview-image&#39; : &#39;cover land-see-cover-position-bottom&#39;"
-                alt="Go to slide 1" width="77" height="58" layout="fixed"
-                src="./img/plaid/people-man-checkered-flannel-preview.jpg">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 1})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 1 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 2" width="77" height="58" layout="fixed" src="./img/tea/pexels-lilartsy-1793035.webp">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 2})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 2 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 3" width="77" height="58" layout="fixed"
-                src="./img/hotels/pexels-zepps-project-837783-2410385.jpg">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 3})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 3 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 4" width="77" height="58" layout="fixed" src="./img/tea/pexels-minan1398-1624554.webp">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 4})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 4 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 5" width="77" height="58" layout="fixed" src="./img/tea/pexels-pixabay-460257.webp">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 5})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 5 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 6" width="77" height="58" layout="fixed" src="./img/hotels/pexels-snapwire-165799.jpg">
-              </amp-img>
-            </button>
-            <button on="tap:AMP.setState({selectedSlide: 6})" class="px0">
-              <amp-img class="cover"
-                [class]="selectedSlide &#x3D;&#x3D; 6 ? &#39;cover land-see-selected-preview-image&#39; : &#39;cover&#39;"
-                alt="Go to slide 7" width="77" height="58" layout="fixed"
-                src="./img/coffee/pexels-lood-goosen-508841-1235706.jpg">
-              </amp-img>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
   </section>
@@ -3934,7 +3831,7 @@ limitations under the License.
   <amp-position-observer on="scroll:subscribeBGParallax.seekTo(percent=event.percent)" layout="nodisplay">
   </amp-position-observer>
   <amp-img alt="A view of the sea, see?" class="land-see-subscribe-bg cover" layout="fixed-height" height="679"
-    src="./img/land-see/content/khatam-tadayon-107740.webp">
+    src="./img/main/pexels-babydov-7787761.jpg">
   </amp-img>
   </div>
 
