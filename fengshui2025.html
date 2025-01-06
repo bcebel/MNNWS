@@ -25,7 +25,7 @@ limitations under the License.
   <meta name="viewport" content="width=device-width">
   <meta name="amp-google-client-id-api" content="googleanalytics">
   <meta name="google-adsense-account" content="ca-pub-3239465181490887">
-
+<meta name="amp-script-src" content="sha384-B7yBn_CJVAlwH2oMXML-8MgZytZn0KBkjaCRMxKXH11IDKi3D1hqyxn10QLpZnQ_">
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
 <meta name="amp-consent-blocking" content="amp-ad">
@@ -2354,20 +2354,21 @@ limitations under the License.
     </script>
   </amp-script>
   <!--maybe delete above-->
-  <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-        {
-        "vars" : { 
-            "gtag_id": "G-V3TNNSX3H4", 
-            "config": { 
-                "G-V3TNNSX3H4": { 
-                      "groups": "default" 
-                      }
-                                      }
-              }
-          } 
-     </script>
-  </amp-analytics>
+<amp-analytics type="googleanalytics">
+  <script type="application/json">
+      {
+        "vars": {
+          "account": "G-V3TNNSX3H4"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+</amp-analytics>
 
 
   <!-- Start Navbar -->
@@ -2465,6 +2466,7 @@ limitations under the License.
       Star), the east encourages celebration and long-term growth. Wood energy strengthens this dynamic. </p><p class="mb1">Center
       (Earth): The 2 Black (Illness Star) dominates the center. Earth energy here requires mitigation with metal to
       neutralize its effects. </p>
+
       <p class="mb1">West (Metal): 4 Green (Academic Star) brings creativity and learning. Metal energy in
       the west balances this intellectual influence. </p>
       <p class="mb1">Northeast (Earth): 5 Yellow (Misfortune Star) demands caution.
@@ -2475,6 +2477,10 @@ limitations under the License.
       stabilize this sector. </p>
       <p class="mb1">Understanding this interplay of elements helps us harmonize our environment to maximize 2025’s
       potential. </p>
+      <amp-carousel width="450" height="300" layout="responsive" type="slides" role="region" aria-label="Basic carousel" style="background-color: #ff0;">
+        <amp-img src="./img/fs2025/snake1.jpeg" width="450" height="300"></amp-img>
+        <amp-img src="./img/fs2025/snake3.jpeg" width="450" height="300"></amp-img>
+      </amp-carousel>
       <p class="mb1">Key Areas of Focus and Remedies # South Side: A Zone of Opportunity The south shines
       brightly in 2025: </p>
       <p class="mb1">6 White (South): Symbolizing blessings and success, activate this area with fire elements like
@@ -2540,7 +2546,7 @@ limitations under the License.
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center px3 ">
 
-
+<div id="postPromptUI"></div>
     <small>
       © Minnowspace 2024 - Site contains affiliate links
     </small>
