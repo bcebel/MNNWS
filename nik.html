@@ -2342,9 +2342,9 @@ limitations under the License.
 </head>
 
 <body class="img-background">
-<div>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
+  <div>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -2353,7 +2353,7 @@ limitations under the License.
           }
         }
       </script>
-</div>
+  </div>
 
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
@@ -2593,7 +2593,9 @@ limitations under the License.
       <footer class="ampstart-footer flex flex-column items-center px3 ">
 
 
-        <small>
+        <div id="postPromptUI">
+          <!-- Content for your post-consent UI -->
+        </div> <small>
           © Minnowspace 2024 - Site contains affiliate links
         </small>
       </footer>

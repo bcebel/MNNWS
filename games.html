@@ -32,8 +32,8 @@ limitations under the License.
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-<meta name="amp-consent-blocking" content="amp-ad">
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
   <style amp-boilerplate="">
@@ -2339,9 +2339,9 @@ limitations under the License.
 </head>
 
 <body class="img-background">
-<div>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
+  <div>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -2350,7 +2350,7 @@ limitations under the License.
           }
         }
       </script>
-</div>
+  </div>
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
      window.dataLayer = window.dataLayer || [];
@@ -2771,7 +2771,9 @@ limitations under the License.
       <footer class="ampstart-footer flex flex-column items-center px3 ">
 
 
-        <small>
+        <div id="postPromptUI">
+          <!-- Content for your post-consent UI -->
+        </div> <small>
           © Minnowspace 2024 - Site contains affiliate links
         </small>
       </footer>

@@ -28,8 +28,8 @@ limitations under the License.
   <meta name="amp-consent-blocking" content="amp-ad">
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <style amp-boilerplate="">
     body {
@@ -2328,9 +2328,9 @@ limitations under the License.
 </head>
 
 <body>
-<div>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
+  <div>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -2339,7 +2339,7 @@ limitations under the License.
           }
         }
       </script>
-</div>
+  </div>
   <!-- Start Navbar --><amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300"
     height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
@@ -2578,7 +2578,9 @@ limitations under the License.
 
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center px3">
-    <small> © Beck & Galo </small>
+    <div id="postPromptUI">
+      <!-- Content for your post-consent UI -->
+    </div> <small> © Beck & Galo </small>
   </footer>
   <!-- End Footer -->
 </body>

@@ -2341,8 +2341,8 @@ limitations under the License.
 </head>
 
 <body class="img-background">
-<div><amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-  <script type="application/json">
+  <div><amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
           {
             "postPromptUI": "postPromptUI",
             "clientConfig": {
@@ -2350,7 +2350,8 @@ limitations under the License.
               "params": ""
             }
           }
-        </script></div>
+        </script>
+  </div>
   <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="100">
     <script id="hello-world" type="text/plain" target="amp-script">
        window.dataLayer = window.dataLayer || [];
@@ -2673,7 +2674,9 @@ limitations under the License.
       <footer class="ampstart-footer flex flex-column items-center px3 ">
 
 
-        <small>
+        <div id="postPromptUI">
+          <!-- Content for your post-consent UI -->
+        </div> <small>
           © Minnowspace 2024 - Site contains affiliate links
         </small>
       </footer>
