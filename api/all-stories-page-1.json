@@ -6,6 +6,24 @@
           "image": [
             {
               "classes": "cover",
+              "alt-text": "Feng Shui 2025",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/fs2025/snake1.jpeg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./fengshui2025.html",
+          "post-category": "Fashion",
+          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-title": "Feng Shui 2025",
+          "post-copy": "New Year, New Systematic Organization System from the Quantum Realm, Yes Honey."
+        },
+        {
+          "image": [
+            {
+              "classes": "cover",
               "alt-text": "Day of the Jackal",
               "width": 670,
               "height": 599,
