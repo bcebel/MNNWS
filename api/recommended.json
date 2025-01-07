@@ -18,6 +18,25 @@
                       "width": 200,
                       "height": 200,
                       "layout": "fixed",
+                      "src": "./img/fs2025/snake1.jpeg"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
+                  "post-url": "https://www.minnowspace.com/fengshui2025.html",
+                  "post-category": "Fashion",
+                  "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+                  "post-title": "Feng Shui Slay Every Day",
+                  "post-copy": "New Year, New Systematic Organization System from the Quantum Realm, Yes Honey.  Slay!"
+                },
+
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Shoes.",
+                      "width": 200,
+                      "height": 200,
+                      "layout": "fixed",
                       "src": "./img/shoes/sal4.webp"
                     }
                   ],
