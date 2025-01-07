@@ -3735,30 +3735,32 @@ data-credentials="include"></amp-analytics>
     </section>
 
 
-    <section class="land-see-entertainment-content mx-auto">
+    <section  style="max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;" >
       <h4 class="land-see-section-header ml1">Recommended</h4>
-      <div class="clearfix pt2">
-        <amp-list class="center justify-center" src="./api/recommended.json" height="460" layout="fixed-height">
+      <div>
+        <amp-list  src="./api/recommended.json" height="460" layout="fixed-height" style="display:flex;">
           <template type="amp-mustache">
             <amp-position-observer on="enter:recommendedSlideIn.start" layout="nodisplay">
             </amp-position-observer>
             {{#land-see-category}}
-            <amp-carousel  type="slides" media="{{media-query}}" width="50vw" height="{{height}}" layout="flex-item" controls
+            <amp-carousel  type="slides" media="{{media-query}}" width="80vw" height="{{height}}" layout="flex-item" controls display="flex"
              >
               {{#story-slide}}
-              <div class="land-see-story-slide flex">
+              <div class="land-see-story-slide flex" display="flex">
                 {{#story-post}}
-                <div class="mx1 col align-top {{post-classes}}">
+                <div class="mx1 col align-top {{post-classes}}" display="flex">
                   <a href="{{post-url}}" class="text-decoration-none">
                     {{#image}}
                     <amp-img class="land-see-post-image {{classes}}" alt="{{alt}}" media="{{media-query}}"
-                      width="12vw" height="50" layout="{{layout}}" src="{{src}}">
+                      width="12vw" height="12vw" layout="{{layout}}" src="{{src}}" display=flex>
                     </amp-img>
                     {{/image}}
                   </a>
-                  <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" style="width:100%;"
+                  <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" style="width:100%;" flex-item
                     href="{{post-category-url}}">{{post-category}}</a>
-                  <h4 class="land-see-post-title ampstart-title-sm pt1">
+                  <h4 class="land-see-post-title ampstart-title-sm pt1" flex>
                     <a class="text-decoration-none" href="{{post-url}}">{{post-title}}</a>
                   </h4>
                   <p class="ampstart-caption pt1 pb3">{{post-copy}}</p>
