@@ -3,7 +3,6 @@
     {
       "land-see-category": [
         {
-          "media-query": "(min-width: 52.06rem)",
           "width": "848",
           "height": "460",
           "layout": "fixed",
@@ -14,9 +13,9 @@
                   "image": [
                     {
                       "classes": "cover",
-                      "alt-text": "Shoes.",
-                      "width": 200,
-                      "height": 200,
+                      "alt-text": "Feng Shui 2025.",
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/fs2025/snake1.jpeg"
                     }
@@ -34,8 +33,8 @@
                     {
                       "classes": "cover",
                       "alt-text": "Shoes.",
-                      "width": 200,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/shoes/sal4.webp"
                     }
@@ -53,8 +52,8 @@
                     {
                       "classes": "cover",
                       "alt-text": "Drones.",
-                      "width": 200,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/drones/drone4sunset.jpg"
                     }
@@ -71,8 +70,8 @@
                     {
                       "classes": "cover",
                       "alt-text": "Plaid.",
-                      "width": 200,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/plaid/people-man-checkered-flannel-preview.jpg"
                     }
@@ -89,8 +88,8 @@
                     {
                       "classes": "cover",
                       "alt-text": "tea.",
-                      "width": 196,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/tea/pexels-minan1398-1629185.webp"
                     }
@@ -107,8 +106,8 @@
                     {
                       "classes": "cover",
                       "alt-text": "Black Doves Review",
-                      "width": 186,
-                      "height": 166,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
                     }
@@ -124,9 +123,8 @@
                   "image": [
                     {
                       "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 200,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
                       "src": "./img/hotels/pexels-snapwire-165799.jpg"
                     }
@@ -143,561 +141,9 @@
                     {
                       "classes": "cover",
                       "alt-text": "Coffee",
-                      "width": 200,
-                      "height": 200,
+                      "width": 100,
+                      "height": 100,
                       "layout": "fixed",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "media-query": "(min-width: 40.06rem) and (max-width: 52rem)",
-          "width": "636",
-          "height": "460",
-          "layout": "fixed",
-          "story-slide": [
-            {
-              "story-post": [
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Drones.",
-                      "width": 200,
-                      "height": 200,
-                      "layout": "fixed",
-                      "src": "./img/drones/drone4sunset.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/drones.html",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Send in the Drones",
-                  "post-copy": "The Ultimate Holiday Gift Soaring into 2024"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            },
-            {
-              "story-post": [
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "media-query": "(min-width: 27.06rem) and (max-width: 40rem)",
-          "width": "424",
-          "height": "460",
-          "layout": "fixed",
-          "story-slide": [
-            {
-              "story-post": [
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Drones.",
-                      "width": 200,
-                      "height": 200,
-                      "layout": "fixed",
-                      "src": "./img/drones/drone4sunset.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/drones.html",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Send in the Drones",
-                  "post-copy": "The Ultimate Holiday Gift Soaring into 2024"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            },
-            {
-              "story-post": [
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "media-query": "(max-width: 27rem)",
-          "width": "auto",
-          "height": "460",
-          "layout": "fixed-height",
-          "story-slide": [
-            {
-              "story-post": [
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Drones.",
-                      "width": 200,
-                      "height": 200,
-                      "layout": "fixed",
-                      "src": "./img/drones/drone4sunset.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/drones.html",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Send in the Drones",
-                  "post-copy": "The Ultimate Holiday Gift Soaring into 2024"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
-                      "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/coffee",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "17 Coffees You Need to Try",
-                  "post-copy": "From the bean to the cup, we've got you covered."
-                }
-              ]
-            },
-            {
-              "story-post": [
-                       {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Drones.",
-                      "width": 200,
-                      "height": 200,
-                      "layout": "fixed",
-                      "src": "./img/drones/drone4sunset.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/drones.html",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Send in the Drones",
-                  "post-copy": "The Ultimate Holiday Gift Soaring into 2024"
-                },
-         {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "tea.",
-                      "width": 196,
-                      "height": 249,
-                      "layout": "responsive",
-                      "src": "./img/tea/pexels-minan1398-1629185.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/tea.html",
-                  "post-category": "Food",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "It's OK to Microwave Your Tea",
-                  "post-copy": "No really, it's fine."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Black Doves Review",
-                      "width": 196,
-                      "height": 187,
-                      "layout": "responsive",
-                      "src": "./img/blackdoves/Black_Peace_Dove.svg.webp"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://minnowspace.com/blackdoves",
-                  "post-category": "Entertainment",
-                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
-                  "post-title": "Black Doves Review",
-                  "post-copy": " Love, Actually + Die Hard = Black Doves"
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Lost in Las Vegas.",
-                      "width": 64,
-                      "height": 42,
-                      "layout": "responsive",
-                      "src": "./img/hotels/pexels-snapwire-165799.jpg"
-                    }
-                  ],
-                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
-                  "post-url": "https://www.minnowspace.com/hotels/",
-                  "post-category": "Travel",
-                  "post-category-url": "stories.amp.html?category=food#land-see-food",
-                  "post-title": "Lost in Las Vegas",
-                  "post-copy": "What happens in Vegas, stays in Vegas."
-                },
-                {
-                  "image": [
-                    {
-                      "classes": "cover",
-                      "alt-text": "Coffee",
-                      "width": 49,
-                      "height": 74,
-                      "layout": "responsive",
                       "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
                     }
                   ],
