@@ -13,6 +13,24 @@
                   "image": [
                     {
                       "classes": "cover",
+                      "alt-text": "Move over composting there's something greener.",
+                      "width": 100,
+                      "height": 100,
+                      "layout": "fixed",
+                      "src": "./img/biochar/Biochar_pile.jpg"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-recommended",
+                  "post-url": "https://www.minnowspace.com/biochar.html",
+                  "post-category": "Fashion",
+                  "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+                  "post-title": "Move over composting ~ there's something greener.",
+                  "post-copy": "Biochar, it is your new favorite thing."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
                       "alt-text": "Feng Shui 2025.",
                       "width": 100,
                       "height": 100,
