@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="canonical" href="https://www.minnowspace.com/test.html">
+    <link rel="canonical" href="https://minnowspace.com/test.html">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-<div>
-    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-        <script type="application/json">
+    <div>
+        <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+            <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -25,7 +25,7 @@
           }
         }
       </script>
-</div>
+    </div>
 
     <!-- Form to Add Video -->
     <form method="POST" action-xhr="/api/videos" target="_top">
@@ -45,14 +45,14 @@
     </form>
 
     <!-- Dynamic Video List -->
-<amp-list width="auto" height="270" layout="fixed-height" src="videos.json">
-    <template type="amp-mustache">
-        <div>
-            <amp-youtube width="480" height="270" layout="responsive" data-videoid="{{.}}">
-            </amp-youtube>
-        </div>
-    </template>
-</amp-list>
+    <amp-list width="auto" height="270" layout="fixed-height" src="videos.json">
+        <template type="amp-mustache">
+            <div>
+                <amp-youtube width="480" height="270" layout="responsive" data-videoid="{{.}}">
+                </amp-youtube>
+            </div>
+        </template>
+    </amp-list>
 
 </body>
 

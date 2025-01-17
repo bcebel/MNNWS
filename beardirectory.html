@@ -10,18 +10,20 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="https://www.minnowspace.com/beardirectory.html">
+  <link rel="canonical" href="https://minnowspace.com/beardirectory.html">
   <meta name="viewport" content="width=device-width">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <title>Bear Directory</title>
   <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
   <script async custom-element="amp-google-document-embed"
     src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
-    <amp-google-document-embed src="https://docs.google.com/document/d/e/2PACX-1vTLzQhSeA_GKWep1Fi8HRbehKnhDxhH8bXggLdPd41trOx6fdlPlkgtpKmh6PJRXWqdyhjBDUpNUDD2/pub" width="800" height="600" layout="responsive">
-    </amp-google-document-embed>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-    <meta name="amp-consent-blocking" content="amp-ad">
+  <amp-google-document-embed
+    src="https://docs.google.com/document/d/e/2PACX-1vTLzQhSeA_GKWep1Fi8HRbehKnhDxhH8bXggLdPd41trOx6fdlPlkgtpKmh6PJRXWqdyhjBDUpNUDD2/pub"
+    width="800" height="600" layout="responsive">
+  </amp-google-document-embed>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
   <!-- ## Setup -->
   <!--
     Import the `amp-next-page` component.
@@ -116,9 +118,10 @@
   </style>
 </head>
 
-<body><div>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
+<body>
+  <div>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -126,7 +129,8 @@
             "params": ""
           }
         }
-      </script></div>
+      </script>
+  </div>
   <p class="previewOnly">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis, metus a tristique aliquet, enim nibh
     efficitur sem, ut iaculis urna justo eu diam. Nullam cursus sapien et sodales posuere. Vestibulum ante ipsum primis
@@ -175,8 +179,8 @@
     erat. In pellentesque sem vel purus auctor, ut venenatis tellus tristique. Phasellus molestie diam orci, nec gravida
     turpis bibendum ut. Sed sagittis aliquet lorem sed dictum.
   </p>
-<amp-twitter width="375" height="472" layout="responsive" data-tweetid="1849662591318065325">
-</amp-twitter>
+  <amp-twitter width="375" height="472" layout="responsive" data-tweetid="1849662591318065325">
+  </amp-twitter>
   <!-- ## Basic usage -->
   <!--
   <html ⚡>
@@ -187,32 +191,29 @@
 </head>
 <body>
     <!-- AMP Bind's State -->
-    <amp-state id="videoState">
-        <script type="application/json">
+  <amp-state id="videoState">
+    <script type="application/json">
             { "videoId": "dQw4w9WgXcQ" }
         </script>
-    </amp-state>
+  </amp-state>
 
-    <!-- AMP YouTube Component -->
-    <amp-youtube
-        data-videoid="47z4m_t_fp0"
-        data-bind-videoid="videoState.videoId"
-        width="480"
-        height="270"
-        layout="responsive">
-    </amp-youtube>
+  <!-- AMP YouTube Component -->
+  <amp-youtube data-videoid="47z4m_t_fp0" data-bind-videoid="videoState.videoId" width="480" height="270"
+    layout="responsive">
+  </amp-youtube>
 
-    <!-- Button to Change Video ID -->
-    <button on="tap:AMP.setState({ videoState: { videoId: 'newVideoId123' } })">
-        Change Video
-    </button>
+  <!-- Button to Change Video ID -->
+  <button on="tap:AMP.setState({ videoState: { videoId: 'newVideoId123' } })">
+    Change Video
+  </button>
 </body>
+
 </html>
 
-    This sample uses the `amp-next-page` component to load other sample pages. It defines a custom separator.
-  -->
-  <amp-next-page>
-    <script type="application/json">
+This sample uses the `amp-next-page` component to load other sample pages. It defines a custom separator.
+-->
+<amp-next-page>
+  <script type="application/json">
       [
         {
           "title": "amp-img",
@@ -231,12 +232,12 @@
         }
       ]
     </script>
-    <div class="amp-next-page-sample-separator" separator>
- 
-    </div>
-  </amp-next-page>
+  <div class="amp-next-page-sample-separator" separator>
 
-  
+  </div>
+</amp-next-page>
+
+
 </body>
 
 </html>
