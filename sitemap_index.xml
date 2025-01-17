@@ -113,6 +113,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://minnowspace.com/minnowspace.html</loc>
+<lastmod>2025-01-12T04:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://minnowspace.com/test.html</loc>
 <lastmod>2025-01-12T04:16:46+00:00</lastmod>
   <priority>0.80</priority>
@@ -144,7 +149,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://minnowspace.com/stories.amp.html?category=fashion</loc>
+  <loc>https://minnowspace.com/stories.amp.html?category=design</loc>
 <lastmod>2025-01-12T04:16:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -154,7 +159,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://minnowspace.com/stories.amp.html?category&amp;#x3D;fashion</loc>
+  <loc>https://minnowspace.com/stories.amp.html?category&amp;#x3D;design</loc>
 <lastmod>2025-01-12T04:16:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>

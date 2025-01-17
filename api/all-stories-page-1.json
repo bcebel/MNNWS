@@ -6,6 +6,42 @@
           "image": [
             {
               "classes": "cover",
+              "alt-text": "The Social Network.",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/main/minnow.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./minnowspace.html",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
+          "post-title": "The Social Network",
+          "post-copy": "Who's up for a bottom up revolution?"
+        },
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Biochar, its what's for climate change.",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/biochar/Biochar_pile.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./biochar.html",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
+          "post-title": "Biochar, its what's for climate change.",
+          "post-copy": "Biochar, carbon negative carbon sequestration 4-eva"
+        },
+        {
+          "image": [
+            {
+              "classes": "cover",
               "alt-text": "Feng Shui 2025",
               "width": 670,
               "height": 599,
@@ -15,8 +51,8 @@
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
           "post-url": "./fengshui2025.html",
-          "post-category": "Fashion",
-          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
           "post-title": "Feng Shui 2025",
           "post-copy": "New Year, New Systematic Organization System from the Quantum Realm, Yes Honey."
         },
@@ -70,8 +106,8 @@
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
           "post-url": "./salshoes.html",
-          "post-category": "Fashion",
-          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
           "post-title": "These Shoes Rule",
           "post-copy": "Form = Function"
         },
@@ -89,8 +125,8 @@
           ],
           "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
           "post-url": "./plaid.html",
-          "post-category": "Fashion",
-          "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
           "post-title": "Big, Tall & Plaid",
           "post-copy": "The 90s called, they want more plaid.  Slacker."
         },

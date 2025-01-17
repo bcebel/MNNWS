@@ -2719,7 +2719,7 @@ limitations under the License.
       opacity: 0.54;
     }
 
-    .land-see-fashion:before {
+    .land-see-design:before {
       opacity: 0.77;
     }
 
@@ -3407,9 +3407,9 @@ data-credentials="include"></amp-analytics>
           } 
      </script>
   </amp-analytics>
-<amp-analytics
-  config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL&dma_cps=ads%2Cmaps%2Cplaystore%2Csearch%2Cshopping%2Cyoutube"
-  data-credentials="include"></amp-analytics>
+  <amp-analytics
+    config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL&dma_cps=ads%2Cmaps%2Cplaystore%2Csearch%2Cshopping%2Cyoutube"
+    data-credentials="include"></amp-analytics>
 
   <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
   </amp-auto-ads>
@@ -3471,11 +3471,12 @@ data-credentials="include"></amp-analytics>
     </a>
     <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
       <ul class="list-reset center m0 p0 flex justify-center nowrap">
-                <li class="ampstart-nav-item">
-                  <a href="https://minnowspace.vercel.app" class="text-decoration-none block" style="font-size:1.5rem;">Network</a>
-                </li>
         <li class="ampstart-nav-item">
-          <a href="stories.amp.html" class="text-decoration-none block" style="font-size:1.5rem;">Stories</a>
+          <a href="https://minnowspace.vercel.app" class="text-decoration-none block"
+            style="font-size:1.5rem;">Network</a>
+        </li>
+        <li class="ampstart-nav-item">
+          <a href="stories.amp.html" class="text-decoration-none block" style="font-size:1.5rem;">All-Stories</a>
         </li>
 
         <li class="ampstart-nav-item">
@@ -3483,8 +3484,8 @@ data-credentials="include"></amp-analytics>
             style="font-size:1.5rem;">Travel</a>
         </li>
         <li class="ampstart-nav-item">
-          <a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none block"
-            style="font-size:1.5rem;">Fashion</a>
+          <a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none block"
+            style="font-size:1.5rem;">Design</a>
         </li>
 
         <li class="ampstart-nav-item">
@@ -3509,7 +3510,7 @@ data-credentials="include"></amp-analytics>
                 </li>
 
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a>
+                  <a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none">design</a>
                 </li>
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=travel#land-see-travel" class="text-decoration-none">Travel</a>
@@ -3580,17 +3581,14 @@ data-credentials="include"></amp-analytics>
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html" class="text-decoration-none">All</a>
                 </li>
-    <li class="ampstart-dropdown-item">
-      <a href="https://minnowspace.vercel.app" class="text-decoration-none">Network</a>
-    </li>
-                    <li class="ampstart-dropdown-item">
-                      <a href="stories.amp.html" class="text-decoration-none">Stories</a>
-                    </li>
-                                    <li class="ampstart-dropdown-item">
-                                      <a href="stories.amp.html?category=travel#land-see-travel" class="text-decoration-none">Travel</a>
-                                    </li>
                 <li class="ampstart-dropdown-item">
-                  <a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a>
+                  <a href="https://minnowspace.vercel.app" class="text-decoration-none">Network</a>
+                </li>
+                <li class="ampstart-dropdown-item">
+                  <a href="stories.amp.html?category=travel#land-see-travel" class="text-decoration-none">Travel</a>
+                </li>
+                <li class="ampstart-dropdown-item">
+                  <a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none">design</a>
                 </li>
                 <li class="ampstart-dropdown-item">
                   <a href="stories.amp.html?category=food#land-see-food" class="text-decoration-none">Food</a>
@@ -3654,8 +3652,9 @@ data-credentials="include"></amp-analytics>
       <h1 class="land-see-hero-title ampstart-title-lg bold pt2 mx2">
         <a class="text-decoration-none" href="index.html">Minnowspace</a>
       </h1>
-          <h2 style="margin-left:20vw; margin-right:20vw">Minnowspace is a place where we can all come together to share our stories, experiences,
-            and ideas.</h2>
+      <h2 style="margin-left:20vw; margin-right:20vw">Minnowspace is a place where we can all come together to share our
+        stories, experiences,
+        and ideas.</h2>
 
 
 
@@ -3746,31 +3745,31 @@ data-credentials="include"></amp-analytics>
     </section>
 
 
-    <section  style="max-width: 90vw;
+    <section style="max-width: 90vw;
   margin-left: auto;
-  margin-right: auto;" >
+  margin-right: auto;">
       <h4 class="land-see-section-header ml1">Recommended</h4>
       <div>
-        <amp-list  src="./api/recommended.json" height="460" layout="fixed-height" style="display:flex;">
+        <amp-list src="./api/recommended.json" height="460" layout="fixed-height" style="display:flex;">
           <template type="amp-mustache">
             <amp-position-observer on="enter:recommendedSlideIn.start" layout="nodisplay">
             </amp-position-observer>
             {{#land-see-category}}
-            <amp-carousel  type="slides" media="{{media-query}}" width="80vw" height="{{height}}" layout="flex-item" controls display="flex"
-             >
+            <amp-carousel type="slides" media="{{media-query}}" width="80vw" height="{{height}}" layout="flex-item"
+              controls display="flex">
               {{#story-slide}}
               <div class="land-see-story-slide flex" display="flex">
                 {{#story-post}}
                 <div class="mx1 col align-top {{post-classes}}" display="flex">
                   <a href="{{post-url}}" class="text-decoration-none">
                     {{#image}}
-                    <amp-img class="land-see-post-image {{classes}}" alt="{{alt}}" media="{{media-query}}"
-                      width="12vw" height="12vw" layout="{{layout}}" src="{{src}}" display=flex>
+                    <amp-img class="land-see-post-image {{classes}}" alt="{{alt}}" media="{{media-query}}" width="12vw"
+                      height="12vw" layout="{{layout}}" src="{{src}}" display=flex>
                     </amp-img>
                     {{/image}}
                   </a>
-                  <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" style="width:100%;" flex-item
-                    href="{{post-category-url}}">{{post-category}}</a>
+                  <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
+                    style="width:100%;" flex-item href="{{post-category-url}}">{{post-category}}</a>
                   <h4 class="land-see-post-title ampstart-title-sm pt1" flex>
                     <a class="text-decoration-none" href="{{post-url}}">{{post-title}}</a>
                   </h4>
@@ -3786,9 +3785,9 @@ data-credentials="include"></amp-analytics>
       </div>
     </section>
 
-      <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
+    <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">
 
-      </div>
+    </div>
     </div>
 
 
