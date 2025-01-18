@@ -23,13 +23,14 @@ limitations under the License.
   <meta name="viewport" content="width=device-width" />
   <meta name="description"
     content="MINNOWSPACE is a communal website that encourages decentralized ownership and a shared economy.">
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="amp-consent-blocking" content="amp-ad">
 
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="keywords"
     content="MINNOWSPACE, MINNOW, SPACE, COMMUNITY, COMMUNAL, DECENTRALIZED, SHARED, ECONOMY, WEBSITE, WEB, PAGE, PAGES, INTERNET, ONLINE, PLATFORM, PLATFORMS, SOCIAL, MEDIA, SOCIAL MEDIA, SOCIAL PLATFORM, SOCIAL PLATFORMS, SOCIAL MEDIA PLATFORM">
   <meta name="author" content="MINNOWSPACE">
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
   <!--
   <script type="text/javascript" data-cmp-ab="1"
     src="https://cdn.consentmanager.net/delivery/autoblocking/539b9d9f016c1.js"
@@ -3754,22 +3755,22 @@ data-credentials="include"></amp-analytics>
             <amp-position-observer on="enter:recommendedSlideIn.start" layout="nodisplay">
             </amp-position-observer>
             {{#land-see-category}}
-            <amp-carousel type="slides" media="{{media-query}}" width="80vw" height="{{height}}" layout="flex-item"
+            <amp-carousel type="slides" media="{{media-query}}" width="80vw" height="{{height}}" 
               controls>
               {{#story-slide}}
               <div class="land-see-story-slide flex">
                 {{#story-post}}
-                <div class="mx1 col align-top {{post-classes}}" display="flex">
+                <div class="mx1 col align-top {{post-classes}}">
                   <a href="{{post-url}}" class="text-decoration-none">
                     {{#image}}
                     <amp-img class="land-see-post-image {{classes}}" alt="{{alt}}" media="{{media-query}}" width="12vw"
-                      height="12vw" layout="{{layout}}" src="{{src}}" display=flex>
+                      height="12vw" layout="{{layout}}" src="{{src}}" >
                     </amp-img>
                     {{/image}}
                   </a>
                   <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
-                    style="width:100%;" flex-item href="{{post-category-url}}">{{post-category}}</a>
-                  <h4 class="land-see-post-title ampstart-title-sm pt1" flex>
+                    style="width:100%;" href="{{post-category-url}}">{{post-category}}</a>
+                  <h4 class="land-see-post-title ampstart-title-sm pt1">
                     <a class="text-decoration-none" href="{{post-url}}">{{post-title}}</a>
                   </h4>
                   <p class="ampstart-caption pt1 pb3">{{post-copy}}</p>
