@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="https://minnowspace.com/yotu.html">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -84,6 +84,9 @@
     <script>
         // Sample video IDs
         const videoIds = [
+            "4l-P9HjdU5E",
+            "3kgNy-kvFak",
+            "5W5dsgpeyLs",
             "whl05wi5KXw",
             "hOQw_J-JjJk",
             "KCJbIbySmk4",
@@ -101,9 +104,9 @@
             videoList.innerHTML = ''; // Clear existing videos
 
             videoIds.forEach(videoId => {
-                const np=document.createElement('amp-next-page');
-       
-     
+                const np = document.createElement('amp-next-page');
+
+
                 const ampYouTube = document.createElement('amp-youtube');
                 ampYouTube.setAttribute('width', '480');
                 ampYouTube.setAttribute('height', '270');
@@ -121,9 +124,9 @@
 </head>
 
 <body>
-<div>
-    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-        <script type="application/json">
+    <div>
+        <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+            <script type="application/json">
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
@@ -132,7 +135,7 @@
           }
         }
       </script>
-</div>
+    </div>
     <form id="video-form">
         <label for="video-id">Enter YouTube Video ID:</label>
         <input type="text" id="video-id" name="videoId" required>
