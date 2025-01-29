@@ -58,6 +58,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://minnowspace.com/deepseek.html</loc>
+  <lastmod>2025-01-26T04:07:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://minnowspace.com/dayofthejackal.html</loc>
   <lastmod>2025-01-26T04:07:11+00:00</lastmod>
   <priority>0.80</priority>
@@ -164,8 +169,8 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://minnowspace.com/deepseek.html</loc>
-  <lastmod>2025-01-26T04:07:11+00:00</lastmod>
+  <loc>https://minnowspace.com/deepseek2.html</loc>
+  <lastmod>2025-01-27T04:07:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
