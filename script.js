@@ -73,7 +73,7 @@ fetch(url, {
         const newElement = document.createElement("div");
         const advertiserName = document.createElement("p");
         const description = document.createElement("p");
-        const photos = document.createElement("img");
+        const photos = document.createElement("amp-img");
         const link = document.createElement("a");
 
         // Set the text content to the product's title
@@ -82,6 +82,11 @@ fetch(url, {
         advertiserName.textContent = product.advertiserName;
         description.textContent = product.description;
         photos.src = product.imageLink;
+        photos.setAttribute("alt", "Product Image"); // Alt text for accessibility
+        photos.setAttribute("src", product.imageLink); // Image source
+        photos.setAttribute("width", "400"); // Width of the image
+        photos.setAttribute("height", "350"); // Height of the image
+        photos.setAttribute("layout", "responsive"); // Responsive layout
         link.href = product.linkCode;
         // Add styling to the element
         newElement.style.backgroundColor = "lightblue";
