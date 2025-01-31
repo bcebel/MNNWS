@@ -8,7 +8,7 @@ const authToken = "Bearer 5vdggj4jebt51sctax5kwfa1qn";
 // Define the GraphQL query as a string
 const graphqlQuery = `
 {
-  products(companyId: "7342464" ,  limit: 10000, keywords:"Hotels.com"), {
+  products(companyId: "7342464" ,  limit: 10000, keywords:["Hotels.com", "Austin"]), {
 
     resultList {
       advertiserId,
@@ -91,7 +91,6 @@ fetch(url, {
         photos.style.width = "400px";
         // Append the new element to the body (or another container)
         document.body.appendChild(newElement);
-        newElement.appendChild(advertiserName);
         newElement.appendChild(description);
         newElement.appendChild(photos);
         newElement.appendChild(link);
