@@ -8,7 +8,7 @@ const authToken = "Bearer 5vdggj4jebt51sctax5kwfa1qn";
 // Define the GraphQL query as a string
 const graphqlQuery = `
 {
-  products(companyId: "7342464" ,  limit: 1000, keywords:["Dozen Roses", "jewelry", "strawberries", "Valentine's Day", "romantic"]), {
+  products(companyId: "7342464" ,  limit: 1000, keywords:["Dozen Roses","flowers","chocolate" "jewelry", "strawberries", "Valentine's Day", "romantic"]), {
 
     resultList {
       advertiserId,
@@ -45,26 +45,33 @@ fetch(url, {
     // Handle the data returned by the API
     console.log("Data received:", data);
 
-    const refinedProducts = data.data.products.resultList.map((product) => {
-      return {
-        title: product.title,
-        description: product.description,
-        imageLink: product.imageLink,
-        advertiserName: product.advertiserName || "N/A",
-        linkCode: product.linkCode?.clickUrl,
-      };
-    }); // Convert the refined data to a string
+    // Step 1: Filter out products containing the word "funeral"
+    const refinedProducts = data.data.products.resultList
+      .filter(
+        (product) =>
+          !product.title.toLowerCase().includes("funeral") &&
+          !product.description.toLowerCase().includes("funeral")
+      )
+      .map((product) => {
+        return {
+          title: product.title,
+          description: product.description,
+          imageLink: product.imageLink,
+          advertiserName: product.advertiserName || "N/A",
+          linkCode: product.linkCode?.clickUrl,
+        };
+      });
+
+    // ring
     const veryRefinedProducts = refinedProducts.map((product) => {
       if (product.linkCode) {
-        if (product.imageLink) {
-          return {
-            title: product.title,
-            description: product.description,
-            imageLink: product.imageLink,
-            advertiserName: product.advertiserName,
-            linkCode: product.linkCode,
-          };
-        }
+        return {
+          title: product.title,
+          description: product.description,
+          imageLink: product.imageLink,
+          advertiserName: product.advertiserName,
+          linkCode: product.linkCode,
+        };
       }
     });
     // Assuming veryRefinedProducts is an array that may contain undefined or invalid entries
@@ -83,10 +90,17 @@ fetch(url, {
         advertiserName.textContent = product.advertiserName;
         description.textContent = product.description;
         photos.src = product.imageLink;
-        photos.setAttribute("alt", "Product Image"); // Alt text for accessibility
-        photos.setAttribute("src", product.imageLink); // Image source
+        photos.setAttribute("alt", "Product Image"); //
+        //
+        if (product.advertiserName.toLowerCase().includes("russell")) {
+          const photosURL = "https://minnowspace.com/img/land-see/content/valentines.jpg";
+          photos.setAttribute("src", photosURL); // Image source
+        } else {
+          photos.setAttribute("src", product.imageLink); // Image source
+        }
+        // Alt text for accessibility
         photos.setAttribute("width", "400"); // Width of the image
-        photos.setAttribute("height", "350"); // Height of the image
+        photos.setAttribute("height", "400"); // Height of the image
         photos.setAttribute("layout", "responsive"); // Responsive layout
         link.href = product.linkCode;
         // Add styling to the element
