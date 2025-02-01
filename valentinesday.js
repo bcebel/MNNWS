@@ -8,7 +8,7 @@ const authToken = "Bearer 5vdggj4jebt51sctax5kwfa1qn";
 // Define the GraphQL query as a string
 const graphqlQuery = `
 {
-  products(companyId: "7342464" ,  limit: 1000, keywords:["ZChocolat","Valentine's", "Flowers", "SilverRushStyle", "JustFlowers", "chocolate","chocolates","FlowerDelivery"]), {
+  products(companyId: "7342464" ,  limit: 1000, keywords:["Dozen Roses", "jewelry", "strawberries", "Valentine's Day", "romantic"]), {
 
     resultList {
       advertiserId,
