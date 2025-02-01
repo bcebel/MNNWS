@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Minimal AMP Template</title>
     <link rel="canonical" href="https://example.com/">
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <meta name="amp-script-src" content="sha384-ZXYoie5lgNGaaBkdVCmXHTqkJWb97FIRvkhHsvmNcy3A0g-lkMWdoQB0mReKbCTX">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
@@ -84,16 +85,20 @@
     
         body {
             background-image: url('https://minnowspace.com/img/main/austin.jpg');
+            background-size:contain;
         }
     </style>
 </head>
 
 <body>
+    <div amp-fx="fade-in" data-duration="2000ms">
+
+
     <h1>Where to Stay in Austin </h1>
     <amp-script src="https://minnowspace.com/script.js" width="100vw" height="1000vh">
         <div id="data-container">Loading...</div>
     </amp-script>
-   
+</div>
         <!-- Your existing content -->
 
 </body>
