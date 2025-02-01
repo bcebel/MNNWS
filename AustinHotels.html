@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Minimal AMP Template</title>
     <link rel="canonical" href="https://example.com/">
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <meta name="amp-script-src" content="sha384-ZXYoie5lgNGaaBkdVCmXHTqkJWb97FIRvkhHsvmNcy3A0g-lkMWdoQB0mReKbCTX">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -91,6 +92,20 @@
 </head>
 
 <body>
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+            "vars" : { 
+                "gtag_id": "G-V3TNNSX3H4", 
+                "config": { 
+                    "G-V3TNNSX3H4": { 
+                          "groups": "default" 
+                          }
+                                          }
+                  }
+              } 
+         </script>
+    </amp-analytics>
     <div amp-fx="fade-in" data-duration="2000ms">
 
 
