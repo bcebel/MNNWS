@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Minimal AMP Template</title>
-    <link rel="canonical" href="https://example.com/">
+    <title>Austin Hotels</title>
+    <link rel="canonical" href="https://minnowspace.com/austinhotels">
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <meta name="amp-script-src" content="sha384-ZXYoie5lgNGaaBkdVCmXHTqkJWb97FIRvkhHsvmNcy3A0g-lkMWdoQB0mReKbCTX">
@@ -86,8 +86,12 @@
     
         body {
             background-image: url('https://minnowspace.com/img/main/austin.jpg');
-            background-size:contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
         }
+
     </style>
 </head>
 
@@ -106,11 +110,11 @@
               } 
          </script>
     </amp-analytics>
-    <div amp-fx="fade-in" data-duration="2000ms">
+    <div amp-fx="fade-in" data-duration="2000ms" class="container"> 
 
 
     <h1>Where to Stay in Austin </h1>
-    <amp-script src="https://minnowspace.com/script.js" width="100vw" height="1000vh">
+    <amp-script src="https://minnowspace.com/script.js" width="100vw" height="31000vh">
         <div id="data-container">Loading...</div>
     </amp-script>
 </div>
