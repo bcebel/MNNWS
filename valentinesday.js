@@ -86,7 +86,7 @@ fetch(url, {
 
         // Set the text content to the product's title
         newElement.textContent = product.title;
-        link.textContent = "Click here to view the deal!";
+        link.textContent = "Click to view!";
         advertiserName.textContent = product.advertiserName;
         description.textContent = product.description;
         photos.src = product.imageLink;
@@ -106,10 +106,12 @@ fetch(url, {
         link.href = product.linkCode;
         link.appendChild(photos);
         // Add styling to the element
+        newElement.className="card"
         newElement.style.backgroundColor = "pink";
         newElement.style.padding = "10px";
         newElement.style.margin = "5px"; // Optional: Add spacing between elements
-        newElement.style.borderRadius = "5px"; // Optional: Rounded corners
+        newElement.style.borderRadius = "8px";// Optional: Rounded corners
+        newElement.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)"; // Optional: Add shadow
         photos.style.width = "400px";
         // Append the new element to the body (or another container)
         document.body.appendChild(newElement);

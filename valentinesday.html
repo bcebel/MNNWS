@@ -100,6 +100,40 @@
             margin: 1rem;
             background-color: rgba(255, 182, 193, 0.838);
         }
+      .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Ensures horizontal centering */
+  display: flex; /* Use Flexbox for vertical and horizontal alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+
+  font-size: 1.5rem;
+
+
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card a:hover {
+  background: #ff0000;
+  color: #fff;
+}
+.card a {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #ff0000;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
     </style>
 </head>
 
@@ -143,8 +177,8 @@
 
 
             </h3>
-            <!--<amp-script src="./valentinesday.js" layout="fixed-height" height="310000vh"> -->
-            <amp-script src="https://minnowspace.com/valentinesday.js" width="100vw" height="31000vh">
+        <!--  <amp-script src="./valentinesday.js" layout="fixed-height" height="5000vh">-->
+           <amp-script src="https://minnowspace.com/valentinesday.js" width="100vw" height="31000vh">
                 <div id="data-container">Loading...</div>
             </amp-script>
         </div>
