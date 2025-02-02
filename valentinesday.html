@@ -86,10 +86,18 @@
 
         body {
             background-color: red;
+            background-image: url('https://minnowspace.com/img/valentinesday/rosees.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
 
+        }
+
+        .valentinestext {
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            margin: 1rem;
+            background-color: rgba(255, 182, 193, 0.838);
         }
     </style>
 </head>
@@ -111,35 +119,35 @@
     </amp-analytics>
     <div amp-fx="fade-in" data-duration="2000ms" class="container">
 
-        <h1 amp-fx="parallax" data-parallax-factor="1.5">
+        <h1 amp-fx="parallax" data-parallax-factor="1.5" class="valentinestext">
             Valentine's Day 2025
         </h1>
-        <h3 amp-fx="parallax" data-parallax-factor="1.3">
-            <p>
-                Ordering your Valentine’s Day gifts like flowers and chocolates early ensures you get the best selection
-                and avoid
-                last-minute stress. </p>
-            <p>Sending thoughtful surprises to your mom, sisters, or significant other shows you care, while
-                securing premium blooms and gourmet treats makes your gestures stand out. </p>
-            <p>Plus, planning ahead saves you time and money,
-                letting you focus on creating meaningful moments instead of scrambling for leftovers at the pharmacy.
-            </p>
-            <p>
-                Valentine’s Day is a time to celebrate love,
-            </p>
-        </h3>
-        <amp-img src="https://minnowspace.com/img/main/valentinesday.jpg" width="800" height="600" layout="responsive"
-            alt="Valentine's Day 2025"></amp-img>
+        <div amp-fx="fade-in fly-in-right" data-duration="2000ms" data-fly-in-distance="80%">
 
-            <div amp-fx="fade-in fly-in-bottom" data-duration="1000ms">
-                <amp-img width="1600" height="900" layout="responsive" src="https://picsum.photos/1600/900?image=1069"></amp-img>
-            </div>
-        <!--<amp-script src="./valentinesday.js" layout="fixed-height" height="310000vh"> -->
-        <amp-script src="https://minnowspace.com/valentinesday.js" width="100vw" height="31000vh">
-            <div id="data-container">Loading...</div>
-        </amp-script>
-    </div>
-    <!-- Your existing content -->
+            <h3 amp-fx="parallax" data-parallax-factor="1.6" class="valentinestext">
+                <p>
+                    Ordering your Valentine’s Day gifts like flowers and chocolates early ensures you get the best
+                    selection
+                    and avoid
+                    last-minute stress. </p>
+                <p>Sending thoughtful surprises to your mom, sisters, or significant other shows you care, while
+                    securing premium blooms and gourmet treats makes your gestures stand out. </p>
+                <p>Plus, planning ahead saves you time and money,
+                    letting you focus on creating meaningful moments instead of scrambling for leftovers at the
+                    pharmacy.
+                </p>
+                <p>
+                    Valentine’s Day is a time to celebrate love,
+                </p>
+
+
+            </h3>
+            <!--<amp-script src="./valentinesday.js" layout="fixed-height" height="310000vh"> -->
+            <amp-script src="https://minnowspace.com/valentinesday.js" width="100vw" height="31000vh">
+                <div id="data-container">Loading...</div>
+            </amp-script>
+        </div>
+        <!-- Your existing content -->
 
 </body>
 
