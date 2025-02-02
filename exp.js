@@ -8,7 +8,7 @@ const authToken = "Bearer 5vdggj4jebt51sctax5kwfa1qn";
 // Define the GraphQL query as a string
 const graphqlQuery = `
 {
-  products(companyId: "7342464" ,  limit: 1000, highPrice: 20.00), {
+  products(companyId: "7342464" ,  limit: 5000, keywords:["green tea"]), {
 
     resultList {
       advertiserId,
@@ -17,7 +17,7 @@ const graphqlQuery = `
       title,
       description,
       
-      linkCode(pid: "101316118") {
+      linkCode(pid: "101316119") {
         clickUrl
       }
     }
@@ -49,8 +49,8 @@ fetch(url, {
     const refinedProducts = data.data.products.resultList
       .filter(
         (product) =>
-          !product.title.toLowerCase().includes("funeral") &&
-          !product.description.toLowerCase().includes("funeral")
+          !product.title.toLowerCase().includes("hotel") &&
+          !product.description.toLowerCase().includes("hotel")
       )
       .map((product) => {
         return {
@@ -102,8 +102,11 @@ fetch(url, {
         // Alt text for accessibility
         photos.setAttribute("width", "400"); // Width of the image
         photos.setAttribute("height", "400"); // Height of the image
-        photos.setAttribute("layout", "responsive"); // Responsive layout
+        photos.setAttribute("layout", "responsive");
+        // Responsive layout
+
         link.href = product.linkCode;
+        link.appendChild(photos);
         // Add styling to the element
         newElement.style.backgroundColor = "pink";
         newElement.style.padding = "10px";
@@ -113,7 +116,6 @@ fetch(url, {
         // Append the new element to the body (or another container)
         document.body.appendChild(newElement);
         newElement.appendChild(description);
-        newElement.appendChild(photos);
         newElement.appendChild(link);
       } else {
         console.warn("Skipping invalid product:", product); // Log skipped items for debugging

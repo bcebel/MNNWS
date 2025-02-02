@@ -102,7 +102,9 @@ fetch(url, {
         photos.setAttribute("width", "400"); // Width of the image
         photos.setAttribute("height", "400"); // Height of the image
         photos.setAttribute("layout", "responsive"); // Responsive layout
+
         link.href = product.linkCode;
+        link.appendChild(photos);
         // Add styling to the element
         newElement.style.backgroundColor = "pink";
         newElement.style.padding = "10px";
@@ -112,7 +114,6 @@ fetch(url, {
         // Append the new element to the body (or another container)
         document.body.appendChild(newElement);
         newElement.appendChild(description);
-        newElement.appendChild(photos);
         newElement.appendChild(link);
       } else {
         console.warn("Skipping invalid product:", product); // Log skipped items for debugging
