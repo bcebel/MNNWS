@@ -14,8 +14,3 @@ export default function Index() {
     </View>
   );
 }
-
-// Set custom options for this screen
-Index.options = {
-  title: "Minnowspace", // Custom title for this screen
-};
