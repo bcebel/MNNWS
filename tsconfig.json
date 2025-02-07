@@ -16,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/screens/HomeScreen.js", "app/screens/MusicScreen.js", "app/screens/RealEstateScreen.js", "app/screens/FoodScreen.js", "app/screens/TechScreen.js", "app/music/index.js"  ]
 }

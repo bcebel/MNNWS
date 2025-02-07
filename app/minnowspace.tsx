@@ -12,7 +12,8 @@ export default function Index() {
       }}
     >
       <Text>Welcome to Minnowspace https://sovrn.co/gm4fz5y</Text>
-      <Link href="https://sovrn.co/gm4fz5y">Go to Your New Place!</Link>
+          <Link href="https://sovrn.co/gm4fz5y">Go to Your New Place!</Link>
+          
     </View>
   );
 }
