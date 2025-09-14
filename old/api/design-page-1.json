@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "land-see-category": [
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Salomon Shoes",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/shoes/salshoe.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./salshoes.html",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
+          "post-title": "These Shoes Rule",
+          "post-copy": "Form = Function"
+        },
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Big, Tall & Plaid",
+              "width": 670,
+              "height": 599,
+              "layout": "responsive",
+              "src": "./img/plaid/people-man-checkered-flannel-preview.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "./plaid.html",
+          "post-category": "design",
+          "post-category-url": "stories.amp.html?category=design#land-see-design",
+          "post-title": "Big, Tall & Plaid",
+          "post-copy": "The 90s called, they want more plaid.  Slacker."
+        }
+      ]
+    }
+  ]
+}

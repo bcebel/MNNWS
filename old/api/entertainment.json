@@ -1,0 +1,302 @@
+{
+  "items": [
+    {
+      "land-see-category": [
+        {
+          "media-query": "(min-width: 52.06rem)",
+          "width": "848",
+          "height": "450",
+          "layout": "fixed",
+          "story-slide": [
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Send in the Drones",
+                      "width": 670,
+                      "height": 599,
+                      "layout": "responsive",
+                      "src": "./img/drones/drone4sunset.jpg"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+                  "post-url": "./drones.html",
+                  "post-category": "Entertainment",
+                  "post-category-url": "stories.amp.html?category=entertainment#land-see-entertainment",
+                  "post-title": "Send in the Drones",
+                  "post-copy": "The Ultimate Holiday Gift Soaring Into 2024."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "media-query": "(min-width: 40.06rem) and (max-width: 52rem)",
+          "width": "636",
+          "height": "450",
+          "layout": "fixed",
+          "story-slide": [
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "entertainment producer.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/shoe-designer-centered.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Entertainment",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "The Artist Behind Your Favorite Songs",
+                  "post-copy": "This Los Angeles based producer is the creative genius behind many Top-40 songs."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Birdhouse metaphor.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/tiny-houses-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Interior Design for Tiny Homes",
+                  "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "The Unsplash Book.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/books-you-need-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "Nightstand-Worthy Books",
+                  "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
+                }
+              ]
+            },
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Through the mist.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/maine.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Bold Coast Cottage in Main",
+                  "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "media-query": "(min-width: 27.06rem) and (max-width: 40rem)",
+          "width": "424",
+          "height": "450",
+          "layout": "fixed",
+          "story-slide": [
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "entertainment producer.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/shoe-designer-centered.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "The Artist Behind Your Favorite Songs",
+                  "post-copy": "This Los Angeles based producer is the creative genius behind many Top-40 songs."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Birdhouse metaphor.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/tiny-houses-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Interior Design for Tiny Homes",
+                  "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
+                }
+              ]
+            },
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "The Unsplash Book.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/books-you-need-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "Nightstand-Worthy Books",
+                  "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Through the mist.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/maine.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Bold Coast Cottage in Main",
+                  "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "media-query": "(max-width: 27rem)",
+          "width": "auto",
+          "height": "450",
+          "layout": "fixed-height",
+          "story-slide": [
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "entertainment producer.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/shoe-designer-centered.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "The Artist Behind Your Favorite Songs",
+                  "post-copy": "This Los Angeles based producer is the creative genius behind many Top-40 songs."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Birdhouse metaphor.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/tiny-houses-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Interior Design for Tiny Homes",
+                  "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
+                }
+              ]
+            },
+            {
+              "story-post": [
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "The Unsplash Book.",
+                      "width": 196,
+                      "height": 249,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/books-you-need-200px.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "Food",
+                  "post-category-url": "stories.amp.html?category=food#land-see-food",
+                  "post-title": "Nightstand-Worthy Books",
+                  "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
+                },
+                {
+                  "image": [
+                    {
+                      "classes": "cover",
+                      "alt-text": "Through the mist.",
+                      "width": 196,
+                      "height": 187,
+                      "layout": "responsive",
+                      "src": "./img/land-see/content/maine.webp"
+                    }
+                  ],
+                  "post-classes": "land-see-pre-animate land-see-post-item land-see-entertainment",
+                  "post-url": "https://www.cj.com/",
+                  "post-category": "travel",
+                  "post-category-url": "stories.amp.html?category=travel#land-see-travel",
+                  "post-title": "Bold Coast Cottage in Main",
+                  "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

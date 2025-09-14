@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+    <meta name="amp-consent-blocking" content="amp-ad">
+</head>
+
+<body>
+<div>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+        <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
+          }
+        }
+      </script>
+</div>
+    <h1>Video Chat</h1>
+    <video id="localVideo" autoplay muted playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+    <script>
+        const localVideo = document.getElementById('localVideo');
+        const remoteVideo = document.getElementById('remoteVideo');
+        const socket = io('https://minnowspacebe-a0380701388b.herokuapp.com/'); // Connect to the signaling server
+        const peerConnection = new RTCPeerConnection();
+
+        // Capture the local video
+        async function startCamera() {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+            localVideo.srcObject = stream;
+
+            // Add the local stream to the WebRTC peer connection
+            stream.getTracks().forEach(track => peerConnection.addTrack(track, stream));
+        }
+
+        // Handle incoming tracks (remote video)
+        peerConnection.ontrack = (event) => {
+            remoteVideo.srcObject = event.streams[0];
+        };
+
+        // Exchange ICE candidates with the other peer
+        peerConnection.onicecandidate = (event) => {
+            if (event.candidate) {
+                socket.emit('signal', { target: remotePeerId, signal: { candidate: event.candidate } });
+            }
+        };
+
+        // Listen for signaling messages
+        socket.on('signal', async (data) => {
+            const { signal, sender } = data;
+            remotePeerId = sender;
+
+            if (signal.sdp) {
+                await peerConnection.setRemoteDescription(new RTCSessionDescription(signal.sdp));
+                if (signal.sdp.type === 'offer') {
+                    const answer = await peerConnection.createAnswer();
+                    await peerConnection.setLocalDescription(answer);
+                    socket.emit('signal', { target: sender, signal: { sdp: answer } });
+                }
+            } else if (signal.candidate) {
+                await peerConnection.addIceCandidate(new RTCIceCandidate(signal.candidate));
+            }
+        });
+
+        // Create an offer to connect with another peer
+        async function createOffer() {
+            const offer = await peerConnection.createOffer();
+            await peerConnection.setLocalDescription(offer);
+            socket.emit('signal', { target: remotePeerId, signal: { sdp: offer } });
+        }
+
+        // Start the camera and connect to a peer
+        startCamera();
+    </script>
+    <input type="text" id="peerIdInput" placeholder="Enter Peer ID">
+    <button onclick="connectToPeer()">Connect</button>
+    <script>
+        let remotePeerId;
+        function connectToPeer() {
+            remotePeerId = document.getElementById('peerIdInput').value;
+            createOffer(); // Initiate WebRTC offer to the remote peer
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# Minnow News Network - Web Story Player
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a web page that displays a carousel of AMP (Accelerated Mobile Pages) stories. It's a demonstration of how to build a web story player from scratch.
 
-## Get started
+## Articles
 
-1. Install dependencies
+*   **GameStop's High-Stakes Wager**: An article about GameStop's recent news.
+*   **New Banksy at the Royal Courts of Justice**: An article about the new Banksy mural in London.
 
-   ```bash
-   npm install
-   ```
+## Files included
 
-2. Start the app
+This project is structured as follows:
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+.
+├── assets/
+│   ├── banksy_mural.jpg
+│   ├── gamestop_store.jpg
+│   ├── ryan_cohen.jpg
+│   ├── stock_chart.jpg
+│   ├── royal_courts_of_justice.jpg
+│   └── Contains images, videos, and audio files for the stories.
+├── img/
+│   └── Contains images for the main page UI.
+├── styles/
+│   └── Contains CSS files for styling the different components of the page.
+├── utils/
+│   └── Contains utility JavaScript files.
+├── bookend.json
+│   └── A JSON file used for the bookend screen of the AMP stories.
+├── cards.js
+│   └── JavaScript for the story cards.
+├── fall.html
+│   └── An example of a web story.
+├── globals.js
+│   └── Global JavaScript variables.
+├── index.html
+│   └── The main entry point of the application.
+├── main.js
+│   └── The main JavaScript file for the application.
+├── pets.html
+│   └── Another example of a web story.
+├── scrolling-arrows.js
+│   └── JavaScript for the scrolling arrows in the carousel.
+└── swipe-down-to-close.js
+    └── JavaScript for the swipe down to close functionality.
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
 
-## Learn more
+This tutorial is licensed under the [Apache License, Version 2.0](https://github.com/ampproject/docs/blob/master/LICENSE).
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Copyright 2024 Minnow News Network

@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "land-see-category": [
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "It's OK to Microwave Your Tea.",
+              "width": 409,
+              "height": 305,
+              "layout": "responsive",
+              "src": "./img/tea/pexels-minan1398-1629185.webp"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "https://www.minnowspace.com/tea.html",
+          "post-category": "Food",
+          "post-category-url": "stories.amp.html?category=food#land-see-food",
+          "post-title": "It's OK to Microwave Your Tea",
+          "post-copy": "TikTok is forever debating whether its ok to microwave your tea, like an American."
+        },
+        {
+          "image": [
+            {
+              "classes": "cover",
+              "alt-text": "Coffee.",
+              "width": 409,
+              "height": 305,
+              "layout": "responsive",
+              "src": "./img/coffee/pexels-adam-lukac-254247-773958.jpg"
+            }
+          ],
+          "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+          "post-url": "https://www.minnowspace.com/coffee",
+          "post-category": "Food",
+          "post-category-url": "stories.amp.html?category=food#land-see-food",
+          "post-title": "17 Easy & Affordable Coffee Drinks",
+          "post-copy": "From the classic espresso to the trendy cold brew, we've got you covered."
+        }
+      ]
+    },
+    {
+      "land-see-category": [{ "post-classes": "hide" }],
+      "land-see-paging": {
+        "classes": "land-see-hide-widescreen",
+        "page-nav": [
+          {
+            "classes": "land-see-next-page mt2 mr2 relative right",
+            "button-text": "Next",
+            "action": "tap:AMP.pushState({height: 550, mobile_height: 550, src: './api/food-page-2.json', selectedCategory: 'food', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
+          }
+        ]
+      }
+    }
+  ]
+}
