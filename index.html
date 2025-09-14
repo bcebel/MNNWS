@@ -6,16 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story-player" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <meta name="amp-consent-blocking" content="amp-ad">
-  
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="keywords"
     content="MINNOWSPACE, MINNOW, SPACE, COMMUNITY, COMMUNAL, DECENTRALIZED, SHARED, ECONOMY, WEBSITE, WEB, PAGE, PAGES, INTERNET, ONLINE, PLATFORM, PLATFORMS, SOCIAL, MEDIA, SOCIAL MEDIA, SOCIAL PLATFORM, SOCIAL PLATFORMS, SOCIAL MEDIA PLATFORM">
-    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
-      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-      <script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
-      <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
+  <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <meta name="author" content="MINNOWSPACE">
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
@@ -29,52 +30,52 @@
       -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
       animation: -amp-start 8s steps(1, end) 0s 1 normal both
     }
-  
+
     @-webkit-keyframes -amp-start {
       from {
         visibility: hidden
       }
-  
+
       to {
         visibility: visible
       }
     }
-  
+
     @-moz-keyframes -amp-start {
       from {
         visibility: hidden
       }
-  
+
       to {
         visibility: visible
       }
     }
-  
+
     @-ms-keyframes -amp-start {
       from {
         visibility: hidden
       }
-  
+
       to {
         visibility: visible
       }
     }
-  
+
     @-o-keyframes -amp-start {
       from {
         visibility: hidden
       }
-  
+
       to {
         visibility: visible
       }
     }
-  
+
     @keyframes -amp-start {
       from {
         visibility: hidden
       }
-  
+
       to {
         visibility: visible
       }
@@ -89,7 +90,9 @@
       }
     </style>
   </noscript>
-  <script async src="./main.js" type="module"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+
+
   <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
 
   <link href="./styles/main.css" rel="stylesheet" type="text/css">
@@ -119,24 +122,7 @@
       <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
     </div>
   </amp-consent>
-  <!-- <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="10">
-      <script id="hello-world" type="text/plain" target="amp-script">
-     window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-V3TNNSX3H4');
-        vars: {
-  'ampHost': '${ampdocHost}'
-  }
-  
-  </script>
-    </amp-script>
-    -<amp-analytics
-  config="https://www.googletagmanager.com/amp.json?id=GTM-WC8J58F&gtm.url=SOURCE_URL&dma_cps=ads%2Cmaps%2Cplaystore%2Csearch%2Cshopping%2Cyoutube"
-  data-credentials="include"></amp-analytics>
-    <!--maybe delete above-->
-  
-  <!--maybe delete above-->
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -155,23 +141,18 @@
   <amp-analytics
     config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL&dma_cps=ads%2Cmaps%2Cplaystore%2Csearch%2Cshopping%2Cyoutube"
     data-credentials="include"></amp-analytics>
-  
+
   <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
   </amp-auto-ads>
-  
-  <!-- Google Tag Manager-->
+
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
-  
-  
-  <!-- Google Tag Manager -->
-  <!---->
 
 
-  <!--   header  -->
   <div class="header">
     <div class="hamburger_wrapper">
-      <div id="hamburger" tabindex="1" role="button" on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')">
+      <div id="hamburger" tabindex="1" role="button"
+        on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')">
         <span></span>
         <span></span>
         <span></span>
@@ -181,7 +162,6 @@
     <div class="user-icon"></div>
   </div>
 
-  <!-- nav menu -->
   <div id="nav-menu">
     <ul class="nav-list">
       <li><a href="#">Home</a></li>
@@ -191,7 +171,6 @@
     </ul>
   </div>
 
-  <!--hero -->
   <div class="hero-section">
     <amp-img class="hero-img" src="./img/fish5.png" width="500" height="500" layout="responsive"
       alt="a highway in a snow forest"></amp-img>
@@ -201,119 +180,83 @@
         <span class="hero-text-body">Swim around and learn something new.</span>
       </div>
     </div>
-    </div>
+  </div>
+  <amp-carousel type="carousel" width="900" height="300" controls loop autoplay delay="3000"
+    data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" layout="fixed-height"
+    aria-label="Looping carousel">
 
-  <!-- carousel -->
+    <a href="./biochar.html">
+    <amp-img src="assets/biochar.jpeg" width="450.82" height="300"></amp-img>
+    </a>
+
+    <a href="./zen-swing.html">
+    <amp-img src="assets/zen2.png" width="298.72" height="300"></amp-img>
+  </a>
+
+  <a href="./gamestop.html">
+    <amp-img src="assets/gamestop_store.jpg" width="450" height="300"></amp-img>
+  </a>
+
+    <a href="./banksy.html">
+    <amp-img src="assets/banksy2.jpg" width="351.08" height="300"></amp-img>
+  </a>
+
+  <a href="./fall.html">
+    <amp-img src="./img/fall.png" width="163.64" height="300"></amp-img>
+  </a>
+
+  </amp-carousel>
+
+  <amp-carousel width="900" height="300" layout="responsive" type="carousel" role="region" aria-label="Basic carousel">
+    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
+    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
+    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
+  </amp-carousel>
   <div class="carousel-section">
     <div class="carousel-container">
       <div class="carousel-header"> Trending </div>
-      <div class="carousel-cards-container">
-        <div class="entry-points" >
-          
-          <div class="entry-point-card-container">
-            <div class="background-cards">
-              <div class="background-card-1"></div>
-              <div class="background-card-2"></div>
-            </div>
-            <img src="assets/biochar.jpeg" class="entry-point-card-img" alt="A cartoon wearing a mask">
-            <div class="author-container">
-              <div class="logo-container">
-                <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
-              </div>
-              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
-            </div>
-          
-            <div class="card-headline-container">
-              <span class="entry-point-card-headline"> Carbon Negative Biochar </span>
-            </div>
+      <amp-carousel width="1000"
+      height="300" class="trending-carousel" layout="responsive" type="slides">
+        <a href="./biochar.html" class="trending-card">
+          <amp-img src="assets/biochar.jpeg" width="275" height="183" layout="fixed" alt="Biochar"  class="entry-point-card-img"></amp-img>
+          <div class="card-info">
+            <span class="card-title">Carbon Negative Biochar</span>
+            <span class="card-author">By Brian Ebel</span>
           </div>
-
-                    <div class="entry-point-card-container" >
-            <div class="background-cards">
-              <div class="background-card-1"></div>
-              <div class="background-card-2"></div>
-            </div>
-            <img src="assets/zen2.png" class="entry-point-card-img" alt="A cartoon wearing a mask">
-            <div class="author-container">
-              <div class="logo-container">
-                <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
-              </div>
-              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
-            </div>
-
-            <div class="card-headline-container">
-              <span class="entry-point-card-headline"> Zen Swing </span>
-            </div>
+        </a>
+        <a href="./zen-swing.html" class="trending-card">
+          <amp-img src="assets/zen2.png" width="160" height="240" layout="fixed" alt="Zen Swing"  class="entry-point-card-img"></amp-img>
+          <div class="card-info">
+            <span class="card-title">Zen Swing</span>
+            <span class="card-author">By Brian Ebel</span>
           </div>
-          
-          <div class="entry-point-card-container">
-            <div class="background-cards">
-              <div class="background-card-1"></div>
-              <div class="background-card-2"></div>
-            </div>
-            <img src="assets/gamestop_store.jpg" class="entry-point-card-img" alt="GameStop Store">
-            <div class="author-container">
-              <div class="logo-container">
-                <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
-              </div>
-              <span class="entry-point-card-subtitle"> By Minnow News Network </span>
-            </div>
-
-            <div class="card-headline-container">
-              <span class="entry-point-card-headline"> GameStop's High-Stakes Wager </span>
-            </div>
+        </a>
+        <a href="./gamestop.html" class="trending-card">
+          <amp-img src="assets/gamestop_store.jpg" width="160" height="240" layout="fixed"
+            alt="GameStop Store"  class="entry-point-card-img"></amp-img>
+          <div class="card-info">
+            <span class="card-title">GameStop's High-Stakes Wager</span>
+            <span class="card-author">By Minnow News Network</span>
           </div>
-
-          <div class="entry-point-card-container">
-            <div class="background-cards">
-              <div class="background-card-1"></div>
-              <div class="background-card-2"></div>
-            </div>
-            <img src="assets/banksy2.jpg" class="entry-point-card-img" alt="Banksy Mural">
-            <div class="author-container">
-              <div class="logo-container">
-                <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
-              </div>
-              <span class="entry-point-card-subtitle"> By Minnow News Network </span>
-            </div>
-
-            <div class="card-headline-container">
-              <span class="entry-point-card-headline"> New Banksy at the Royal Courts of Justice </span>
-            </div>
+        </a>
+        <a href="./banksy.html" class="trending-card">
+          <amp-img src="assets/banksy2.jpg" width="160" height="240" layout="fixed" alt="Banksy Mural"  class="entry-point-card-img"></amp-img>
+          <div class="card-info">
+            <span class="card-title">New Banksy at the Royal Courts of Justice</span>
+            <span class="card-author">By Minnow News Network</span>
           </div>
-
-          <div class="entry-point-card-container">
-            <div class="background-cards">
-              <div class="background-card-1"></div>
-              <div class="background-card-2"></div>
-            </div>
-            <img src="./img/fall.png" class="entry-point-card-img" alt="A cat">
-            <div class="author-container">
-              <div class="logo-container">
-                <div class="logo-ring"></div>
-                <img class="entry-point-card-logo" src="./img/me.png" alt="Publisher logo">
-              </div>
-              <span class="entry-point-card-subtitle"> By Brian Ebel </span>
-            </div>
-
-            <div class="card-headline-container">
-              <span class="entry-point-card-headline"> Fall Ingredients </span>
-            </div>
+        </a>
+        <a href="./fall.html" class="trending-card">
+          <amp-img src="./img/fall.png" width="160" height="240" layout="fixed" alt="A cat"  class="entry-point-card-img"></amp-img>
+          <div class="card-info">
+            <span class="card-title">Fall Ingredients</span>
+            <span class="card-author">By Brian Ebel</span>
           </div>
-        </div>
-
-        <!-- Carousel arrows -->
-        <button class="entry-point-left-arrow entry-point-arrow"></button>
-        <button class="entry-point-right-arrow entry-point-arrow"></button>
-      </div>
+        </a>
+      </amp-carousel>
     </div>
   </div>
 
-  <!-- Lightbox and player -->
   <div class="lightbox closed">
     <amp-story-player class="my-player">
       <script type="application/json">
@@ -333,11 +276,12 @@
         }
       </script>
       <a href="./biochar.html"></a>
-      <a href="./zen-swing.html" ></a>
+      <a href="./zen-swing.html"></a>
       <a href="./gamestop.html"></a>
       <a href="./banksy.html"></a>
       <a href="./fall.html"></a>
     </amp-story-player>
+
   </div>
 
 </body>
