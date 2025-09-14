@@ -6,7 +6,7 @@
   <title>New Banksy at the Royal Courts of Justice</title>
   <link rel="canonical" href="banksy.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -74,7 +74,11 @@
       }
     </style>
   </noscript>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <meta name="amp-google-client-id-api" content="googleanalytics">
+  <meta name="google-adsense-account" content="ca-pub-3239465181490887">
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
@@ -136,6 +140,32 @@
 </head>
 
 <body>
+
+    <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="10">
+      <script id="hello-world" type="text/plain" target="amp-script">
+             window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+          
+                gtag('config', 'G-V3TNNSX3H4');
+          </script>
+    </amp-script>
+    <!--maybe delete above-->
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+              {
+              "vars" : { 
+                  "gtag_id": "G-V3TNNSX3H4", 
+                  "config": { 
+                      "G-V3TNNSX3H4": { 
+                            "groups": "default" 
+                            }
+                                            }
+                    }
+                } 
+           </script>
+    </amp-analytics>
+  
   <!-- Cover page -->
   <amp-story standalone title="New Banksy at the Royal Courts of Justice" publisher="Minnow News Network"
     publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="./assets/banksy.avif"
