@@ -106,9 +106,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Web Player</title>
+  <style amp-custom>
+      body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* This ensures the body takes up the full viewport height */
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .main-container {
+    max-width: 2000px; /* Optional: set a max width for large screens */
+    width: 100%;
+  }
+
+  .bodyody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* This ensures the body takes up the full viewport height */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 2000px; /* Optional: set a max width for large screens */
+    width: 100%;
+  }
+  </style>
 </head>
 
-<body>
+<body><div class="main-container">
   <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
     <script type="application/json">
         {
@@ -185,11 +211,11 @@
 
   
   <button on="tap:quote-lb">Click Here to See All stories</button>
-  <amp-lightbox id="quote-lb" layout="nodisplay">
+  <amp-lightbox id="quote-lb" layout="nodisplay" class="bodyody">
 
     <button on="tap:quote-lb.close">
       <h1 style="color:black">Click Here To Close</h1>
-      <amp-story-player layout="fixed" width="80vw" height="80vh">
+      <amp-story-player layout="fixed" width="90vw" height="90vh">
 
         <a href="./biochar.html"> Biochar </a>
         <a href="./zen-swing.html"> Zen Swing</a>
@@ -233,7 +259,7 @@
 
 
 
-
+</div>
 </body>
 
 </html>
