@@ -7,6 +7,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story-player" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
   <meta name="amp-consent-blocking" content="amp-ad">
 
   <meta name="amp-google-client-id-api" content="googleanalytics" />
@@ -181,108 +182,57 @@
       </div>
     </div>
   </div>
-  <amp-carousel type="carousel" width="900" height="300" controls loop autoplay delay="3000"
-    data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" layout="fixed-height"
-    aria-label="Looping carousel">
 
-    <a href="./biochar.html">
-    <amp-img src="assets/biochar.jpeg" width="450.82" height="300"></amp-img>
-    </a>
+  
+  <button on="tap:quote-lb">Click Here to See All stories</button>
+  <amp-lightbox id="quote-lb" layout="nodisplay">
 
-    <a href="./zen-swing.html">
-    <amp-img src="assets/zen2.png" width="298.72" height="300"></amp-img>
-  </a>
+    <button on="tap:quote-lb.close">
+      <h1 style="color:black">Click Here To Close</h1>
+      <amp-story-player layout="fixed" width="80vw" height="80vh">
 
-  <a href="./gamestop.html">
-    <amp-img src="assets/gamestop_store.jpg" width="450" height="300"></amp-img>
-  </a>
+        <a href="./biochar.html"> Biochar </a>
+        <a href="./zen-swing.html"> Zen Swing</a>
+        <a href="./gamestop.html"> Gamestop</a>
+        <a href="./banksy.html"> Banksy</a>
+        <a href="./fall.html"> Fall </a>
+      </amp-story-player>
+    </button>
+  </amp-lightbox>
 
-    <a href="./banksy.html">
-    <amp-img src="assets/banksy2.jpg" width="351.08" height="300"></amp-img>
-  </a>
+  <amp-carousel width="400" height="600" type="carousel" layout="fixed-height" loop controls>
 
-  <a href="./fall.html">
-    <amp-img src="./img/fall.png" width="163.64" height="300"></amp-img>
-  </a>
+    <amp-story-player layout="fixed" width="360" height="600">
+      <a href="./biochar.html" target=_top> Biochar </a>
 
-  </amp-carousel>
+    </amp-story-player>
+    <amp-story-player layout="fixed" width="360" height="600">
 
-  <amp-carousel width="900" height="300" layout="responsive" type="carousel" role="region" aria-label="Basic carousel">
-    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
-    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
-    <amp-img src="assets/biochar.jpeg" width="450" height="300"></amp-img>
-  </amp-carousel>
-  <div class="carousel-section">
-    <div class="carousel-container">
-      <div class="carousel-header"> Trending </div>
-      <amp-carousel width="1000"
-      height="300" class="trending-carousel" layout="responsive" type="slides">
-        <a href="./biochar.html" class="trending-card">
-          <amp-img src="assets/biochar.jpeg" width="275" height="183" layout="fixed" alt="Biochar"  class="entry-point-card-img"></amp-img>
-          <div class="card-info">
-            <span class="card-title">Carbon Negative Biochar</span>
-            <span class="card-author">By Brian Ebel</span>
-          </div>
-        </a>
-        <a href="./zen-swing.html" class="trending-card">
-          <amp-img src="assets/zen2.png" width="160" height="240" layout="fixed" alt="Zen Swing"  class="entry-point-card-img"></amp-img>
-          <div class="card-info">
-            <span class="card-title">Zen Swing</span>
-            <span class="card-author">By Brian Ebel</span>
-          </div>
-        </a>
-        <a href="./gamestop.html" class="trending-card">
-          <amp-img src="assets/gamestop_store.jpg" width="160" height="240" layout="fixed"
-            alt="GameStop Store"  class="entry-point-card-img"></amp-img>
-          <div class="card-info">
-            <span class="card-title">GameStop's High-Stakes Wager</span>
-            <span class="card-author">By Minnow News Network</span>
-          </div>
-        </a>
-        <a href="./banksy.html" class="trending-card">
-          <amp-img src="assets/banksy2.jpg" width="160" height="240" layout="fixed" alt="Banksy Mural"  class="entry-point-card-img"></amp-img>
-          <div class="card-info">
-            <span class="card-title">New Banksy at the Royal Courts of Justice</span>
-            <span class="card-author">By Minnow News Network</span>
-          </div>
-        </a>
-        <a href="./fall.html" class="trending-card">
-          <amp-img src="./img/fall.png" width="160" height="240" layout="fixed" alt="A cat"  class="entry-point-card-img"></amp-img>
-          <div class="card-info">
-            <span class="card-title">Fall Ingredients</span>
-            <span class="card-author">By Brian Ebel</span>
-          </div>
-        </a>
-      </amp-carousel>
-    </div>
-  </div>
+      <a href="./zen-swing.html"> Zen Swing</a>
 
-  <div class="lightbox closed">
-    <amp-story-player class="my-player">
-      <script type="application/json">
-        {
-          "behavior": {
-            "pageScroll": false,
-            "autoplay": false
-          },
-          "controls": [{
-              "name": "close",
-              "position": "start"
-            },
-            {
-              "name": "skip-to-next"
-            }
-          ]
-        }
-      </script>
-      <a href="./biochar.html"></a>
-      <a href="./zen-swing.html"></a>
-      <a href="./gamestop.html"></a>
-      <a href="./banksy.html"></a>
-      <a href="./fall.html"></a>
+    </amp-story-player>
+    <amp-story-player layout="fixed" width="360" height="600">
+
+      <a href="./gamestop.html"> Gamestop</a>
+
     </amp-story-player>
 
-  </div>
+    <amp-story-player layout="fixed" width="360" height="600">
+
+      <a href="./banksy.html"> Banksy</a>
+
+    </amp-story-player>
+    <amp-story-player layout="fixed" width="360" height="600">
+
+
+      <a href="./fall.html"> Fall </a>
+
+    </amp-story-player>
+
+  </amp-carousel>
+
+
+
 
 </body>
 
