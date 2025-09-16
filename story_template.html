@@ -1,0 +1,134 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <!-- TODO: Update the title for your story -->
+  <title>Story Template</title>
+  <!-- TODO: Update the canonical link for your story -->
+  <link rel="canonical" href="minnowspace.com/story_template.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="amp-google-client-id-api" content="googleanalytics">
+  <meta name="google-adsense-account" content="ca-pub-3239465181490887">
+  <script async custom-element="amp-story-auto-analytics"
+    src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+  <style amp-custom>
+    amp-story {
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+    }
+    amp-story-page {
+      background-color: #000;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 2.875em;
+      font-weight: normal;
+      line-height: 1.174;
+    }
+    p {
+      font-weight: normal;
+      font-size: 1.3em;
+      line-height: 1.5em;
+      color: #fff;
+    }
+    amp-story-grid-layer.bottom {
+      align-content: end;
+    }
+    amp-story-grid-layer.top {
+        align-content: start;
+    }
+    .text-overlay {
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+    }
+
+    /* CSS for landscape image sizing */
+    @media (orientation: landscape) {
+      amp-story-page {
+        background-color: #222;
+      }
+      amp-story-grid-layer[template="fill"] amp-img {
+        object-fit: contain;
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    AMP STORY TEMPLATE
+    This is a reusable template for creating AMP Stories.
+
+    Instructions:
+    1. Update the metadata in the <head> section (title, canonical link).
+    2. Update the <amp-story> tag with your story's title, publisher name, publisher logo, and poster image.
+    3. Replace the placeholder content in the <amp-story-page> elements with your own images and text.
+    4. To add a new page, copy one of the example <amp-story-page> blocks and modify its content.
+    5. The landscape image sizing is handled automatically by the CSS in the <head>.
+  -->
+
+  <!-- TODO: Update story metadata -->
+  <amp-story standalone
+    supports-landscape
+    title="Your Story Title"
+    publisher="Your Publisher Name"
+    publisher-logo-src="img/your-logo.png"
+    poster-portrait-src="assets/your-cover-image.jpg">
+
+    <!-- This gtag-id is for analytics. You can keep it or change it. -->
+    <amp-story-auto-analytics gtag-id="G-V3TNNSX3H4"></amp-story-auto-analytics>
+
+    <!-- Cover Page -->
+    <amp-story-page id="cover">
+      <amp-story-grid-layer template="fill">
+        <!-- TODO: Replace with your cover image -->
+        <amp-img src="assets/placeholder.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <!-- TODO: Replace with your story title -->
+        <h1>Your Story Title</h1>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Example Page 1: Full-screen image with text overlay -->
+    <amp-story-page id="page1">
+      <amp-story-grid-layer template="fill">
+        <!-- TODO: Replace with your image -->
+        <amp-img src="assets/placeholder.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <!-- TODO: Replace with your text -->
+        <p class="text-overlay">This is some example text for your story page. You can describe the image or tell part of your story here.</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Example Page 2: Text-only page -->
+    <amp-story-page id="page2">
+      <amp-story-grid-layer template="vertical">
+        <!-- TODO: Replace with your title and text -->
+        <h1>A Chapter Title</h1>
+        <p>This page is for text-heavy content. You can add multiple paragraphs here to tell your story.</p>
+        <p>The background is black by default, but you can change it in the CSS if you like.</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+
+    <!-- Bookend: This is the final page of the story with related links. -->
+    <!-- TODO: Update bookend.json with your own content -->
+    <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
+  </amp-story>
+</body>
+
+</html>
