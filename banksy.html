@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>New Banksy at the Royal Courts of Justice</title>
-  <link rel="canonical" href="banksy.html">
+  <link rel="canonical" href="minnowspace.com/banksy.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="amp-google-client-id-api" content="googleanalytics">
+  <meta name="google-adsense-account" content="ca-pub-3239465181490887">
+  <script async custom-element="amp-story-auto-analytics"
+    src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp-boilerplate>
     body {
@@ -140,36 +144,11 @@
 </head>
 
 <body>
-
-    <amp-script src="https://www.googletagmanager.com/gtag/js?id=G-V3TNNSX3H4" width="300" height="10">
-      <script id="hello-world" type="text/plain" target="amp-script">
-             window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-          
-                gtag('config', 'G-V3TNNSX3H4');
-          </script>
-    </amp-script>
-    <!--maybe delete above-->
-    <amp-analytics type="gtag" data-credentials="include">
-      <script type="application/json">
-              {
-              "vars" : { 
-                  "gtag_id": "G-V3TNNSX3H4", 
-                  "config": { 
-                      "G-V3TNNSX3H4": { 
-                            "groups": "default" 
-                            }
-                                            }
-                    }
-                } 
-           </script>
-    </amp-analytics>
   
   <!-- Cover page -->
   <amp-story standalone supports-landscape title="New Banksy at the Royal Courts of Justice" publisher="Minnow News Network"
-    publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="./assets/banksy.avif"
-    >
+    publisher-logo-src="img/fish.png" poster-portrait-src="assets/banksy.avif">
+    <amp-story-auto-analytics gtag-id="G-V3TNNSX3H4"></amp-story-auto-analytics>
     <amp-story-page id="cover">
       <amp-story-grid-layer template="fill">
         <amp-img src="assets/banksy2.jpg" width="4" height="2.25" layout="responsive">
