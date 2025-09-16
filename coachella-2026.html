@@ -60,6 +60,21 @@
         padding: 10px;
         border-radius: 5px;
     }
+    /* CSS for landscape image sizing */
+    @media (orientation: landscape) {
+      amp-story-page {
+        background-color: #222;
+      }
+      amp-story-grid-layer[template="fill"] {
+        max-width: 70vw;
+        max-height: 70vh;
+        margin: auto;
+      }
+      /* Per AMP docs, use object-fit on the inner <img> element for layout=fill */
+      amp-story-grid-layer[template="fill"] amp-img img {
+        object-fit: contain;
+      }
+    }
   </style>
 </head>
 
