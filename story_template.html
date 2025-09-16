@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- TODO: Update the title for your story -->
-  <title>Story Template</title>
-  <!-- TODO: Update the canonical link for your story -->
+  <title>Story Template (Banksy Test)</title>
   <link rel="canonical" href="minnowspace.com/story_template.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="amp-google-client-id-api" content="googleanalytics">
@@ -70,24 +68,16 @@
   <!--
     AMP STORY TEMPLATE
     This is a reusable template for creating AMP Stories.
-
-    Instructions:
-    1. Update the metadata in the <head> section (title, canonical link).
-    2. Update the <amp-story> tag with your story's title, publisher name, publisher logo, and poster image.
-    3. Replace the placeholder content in the <amp-story-page> elements with your own images and text.
-    4. To add a new page, copy one of the example <amp-story-page> blocks and modify its content.
-    5. The landscape image sizing is handled automatically by the CSS in the <head>.
+    This version uses a real image to demonstrate and test the landscape sizing feature.
   -->
 
-  <!-- TODO: Update story metadata -->
   <amp-story standalone
     supports-landscape
-    title="Your Story Title"
-    publisher="Your Publisher Name"
-    publisher-logo-src="img/your-logo.png"
-    poster-portrait-src="assets/your-cover-image.jpg">
+    title="Banksy in London"
+    publisher="Minnow News Network"
+    publisher-logo-src="img/fish.png"
+    poster-portrait-src="assets/banksy.avif">
 
-    <!-- This gtag-id is for analytics. You can keep it or change it. -->
     <amp-story-auto-analytics gtag-id="G-V3TNNSX3H4"></amp-story-auto-analytics>
 
     <!-- Cover Page -->
@@ -95,38 +85,33 @@
       <amp-story-grid-layer template="fill">
         <!-- TODO: Replace with your cover image -->
         <amp-img src="assets/banksy.jpg" width="720" height="1280" layout="responsive"></amp-img>
+
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
-        <!-- TODO: Replace with your story title -->
-        <h1>Your Story Title</h1>
+        <h1 style="color:rgb(255, 0, 0)">New Banksy at the Royal Courts of Justice</h1>
       </amp-story-grid-layer>
     </amp-story-page>
 
     <!-- Example Page 1: Full-screen image with text overlay -->
     <amp-story-page id="page1">
       <amp-story-grid-layer template="fill">
-        <!-- TODO: Replace with your image -->
-        <amp-img src="assets/banksy.jpg" width="720" height="1280" layout="responsive"></amp-img>
+
+        <!-- This image is a good test for landscape mode -->
+        <amp-img src="assets/banksy3.jpeg" width="720" height="1280" layout="responsive"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="bottom">
         <!-- TODO: Replace with your text -->
         <p class="text-overlay">This is some example text for your story page. You can describe the image or tell part of your story here.</p>
+
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="top">
+        <p class="text-overlay">HM Courts and Tribunals Service said that because the 143-year-old complex is a listed building, they are "obliged to maintain its original character."</p>
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- Example Page 2: Text-only page -->
-    <amp-story-page id="page2">
-      <amp-story-grid-layer template="vertical">
-        <!-- TODO: Replace with your title and text -->
-        <h1>A Chapter Title</h1>
-        <p>This page is for text-heavy content. You can add multiple paragraphs here to tell your story.</p>
-        <p>The background is black by default, but you can change it in the CSS if you like.</p>
-      </amp-story-grid-layer>
-    </amp-story-page>
-
+    <!-- You can add more pages here by copying the structure from Page 1 -->
 
     <!-- Bookend: This is the final page of the story with related links. -->
-    <!-- TODO: Update bookend.json with your own content -->
     <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
   </amp-story>
 </body>
