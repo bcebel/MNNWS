@@ -1,783 +1,158 @@
 <!DOCTYPE html>
 <html amp lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-story-player" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
   <meta name="amp-consent-blocking" content="amp-ad">
-
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="keywords"
     content="MINNOWSPACE, MINNOW, SPACE, COMMUNITY, COMMUNAL, DECENTRALIZED, SHARED, ECONOMY, WEBSITE, WEB, PAGE, PAGES, INTERNET, ONLINE, PLATFORM, PLATFORMS, SOCIAL, MEDIA, SOCIAL MEDIA, SOCIAL PLATFORM, SOCIAL PLATFORMS, SOCIAL MEDIA PLATFORM">
-  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-  </script>
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
-  <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <meta name="author" content="MINNOWSPACE">
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-
-
-  <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-  </style><noscript>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        animation: none
-      }
-    </style>
-  </noscript>
-
-
-
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://minnowspace.com/index.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <title>Web Player</title>
+  <title>Minnow News</title>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
-      body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* This ensures the body takes up the full viewport height */
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
-  .main-container {
-    max-width: 2000px; /* Optional: set a max width for large screens */
-    width: 100%;
-  }
-
-  .bodyody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* This ensures the body takes up the full viewport height */
-    padding-left: 5vw;
-    padding-right: 5vw;
-    max-width: 2000px; /* Optional: set a max width for large screens */
-    width: 100%;
-  }
-.hamburger_wrapper {
-    padding: 5px;
-    z-index: 10;
-  }
-
-  #hamburger {
-    width: 60px;
-    height: 45px;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-
-  }
-
-  #hamburger span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #005af0;
-    border-radius: 9px;
-    opacity: 1;
-    margin-top: 0;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-  }
-
-  #hamburger span:nth-child(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-
-  #hamburger span:nth-child(2) {
-    top: 21px;
-    transform-origin: left center;
-  }
-
-  #hamburger span:nth-child(3) {
-    top: 42px;
-    transform-origin: left center;
-  }
-
-  #hamburger.close span:nth-child(1) {
-    transform: rotate(45deg);
-  }
-
-  #hamburger.close span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
-    transition: .1s;
-  }
-
-  #hamburger.close span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-
-  #nav-menu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    height: calc(100vh - 60px);
-    transform: translateX(-100vw);
-    opacity: 0;
-    z-index: 10;
-    transition: transform .5s ease, opacity ease .2s;
-  }
-
-  #nav-menu.now-active {
-    transform: translateX(0);
-    transition: transform .5s ease, opacity ease .2s;
-    opacity: 1;
-    background-color: #eaeaea;
-  }
-
-  .nav-list {
-    padding: 10px;
-    list-style-type: none;
-    font-size: 2em;
-  }
-
-  amp-story:amp-story-open .amp-hamburger-menu {
-    display: none;
-  }
-.entry-points {
-  display: flex;
-  overflow-y: visible;
-  scrollbar-width: none;
-  padding-right: 36px;
-  padding-left: 36px;
-}
-
-.entry-point-card-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-}
-
-.entry-point-card-container:after {
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.0001) 49.88%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: 16px;
-  content: "";
-}
-
-.entry-point-arrow {
-  z-index: 1;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 14px 24px;
-  border: 0px;
-  background-color: #000000;
-  outline: transparent;
-  height: 48px;
-  width: 48px;
-  min-width: 48px;
-  position: absolute;
-  border-radius: 50%;
-  padding: 0px;
-  box-shadow: 0px 0px 10px rgba(60, 64, 67, 0.3);
-  visibility: hidden;
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.82L8.65317 12L0 21.18L2.66397 24L14 12L2.66397 0L0 2.82Z" fill="white"/></svg>');
-}
-
-.visible {
-  visibility: visible;
-}
-
-.entry-point-left-arrow {
-  left: 68px;
-  transform: rotate(-180deg);
-}
-
-.entry-point-right-arrow {
-  right: 68px;
-}
-
-.entry-point-card-container {
-  flex-shrink: 0;
-  cursor: pointer;
-  position: relative;
-  margin-right: 24px;
-  width: 240px;
-  height: 400px;
-  opacity: 1;
-  transform: scale(1);
-  visibility: visible;
-  transition: opacity 0.33s, transform 0.33s, visibility 0.33s;
-}
-
-.entry-point-card-container.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.background-cards {
-  display: flex;
-  align-items: center;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transition: transform 0.2s;
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.entry-point-card-container:hover .background-cards {
-  transform: translate3d(24px, 0px, 0px);
-}
-
-.background-card-1 {
-  background: #000000;
-  margin: 0px 2px;
-  width: 10px;
-  height: 368px;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
-
-.background-card-2 {
-  background: #4d4d4d;
-  width: 10px;
-  height: 336px;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
-
-.author-container {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 24px;
-  left: 24px;
-}
-
-.card-headline-container {
-  position: absolute;
-  bottom: 2px;
-  text-align: left;
-  padding: 24px;
-  z-index: 1;
-}
-
-.entry-point-card-headline {
-  color: #fff;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 26px;
-}
-
-.entry-point-card-subtitle {
-  color: #fff;
-  font-weight: 700;
-  font-family: "Noto Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  line-height: 15px;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  position: relative;
-  margin-right: 10px;
-}
-
-.logo-ring {
-  width: 46px;
-  height: 46px;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220' width='100%25' height='100%25' preserveAspectRatio='none'><defs><linearGradient id='gradient'><stop offset='0' style='stop-color:%232BAC95' /><stop offset='1' style='stop-color:%236EB6F9' /></linearGradient></defs><ellipse ry='100' rx='100' cy='110' cx='110' style='fill:none;stroke:url(%23gradient);stroke-width:6;' /></svg>");
-  border-radius: 100%;
-  position: absolute;
-}
-
-.entry-point-card-logo {
-  border-radius: 100%;
-  width: 38px;
-  height: 38px;
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
-}
-
-/* Mobile CSS rules here*/
-@media only screen and (hover: none) and (pointer: coarse) {
-  .entry-point-card-container {
-    width: 180px;
-    height: 300px;
-  }
-
-  .entry-point-card-container.hidden {
-    transform: scale(1.2);
-  }
-
-  .author-container {
-    top: 16px;
-    left: 16px;
-  }
-
-  .logo-container,
-  .entry-point-card-logo {
-    width: 20px;
-    height: 20px;
-  }
-
-  .logo-ring {
-    width: 26px;
-    height: 26px;
-  }
-
-  .entry-point-card-subtitle {
-    font-size: 10px;
-    line-height: 14px;
-  }
-
-  .entry-point-card-headline {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  .card-headline-container {
-    padding: 16px;
-  }
-
-  .background-cards {
-    display: none;
-  }
-}
-.carousel-section {
-  margin-top: 44px;
-}
-
-.carousel-container {
-  position: relative;
-}
-
-.carousel-container::after {
-  display: none;
-  position: absolute;
-  pointer-events: none;
-  content: '';
-  width: 239px;
-  height: 488px;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0) 89.96%);
-  background-attachment: local, local, scroll, scroll;
-}
-
-.carousel-container.overflow-right::after {
-  display: block;
-}
-
-.carousel-container::before {
-  z-index: 1;
-  display: none;
-  position: absolute;
-  pointer-events: none;
-  content: '';
-  width: 239px;
-  height: 488px;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0) 89.96%);
-}
-
-.carousel-container.overflow-left::before {
-  display: block;
-}
-
-
-.carousel-header {
-  border: 1px solid #cccccc;
-  border-top: 10px solid #000000;
-  border-bottom: none;
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 60px;
-  padding-left: 36px;
-}
-
-.carousel-cards-container {
-  border-top: 1px solid #cccccc;
-  display: flex;
-  position: relative;
-  align-items: center;
-  height: 488px;
-  overflow-x: scroll;
-}
-
-
-/* Mobile CSS rules here*/
-@media only screen and (hover: none) and (pointer: coarse) {
-  .carousel-header {
-    padding-left: 24px;
-  }
-
-  .carousel-container {
-    margin: 0px 13px;
-  }
-
-  .carousel-cards-container {
-    border: 1px solid #cccccc;
-    height: 348px;
-  }
-  .carousel-container::after {
-    width: 180px;
-    height: 349px;
-  }
-  .carousel-container::before {
-    width: 180px;
-    height: 349px;
-  }
-}
-.header {
-  --header-height: 60px;
-
-  position: relative;
-  width: 100%;
-  height: var(--header-height);
-  left: 0px;
-  top: 0px;
-  background: #000000;
-
-  display: flex;
-  align-items: center;
-}
-
-.user-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 32px;
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 7C13.1 7 14 7.9 14 9C14 10.1 13.1 11 12 11C10.9 11 10 10.1 10 9C10 7.9 10.9 7 12 7ZM12 5C9.79 5 8 6.79 8 9C8 11.21 9.79 13 12 13C14.21 13 16 11.21 16 9C16 6.79 14.21 5 12 5ZM12 0C5.37 0 0 5.37 0 12C0 18.63 5.37 24 12 24C18.63 24 24 18.63 24 12C24 5.37 18.63 0 12 0ZM5.74 19.79C6.83 18.56 9.06 17.5 12 17.5C14.94 17.5 17.17 18.56 18.26 19.79C16.54 21.17 14.37 22 12 22C9.63 22 7.46 21.17 5.74 19.79ZM19.68 18.39C18.1 16.66 15.25 15.5 11.99 15.5C8.73 15.5 5.88 16.66 4.31 18.39C2.87 16.66 2 14.43 2 12C2 6.49 6.49 2 12 2C17.51 2 22 6.49 22 12C22 14.43 21.13 16.65 19.68 18.39Z" fill="white"/></svg>');
-}
-
-
-.title {
-  font-family: Georgia;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--header-height);
-  text-align: center;
-  flex-grow: 1;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.title span:nth-child(2) {
-  font-weight: 700;
-  line-height: 36px;
-}
-
-/* Mobile CSS rules here*/
-@media only screen and (hover: none) and (pointer: coarse) {
-  .user-icon {
-    margin-right: 14px;
-  }
-}
-.hero-section {
-  position: relative; /* Allow absolute positioning of text */
-  width: 100%;
-  max-width: 1200px; /* Constrain width for larger screens */
-  margin: 0 auto; /* Center the section */
-  height: 540px; /* Fixed height for desktop */
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fill container, may crop edges */
-  display: block; /* Ensure AMP wrapper behaves */
-}
-
-.hero-text-section {
-  position: absolute; /* Overlay text on image */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; /* Vertically center text */
-  justify-content: center; /* Horizontally center text */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
-  color: #ffffff;
-  font-family: Poppins, sans-serif;
-}
-
-.hero-text-container {
-  max-width: 600px; /* Limit text width for readability */
-  text-align: center; /* Center text content */
-  padding: 20px;
-}
-
-.hero-text-title {
-  display: block;
-  font-weight: bold;
-  font-size: 1.75em;
-  margin-bottom: 12px;
-}
-
-.hero-text-body {
-  display: block;
-  font-family: Georgia, serif;
-  font-weight: normal;
-  font-size: 1.125em;
-  color: #dbdce0;
-  margin-bottom: 24px;
-}
-
-.hero-text-author {
-  display: block;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  font-size: 0.7em;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 880px) {
-  .hero-section {
-    height: 400px; /* Reduced height for mobile */
-  }
-
-  .hero-img {
-    height: 100%;
-    object-fit: cover; /* Ensure image fills container */
-  }
-
-  .hero-text-container {
-    padding: 15px;
-    max-width: 90%; /* Allow more text width on smaller screens */
-  }
-
-  .hero-text-title {
-    font-size: 1.5em; /* Slightly smaller for mobile */
-  }
-
-  .hero-text-body {
-    font-size: 1em;
-  }
-}
-body h1 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: white;
-  font-family: Poppins;
-  margin: 30px 20px;
-}
-
-.fake-content {
-  width: 320px;
-  height: 427px;
-  top: -178px;
-  margin: auto;
-
-  background: #24242d;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-}
-
-.viewport {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 15px;
-  margin: auto;
-  width: 360px;
-  height: 800px;
-  background-color: #202029;
-  overflow: hidden;
-}
-
-@media (max-width: 410px) {
-  .viewport {
-    width: 100%;
-    border-radius: 0px;
-    padding: 0px;
-/*     overflow-x: hidden; */
-  }
-}
-
-.lightbox {
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  overflow: hidden;
-  visibility: visible;
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-  transition: transform 0.33s, opacity 0.33s, visibility 0.33s;
-}
-
-.lightbox.closed {
-  transform: scale3d(0.5, 0.5, 1);
-  opacity: 0;
-  visibility: hidden;
-  z-index: -1;
-  /* Dismissal has faster duration. */
-  transition: transform 0.2s, opacity 0.2s, visibility 0.2s;
-  pointer-events: none;
-}
-
-/* No transitions when dragging, it creates a laggy effect. */
-.dragging {
-  transition: none;
-}
-
-body:before {
-  content: "";
-  z-index: 2;
-    pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.2s, visibility 0.2s;
-  visibility: hidden;
-}
-
-body.lightbox-open:before {
-  opacity: 1;
-  visibility: visible;
-}
-
-amp-story-player.my-player {
-/*   width: 360px;
-  height: 600px;
-  margin: 70px auto; */
-  width: 100%;
-  height: 100%;
-
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.page-indicators > * {
-  width: 8px;
-  height: 8px;
-  margin: 10px 5px;
-  border-radius: 100px;
-  background-color: white;
-}
-
-.page-indicator-right {
-  opacity: 0.3;
-}
-
-.page-indicators {
-  width: 100%;
-  justify-content: center;
-  margin: 0;
-  display: flex;
-  position: absolute;
-}
-
-body {
-  margin: 0px;
-  max-width: 1200px;
-  margin: auto;
-}
+    :root {
+      --background: #f0f2f5;
+      --card-background: #ffffff;
+      --text-color: #333;
+      --heading-color: #000;
+      --accent-color: #1877f2;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --border-radius: 8px;
+    }
+    body {
+      background-color: var(--background);
+      color: var(--text-color);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .header {
+      background-color: var(--card-background);
+      padding: 1rem 5%;
+      border-bottom: 1px solid #dddfe2;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .header h1 {
+      font-size: 1.8rem;
+      color: var(--heading-color);
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .header h1 span {
+      color: var(--accent-color);
+    }
+    main {
+      padding: 2rem 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--card-background);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: var(--text-color);
+      transition: transform 0.2s ease-in-out;
+      animation: popIn 0.4s ease-out forwards;
+      opacity: 0;
+    }
+    .article-card:nth-child(1) { animation-delay: 0.1s; }
+    .article-card:nth-child(2) { animation-delay: 0.2s; }
+    .article-card:nth-child(3) { animation-delay: 0.3s; }
+    .article-card:nth-child(4) { animation-delay: 0.4s; }
+    .article-card:nth-child(5) { animation-delay: 0.5s; }
+    .article-card:hover {
+      transform: scale(1.03);
+    }
+    .card-image amp-img {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    .card-content {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-content h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.15rem;
+      color: var(--heading-color);
+    }
+    .card-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      flex-grow: 1;
+      opacity: 0.9;
+    }
+    .featured {
+      grid-column: 1 / -1;
+    }
+    .featured .card-content h3 {
+        font-size: 1.75rem;
+    }
+    .featured .card-content p {
+        font-size: 1rem;
+    }
+    @media (min-width: 768px) {
+      .articles-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+          "featured featured article2 article3"
+          "featured featured article4 article5";
+      }
+      .article-card:nth-child(1) { grid-area: featured; }
+      .article-card:nth-child(2) { grid-area: article2; }
+      .article-card:nth-child(3) { grid-area: article3; }
+      .article-card:nth-child(4) { grid-area: article4; }
+      .article-card:nth-child(5) { grid-area: article5; }
+      .featured {
+        flex-direction: column;
+      }
+      .featured .card-image {
+        height: 300px;
+      }
+      .featured .card-image amp-img {
+         border-radius: var(--border-radius) var(--border-radius) 0 0;
+         object-fit: cover;
+      }
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+        .articles-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        .featured {
+            grid-column: 1 / -1;
+        }
+    }
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   </style>
 </head>
-
-<body><div class="main-container">
+<body>
   <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
     <script type="application/json">
         {
@@ -792,7 +167,6 @@ body {
       <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
     </div>
   </amp-consent>
-
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -811,98 +185,61 @@ body {
   <amp-analytics
     config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL&dma_cps=ads%2Cmaps%2Cplaystore%2Csearch%2Cshopping%2Cyoutube"
     data-credentials="include"></amp-analytics>
-
   <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
   </amp-auto-ads>
-
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
-
-
-  <div class="header">
-    <div class="hamburger_wrapper">
-      <div id="hamburger" tabindex="1" role="button"
-        on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  <header class="header">
+    <h1>Minnow<span>News</span></h1>
+  </header>
+  <main>
+    <div class="articles-grid">
+      <a href="biochar.html" class="article-card featured">
+        <div class="card-image">
+          <amp-img src="assets/biochar.jpeg" width="600" height="400" layout="responsive" alt="Biochar"></amp-img>
+        </div>
+        <div class="card-content">
+          <h3>Biochar: The Black Gold for Your Garden</h3>
+          <p>An in-depth look at how this ancient soil amendment can revolutionize modern farming and help fight climate change.</p>
+        </div>
+      </a>
+      <a href="zen-swing.html" class="article-card">
+        <div class="card-image">
+          <amp-img src="assets/coffee.jpg" width="300" height="150" layout="responsive" alt="Zen Swing"></amp-img>
+        </div>
+        <div class="card-content">
+          <h3>The Art of the Zen Swing</h3>
+          <p>Finding focus and flow in simple movements.</p>
+        </div>
+      </a>
+      <a href="gamestop.html" class="article-card">
+        <div class="card-image">
+          <amp-img src="assets/gamestop_store.jpg" width="300" height="150" layout="responsive" alt="Gamestop"></amp-img>
+        </div>
+        <div class="card-content">
+          <h3>GameStop Saga</h3>
+          <p>When Reddit traders took on Wall Street.</p>
+        </div>
+      </a>
+      <a href="banksy.html" class="article-card">
+        <div class="card-image">
+          <amp-img src="assets/banksy.jpg" width="300" height="150" layout="responsive" alt="Banksy"></amp-img>
+        </div>
+        <div class="card-content">
+          <h3>Who is Banksy?</h3>
+          <p>Unmasking the world's most elusive artist.</p>
+        </div>
+      </a>
+      <a href="fall.html" class="article-card">
+        <div class="card-image">
+          <amp-img src="assets/fallveg.jpg" width="300" height="150" layout="responsive" alt="Fall"></amp-img>
+        </div>
+        <div class="card-content">
+          <h3>Autumn's Embrace</h3>
+          <p>The changing colors and cozy comforts of fall.</p>
+        </div>
+      </a>
     </div>
-    <div class="title"><span>MNN </span></div>
-    <div class="user-icon"></div>
-  </div>
-
-  <div id="nav-menu">
-    <ul class="nav-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Account</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Support</a></li>
-    </ul>
-  </div>
-
-  <div class="hero-section">
-    <amp-img class="hero-img" src="./img/fish5.png" width="500" height="500" layout="responsive"
-      alt="a highway in a snow forest"></amp-img>
-    <div class="hero-text-section">
-      <div class="hero-text-container">
-        <span class="hero-text-title">Welcome to the Minnow News Network</span>
-        <span class="hero-text-body">Swim around and learn something new.</span>
-      </div>
-    </div>
-  </div>
-
-
-  <button on="tap:quote-lb">Click Here to See All stories</button>
-  <amp-lightbox id="quote-lb" layout="nodisplay" class="bodyody">
-
-    <button on="tap:quote-lb.close">
-      <h1 style="color:black">Click Here To Close</h1>
-      <amp-story-player layout="fixed" width="90vw" height="90vh">
-
-        <a href="./biochar.html"> Biochar </a>
-        <a href="./zen-swing.html"> Zen Swing</a>
-        <a href="./gamestop.html"> Gamestop</a>
-        <a href="./banksy.html"> Banksy</a>
-        <a href="./fall.html"> Fall </a>
-      </amp-story-player>
-    </button>
-  </amp-lightbox>
-
-  <amp-carousel width="auto" height="600" type="carousel" layout="fixed-height" loop controls>
-
-    <amp-story-player layout="fixed" width="360" height="600">
-      <a href="./biochar.html" target=_top> Biochar </a>
-
-    </amp-story-player>
-    <amp-story-player layout="fixed" width="360" height="600">
-
-      <a href="./zen-swing.html"> Zen Swing</a>
-
-    </amp-story-player>
-    <amp-story-player layout="fixed" width="360" height="600">
-
-      <a href="./gamestop.html"> Gamestop</a>
-
-    </amp-story-player>
-
-    <amp-story-player layout="fixed" width="360" height="600">
-
-      <a href="./banksy.html"> Banksy</a>
-
-    </amp-story-player>
-    <amp-story-player layout="fixed" width="360" height="600">
-
-
-      <a href="./fall.html"> Fall </a>
-
-    </amp-story-player>
-
-  </amp-carousel>
-
-
-
-</div>
+  </main>
 </body>
-
 </html>
