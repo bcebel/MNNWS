@@ -1,0 +1,35 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "facebook",
+    "twitter",
+    "email"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "More to explore"
+    },
+    {
+      "type": "small",
+      "title": "Official Coachella Website",
+      "url": "https://www.coachella.com/",
+      "image": "https://images.unsplash.com/photo-1542037104-958178464326?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "type": "small",
+      "title": "Coachella on Instagram",
+      "url": "https://www.instagram.com/coachella/",
+      "image": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "type": "cta-link",
+      "links": [
+        {
+          "text": "Get Tickets",
+          "url": "https://www.coachella.com/tickets"
+        }
+      ]
+    }
+  ]
+}
