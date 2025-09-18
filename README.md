@@ -1,50 +1,20 @@
-# Minnow News Network - Web Story Player
+# Minnow News Network - A Zine for the Ages
 
-This project is a web page that displays a carousel of AMP (Accelerated Mobile Pages) stories. It's a demonstration of how to build a web story player from scratch.
+Welcome to the Minnow News Network, your new favorite corner of the internet, broadcasting straight from the heart of Austin, TX. We are a digital zine for the curious, the creative, and the independent spirits who believe that even small voices can make big waves.
 
-## Articles
+## Our Philosophy: The Minnow in the Machine
 
-*   **GameStop's High-Stakes Wager**: An article about GameStop's recent news.
-*   **New Banksy at the Royal Courts of Justice**: An article about the new Banksy mural in London.
+In the vast ocean of the interweb, it's easy to feel like a small fish. But just like a school of minnows, we believe there's strength in numbers and beauty in the collective. We are the David to the internet's Goliath, a testament to the power of individual voices coming together to tell stories that matter. We're all just people navigating this digital world, and here, we're building a community that celebrates that.
 
-## Files included
+## What We're About
 
-This project is structured as follows:
+From the weird and wonderful of Austin's local art scene to deep dives into culture, tech, and everything in between, we're here to share stories that spark curiosity and connection. Think of us as your friendly neighborhood zine, but for a global audience.
 
-```text
-.
-├── assets/
-│   ├── banksy_mural.jpg
-│   ├── gamestop_store.jpg
-│   ├── ryan_cohen.jpg
-│   ├── stock_chart.jpg
-│   ├── royal_courts_of_justice.jpg
-│   └── Contains images, videos, and audio files for the stories.
-├── img/
-│   └── Contains images for the main page UI.
-├── styles/
-│   └── Contains CSS files for styling the different components of the page.
-├── utils/
-│   └── Contains utility JavaScript files.
-├── bookend.json
-│   └── A JSON file used for the bookend screen of the AMP stories.
-├── cards.js
-│   └── JavaScript for the story cards.
-├── fall.html
-│   └── An example of a web story.
-├── globals.js
-│   └── Global JavaScript variables.
-├── index.html
-│   └── The main entry point of the application.
-├── main.js
-│   └── The main JavaScript file for the application.
-├── pets.html
-│   └── Another example of a web story.
-├── scrolling-arrows.js
-│   └── JavaScript for the scrolling arrows in the carousel.
-└── swipe-down-to-close.js
-    └── JavaScript for the swipe down to close functionality.
-```
+This project is more than just a website; it's a platform for discovery, a place to get lost in compelling narratives and emerge with a fresh perspective.
+
+## Join the School
+
+We're just getting started, and we're thrilled to have you swim along with us.
 
 ## License
 
