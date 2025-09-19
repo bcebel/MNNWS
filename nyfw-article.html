@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
+
 <head>
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <meta name="description"
+    content="NYFW Spring/Summer 2026: The Biggest Moments and Trends - Minnow News">
+  <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/nyfw-article.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>NYFW Spring/Summer 2026: The Biggest Moments and Trends - Minnow News</title>
-  <style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.6;
@@ -80,7 +157,42 @@
     }
   </style>
 </head>
+
 <body>
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
+          }
+        }
+      </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <header class="header">
     <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
     <nav class="nav">
@@ -96,7 +208,7 @@
 
         <p>New York Fashion Week has once again set the stage for the future of style, and the Spring/Summer 2026 collections did not disappoint. From bold reinterpretations of classic silhouettes to a renewed focus on sustainable and innovative materials, this season was all about playful contrasts and thoughtful design. Here’s a look at the biggest moments and trends that will be defining our wardrobes next year.</p>
 
-        <img src="assets/cover.webp" alt="A runway model at New York Fashion Week" class="article-image">
+        <amp-img src="assets/cover.webp" alt="A runway model at New York Fashion Week" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
 
         <h3>Trend 1: The New Prep</h3>
         <p>Preppy aesthetics are back, but not as you know them. Designers like Tommy Hilfiger and Carolina Herrera showcased collections that deconstructed the traditional preppy look. Think classic cable-knit sweaters reimagined with asymmetrical cuts, polo shirts adorned with unexpected embellishments, and varsity jackets crafted from luxurious, flowing fabrics. The look is less about Ivy League conformity and more about a playful, ironic take on American classics.</p>
@@ -116,4 +228,5 @@
     </article>
   </main>
 </body>
+
 </html>
