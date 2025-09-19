@@ -11,7 +11,73 @@
   <script async custom-element="amp-story-auto-analytics"
     src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
 
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
@@ -21,40 +87,49 @@
       font-family: 'Oswald', sans-serif;
       color: #fff;
     }
+
     amp-story-page {
       background-color: #000;
     }
+
     h1 {
       font-weight: bold;
       font-size: 2.875em;
       font-weight: normal;
       line-height: 1.174;
     }
+
     p {
       font-weight: normal;
       font-size: 1.3em;
       line-height: 1.5em;
       color: #fff;
     }
+
     amp-story-grid-layer.bottom {
       align-content: end;
     }
+
     amp-story-grid-layer.top {
-        align-content: start;
+      align-content: start;
     }
+
     .text-overlay {
-        background-color: rgba(0,0,0,0.7);
-        padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
     }
+
     @media (orientation: landscape) {
       amp-story-page {
         background-color: #222;
       }
+
       amp-story-grid-layer[template="fill"] {
         max-width: 70vw;
         max-height: 70vh;
         margin: auto;
       }
+
       amp-story-grid-layer[template="fill"] amp-img img {
         object-fit: contain;
       }
@@ -64,18 +139,15 @@
 
 <body>
 
-  <amp-story standalone
-    supports-landscape
-    title="ABC Pulls Kimmel"
-    publisher="Minnow News Network"
-    publisher-logo-src="img/fish.png"
-    poster-portrait-src="https://upload.wikimedia.org/wikipedia/commons/2/2f/JimmyKimmelHWOFJan2013.jpg">
+  <amp-story standalone supports-landscape title="ABC Pulls Kimmel" publisher="Minnow News Network"
+    publisher-logo-src="img/fish.webp"
+    poster-portrait-src="https://upload.wikimedia.org/wikipedia/commons/2/2f/JimmyKimmelHWOFJan2013.webp">
 
     <amp-story-auto-analytics gtag-id="G-V3TNNSX3H4"></amp-story-auto-analytics>
 
     <amp-story-page id="cover">
       <amp-story-grid-layer template="fill">
-        <amp-img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/JimmyKimmel08.jpg" layout="fill"></amp-img>
+        <amp-img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/JimmyKimmel08.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <h1>ABC Pulls Jimmy Kimmel From Air</h1>
@@ -84,28 +156,36 @@
 
     <amp-story-page id="page1">
       <amp-story-grid-layer template="fill">
-        <amp-img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Jimmy_Kimmel_and_Cousin_Sal_%28cropped%29.jpg" layout="fill"></amp-img>
+        <amp-img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Jimmy_Kimmel_and_Cousin_Sal_%28cropped%29.webp"
+          layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
-        <p class="text-overlay">ABC announced it was pulling Jimmy Kimmel’s late-night show 'indefinitely' following comments the host made about the man accused of fatally shooting conservative activist Charlie Kirk.</p>
+        <p class="text-overlay">ABC announced it was pulling Jimmy Kimmel’s late-night show 'indefinitely' following
+          comments the host made about the man accused of fatally shooting conservative activist Charlie Kirk.</p>
       </amp-story-grid-layer>
     </amp-story-page>
 
     <amp-story-page id="page2">
       <amp-story-grid-layer template="fill">
-        <amp-img src="https://heute-at-prod-images.imgix.net/2021/07/23/eb5a825d-d370-4e3e-be58-96c2988b522e.jpeg?rect=84%2C0%2C1111%2C625&auto=format" layout="fill"></amp-img>
+        <amp-img
+          src="https://heute-at-prod-images.imgix.net/2021/07/23/eb5a825d-d370-4e3e-be58-96c2988b522e.webp?rect=84%2C0%2C1111%2C625&auto=format"
+          layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
-        <p class="text-overlay">The decision followed pressure from F.C.C. Chairman Brendan Carr, who suggested the agency might take action against ABC. President Trump praised the move, calling it 'Great News for America.'</p>
+        <p class="text-overlay">The decision followed pressure from F.C.C. Chairman Brendan Carr, who suggested the
+          agency might take action against ABC. President Trump praised the move, calling it 'Great News for America.'
+        </p>
       </amp-story-grid-layer>
     </amp-story-page>
 
     <amp-story-page id="page3">
       <amp-story-grid-layer template="fill">
-        <amp-img src="https://live.staticflickr.com/65535/52270856543_893c539f09_c.jpg" layout="fill"></amp-img>
+        <amp-img src="https://live.staticflickr.com/65535/52270856543_893c539f09_c.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
-        <p class="text-overlay">Major ABC affiliates, including Nexstar and Sinclair, had already announced they would preempt the show. Democrats denounced the move as an attack on free speech.</p>
+        <p class="text-overlay">Major ABC affiliates, including Nexstar and Sinclair, had already announced they would
+          preempt the show. Democrats denounced the move as an attack on free speech.</p>
       </amp-story-grid-layer>
     </amp-story-page>
 

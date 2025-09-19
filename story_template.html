@@ -11,7 +11,73 @@
   <script async custom-element="amp-story-auto-analytics"
     src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
 
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
@@ -21,30 +87,36 @@
       font-family: 'Oswald', sans-serif;
       color: #fff;
     }
+
     amp-story-page {
       background-color: #000;
     }
+
     h1 {
       font-weight: bold;
       font-size: 2.875em;
       font-weight: normal;
       line-height: 1.174;
     }
+
     p {
       font-weight: normal;
       font-size: 1.3em;
       line-height: 1.5em;
       color: #fff;
     }
+
     amp-story-grid-layer.bottom {
       align-content: end;
     }
+
     amp-story-grid-layer.top {
-        align-content: start;
+      align-content: start;
     }
+
     .text-overlay {
-        background-color: rgba(0,0,0,0.7);
-        padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
     }
 
     /* CSS for landscape image sizing */
@@ -52,11 +124,13 @@
       amp-story-page {
         background-color: #222;
       }
+
       amp-story-grid-layer[template="fill"] {
         max-width: 70vw;
         max-height: 70vh;
         margin: auto;
       }
+
       /* Per AMP docs, use object-fit on the inner <img> element for layout=fill */
       amp-story-grid-layer[template="fill"] amp-img img {
         object-fit: contain;
@@ -67,18 +141,14 @@
 
 <body>
 
-  <amp-story standalone
-    supports-landscape
-    title="Placeholder Story Title"
-    publisher="Minnow News Network"
-    publisher-logo-src="img/fish.png"
-    poster-portrait-src="assets/cover.png">
+  <amp-story standalone supports-landscape title="Placeholder Story Title" publisher="Minnow News Network"
+    publisher-logo-src="img/fish.webp" poster-portrait-src="assets/cover.webp">
 
     <amp-story-auto-analytics gtag-id="G-V3TNNSX3H4"></amp-story-auto-analytics>
 
     <amp-story-page id="cover">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/cover.png" layout="fill"></amp-img>
+        <amp-img src="assets/cover.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <h1>Placeholder Story Title</h1>
@@ -87,7 +157,7 @@
 
     <amp-story-page id="page1">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/cat.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/cat.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the first page of the story. Add your content here.</p>
@@ -96,7 +166,7 @@
 
     <amp-story-page id="page2">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/dog.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/dog.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the second page. You can add more text and images.</p>
@@ -105,7 +175,7 @@
 
     <amp-story-page id="page3">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/bike.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/bike.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the third page. Keep your story engaging.</p>
@@ -114,7 +184,7 @@
 
     <amp-story-page id="page4">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/coffee.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/coffee.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the fourth page. Use high-quality images.</p>
@@ -123,7 +193,7 @@
 
     <amp-story-page id="page5">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/carrots.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/carrots.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the fifth page. Tell a compelling narrative.</p>
@@ -132,7 +202,7 @@
 
     <amp-story-page id="page6">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/beets.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/beets.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the sixth page. Almost to the end!</p>
@@ -141,7 +211,7 @@
 
     <amp-story-page id="page7">
       <amp-story-grid-layer template="fill">
-        <amp-img src="assets/bird.jpg" layout="fill"></amp-img>
+        <amp-img src="assets/bird.webp" layout="fill"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="top">
         <p class="text-overlay">This is the seventh and final page of the story.</p>

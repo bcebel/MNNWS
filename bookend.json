@@ -1,10 +1,6 @@
 {
   "bookendVersion": "v1.0",
-  "shareProviders": [
-    "facebook",
-    "twitter",
-    "email"
-  ],
+  "shareProviders": ["facebook", "twitter", "email"],
   "components": [
     {
       "type": "heading",
@@ -14,19 +10,19 @@
       "type": "small",
       "title": "Ben & Jerry's Homepage",
       "url": "https://www.benjerry.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ben_%26_Jerry%27s_Cookie_Dough_Ice_Cream_465_ml%2C_May_2025.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ben_%26_Jerry%27s_Cookie_Dough_Ice_Cream_465_ml%2C_May_2025.webp"
     },
     {
       "type": "landscape",
       "title": "The Sweet Story of Ben & Jerry's Ice Cream",
       "url": "https://www.mentalfloss.com/article/62331/sweet-story-ben-jerrys-ice-cream",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Ben_Cohen_et_Jerry_Greenfield.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Ben_Cohen_et_Jerry_Greenfield.webp"
     },
     {
       "type": "portrait",
       "title": "A Brief History of Ben & Jerry’s",
       "url": "https://www.eater.com/2018/4/12/17229532/ben-and-jerrys-history-timeline",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Peace_symbol.svg/1024px-Peace_symbol.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Peace_symbol.svg/1024px-Peace_symbol.svg.webp"
     },
     {
       "type": "cta-link",
