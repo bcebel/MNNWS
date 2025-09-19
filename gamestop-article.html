@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
+
 <head>
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <meta name="description"
+    content="GameStop's High-Stakes Wager: A Financial Beatdown and a Bold Play for the Future - Minnow News">
+  <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/gamestop-article.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>GameStop's High-Stakes Wager: A Financial Beatdown and a Bold Play for the Future - Minnow News</title>
-  <style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.6;
@@ -87,7 +164,42 @@
     }
   </style>
 </head>
+
 <body>
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
+          }
+        }
+      </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <header class="header">
     <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
     <nav class="nav">
@@ -105,7 +217,7 @@
 
         <p class="disclaimer">Disclaimer: This article is for informational purposes only and does not constitute financial advice.</p>
 
-        <img src="assets/stock_chart.webp" alt="A stock chart showing volatility" class="article-image">
+        <amp-img src="assets/stock_chart.webp" alt="A stock chart showing volatility" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
 
         <h3>The Surprise Financials</h3>
         <p>The better-than-expected financial results were largely driven by aggressive cost-cutting measures and a surprising increase in sales of hardware and collectibles. This suggests a partial success in the company's effort to diversify away from its declining core business of physical software sales, which continued to show a decline. While the "beat" is a welcome development, it also highlights the ongoing transition and challenges GameStop faces.</p>
@@ -116,7 +228,7 @@
         <h3>The Ryan Cohen Playbook</h3>
         <p>This move is a classic Ryan Cohen play. Instead of seeking traditional financing, he is turning directly to the company's loyal shareholder base—the so-called "Ape" community—to fund his vision. The warrants are designed to reward these long-term holders and encourage further investment. The potential $1.9 billion capital injection would give Cohen a massive war chest for "general corporate purposes," which could include strategic acquisitions or further investment in the company's e-commerce and digital initiatives.</p>
 
-        <img src="assets/ryan_cohen.webp" alt="GameStop CEO Ryan Cohen" class="article-image">
+        <amp-img src="assets/ryan_cohen.webp" alt="GameStop CEO Ryan Cohen" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
 
         <h3>A Risky Bet with High Reward Potential</h3>
         <p>The strategy is not without significant risk. The exercise of the warrants depends entirely on the stock price staying above the $32.00 strike price. By tying the company's financial future so directly to its volatile stock, Cohen is making a high-stakes wager on continued market enthusiasm.</p>
@@ -124,4 +236,5 @@
     </article>
   </main>
 </body>
+
 </html>

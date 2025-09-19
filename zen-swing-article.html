@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
+
 <head>
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <meta name="description"
+    content="The Art of the Zen Swing: A Simple Movement for Health and Flow - Minnow News">
+  <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/zen-swing-article.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>The Art of the Zen Swing: A Simple Movement for Health and Flow - Minnow News</title>
-  <style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.6;
@@ -84,7 +161,42 @@
     }
   </style>
 </head>
+
 <body>
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
+          }
+        }
+      </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <header class="header">
     <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
     <nav class="nav">
@@ -100,7 +212,7 @@
 
         <p>In our fast-paced world, finding moments of calm and clarity can feel like a monumental task. Yet, one of the most effective techniques for achieving a state of relaxed focus comes from the ancient Chinese practice of Qigong. It’s called the "Zen Swing," and its beauty lies in its profound simplicity.</p>
 
-        <img src="assets/zen2.webp" alt="A serene image representing zen and balance" class="article-image">
+        <amp-img src="assets/zen2.webp" alt="A serene image representing zen and balance" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
 
         <h3>What is the Zen Swing?</h3>
         <p>The Zen Swing, also known as "Shaking the Tree" or simply "Spinal Cord Breathing," is a foundational Qigong exercise. It’s a form of moving meditation that involves a gentle, rhythmic twisting of the torso, allowing the arms to swing freely. The goal is to release tension, stimulate the body's internal energy (Qi), and calm the mind through repetitive, fluid motion.</p>
@@ -130,4 +242,5 @@
     </article>
   </main>
 </body>
+
 </html>

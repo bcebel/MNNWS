@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
+
 <head>
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <meta name="description"
+    content="Autumn's Embrace: Simple Ways to Enjoy the Flavors of Fall - Minnow News">
+  <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/fall-article.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Autumn's Embrace: Simple Ways to Enjoy the Flavors of Fall - Minnow News</title>
-  <style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.6;
@@ -80,7 +157,42 @@
     }
   </style>
 </head>
+
 <body>
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "539b9d9f016c1",
+            "params": ""
+          }
+        }
+      </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <header class="header">
     <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
     <nav class="nav">
@@ -96,7 +208,7 @@
 
         <p>As the air turns crisp and the leaves begin to paint the landscape in hues of gold and crimson, it's time to welcome the cozy comforts of fall. This season is all about rich flavors and warming spices, but enjoying them doesn't have to be complicated. Here are some simple hacks to bring the taste of autumn into your life without the stress.</p>
 
-        <img src="assets/fallveg.webp" alt="A collection of fall vegetables" class="article-image">
+        <amp-img src="assets/fallveg.webp" alt="A collection of fall vegetables" class="article-image" width="1024" height="768" layout="responsive"></amp-img>
 
         <h3>The Magic of Pumpkin Spice</h3>
         <p>Let's start with the undisputed king of fall flavors: pumpkin spice. This magical blend of cinnamon, nutmeg, ginger, and allspice can be sprinkled on almost anything to instantly make it feel like autumn. Add it to your morning coffee, sprinkle it over a bagel with cream cheese, or mix it into your tea. A small container of pre-mixed pumpkin spice can save you a fortune on fancy coffee shop drinks.</p>
@@ -107,7 +219,7 @@
         <h3>Get to Know Your Root Vegetables</h3>
         <p>Fall is the season for root vegetables like potatoes, sweet potatoes, carrots, and beets. They are inexpensive, versatile, and incredibly easy to prepare. Roast them low and slow in the oven until they are tender and caramelized. For a quick option, you can even cook them in the microwave. Mash them up with butter and a sprinkle of pumpkin spice for the ultimate comfort food.</p>
 
-        <img src="assets/carrots.webp" alt="Freshly harvested carrots" class="article-image">
+        <amp-img src="assets/carrots.webp" alt="Freshly harvested carrots" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
 
         <h3>Warm Up with Ginger</h3>
         <p>Ginger is another fall essential. Its warming, aromatic flavor is perfect for the season. Add powdered ginger to your coffee for a gingerbread-like treat, or use fresh ginger to make a soothing tea. It's a simple ingredient that adds a major flavor impact.</p>
@@ -119,4 +231,5 @@
     </article>
   </main>
 </body>
+
 </html>
