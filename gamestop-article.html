@@ -6,8 +6,8 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <meta name="amp-consent-blocking" content="amp-ad">
+
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="description"
     content="GameStop's High-Stakes Wager: A Financial Beatdown and a Bold Play for the Future - Minnow News">
@@ -90,6 +90,7 @@
       background-color: #f0f2f5;
       margin: 0;
     }
+
     .header {
       background-color: #ffffff;
       padding: 1rem 5%;
@@ -97,8 +98,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .header h1 {
       font-size: 1.8rem;
       color: #000;
@@ -106,9 +108,11 @@
       font-weight: 700;
       letter-spacing: -1px;
     }
+
     .header h1 span {
       color: #1877f2;
     }
+
     .nav a {
       margin: 0 10px;
       color: #1877f2;
@@ -116,70 +120,66 @@
       font-size: 1rem;
       font-weight: 500;
     }
+
     .nav a:hover {
       text-decoration: underline;
     }
+
     main {
       padding: 2rem 5%;
       max-width: 800px;
       margin: 20px auto;
       background-color: #ffffff;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     article h2 {
       color: #000;
       border-bottom: 2px solid #dddfe2;
       padding-bottom: 10px;
     }
+
     article p {
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
     }
+
     article h3 {
-        color: #333;
-        margin-top: 2rem;
+      color: #333;
+      margin-top: 2rem;
     }
+
     a {
       color: #1877f2;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .article-image {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
+
     .disclaimer {
-        background-color: #fff3cd;
-        border: 1px solid #ffeeba;
-        color: #856404;
-        padding: 1rem;
-        border-radius: 5px;
-        font-style: italic;
-        text-align: center;
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      color: #856404;
+      padding: 1rem;
+      border-radius: 5px;
+      font-style: italic;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
-          }
-        }
-      </script>
-    <div id="postPromptUI">
-      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
-    </div>
-  </amp-consent>
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -201,7 +201,9 @@
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
   <header class="header">
-    <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -211,28 +213,49 @@
   </header>
   <main>
     <article>
-        <h2>GameStop's High-Stakes Wager: Warrants, a Financial Beat, and the Future of a Meme Stock</h2>
+      <h2>GameStop's High-Stakes Wager: Warrants, a Financial Beat, and the Future of a Meme Stock</h2>
 
-        <p>In a surprise move that has sent ripples through the financial world, GameStop has announced a major beat on revenue and earnings, coupled with an unconventional plan to issue warrants as a special dividend to its shareholders. The news provides a rare positive sign for the embattled retailer and offers a glimpse into CEO Ryan Cohen's high-stakes strategy for the company's future.</p>
+      <p>In a surprise move that has sent ripples through the financial world, GameStop has announced a major beat on
+        revenue and earnings, coupled with an unconventional plan to issue warrants as a special dividend to its
+        shareholders. The news provides a rare positive sign for the embattled retailer and offers a glimpse into CEO
+        Ryan Cohen's high-stakes strategy for the company's future.</p>
 
-        <p class="disclaimer">Disclaimer: This article is for informational purposes only and does not constitute financial advice.</p>
+      <p class="disclaimer">Disclaimer: This article is for informational purposes only and does not constitute
+        financial advice.</p>
 
-        <amp-img src="assets/stock_chart.webp" alt="A stock chart showing volatility" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
+      <amp-img src="assets/stock_chart.webp" alt="A stock chart showing volatility" class="article-image" width="1024"
+        height="683" layout="responsive"></amp-img>
 
-        <h3>The Surprise Financials</h3>
-        <p>The better-than-expected financial results were largely driven by aggressive cost-cutting measures and a surprising increase in sales of hardware and collectibles. This suggests a partial success in the company's effort to diversify away from its declining core business of physical software sales, which continued to show a decline. While the "beat" is a welcome development, it also highlights the ongoing transition and challenges GameStop faces.</p>
+      <h3>The Surprise Financials</h3>
+      <p>The better-than-expected financial results were largely driven by aggressive cost-cutting measures and a
+        surprising increase in sales of hardware and collectibles. This suggests a partial success in the company's
+        effort to diversify away from its declining core business of physical software sales, which continued to show a
+        decline. While the "beat" is a welcome development, it also highlights the ongoing transition and challenges
+        GameStop faces.</p>
 
-        <h3>Decoding the Warrants: A Bold Move to Raise Capital</h3>
-        <p>The centerpiece of the announcement is the special dividend of warrants. A warrant gives a shareholder the right, but not the obligation, to purchase more shares of the company's stock at a fixed price—in this case, $32.00—before a specific expiration date in October 2026. If all these warrants are exercised by shareholders, GameStop stands to raise a staggering $1.9 billion in gross proceeds.</p>
+      <h3>Decoding the Warrants: A Bold Move to Raise Capital</h3>
+      <p>The centerpiece of the announcement is the special dividend of warrants. A warrant gives a shareholder the
+        right, but not the obligation, to purchase more shares of the company's stock at a fixed price—in this case,
+        $32.00—before a specific expiration date in October 2026. If all these warrants are exercised by shareholders,
+        GameStop stands to raise a staggering $1.9 billion in gross proceeds.</p>
 
-        <h3>The Ryan Cohen Playbook</h3>
-        <p>This move is a classic Ryan Cohen play. Instead of seeking traditional financing, he is turning directly to the company's loyal shareholder base—the so-called "Ape" community—to fund his vision. The warrants are designed to reward these long-term holders and encourage further investment. The potential $1.9 billion capital injection would give Cohen a massive war chest for "general corporate purposes," which could include strategic acquisitions or further investment in the company's e-commerce and digital initiatives.</p>
+      <h3>The Ryan Cohen Playbook</h3>
+      <p>This move is a classic Ryan Cohen play. Instead of seeking traditional financing, he is turning directly to the
+        company's loyal shareholder base—the so-called "Ape" community—to fund his vision. The warrants are designed to
+        reward these long-term holders and encourage further investment. The potential $1.9 billion capital injection
+        would give Cohen a massive war chest for "general corporate purposes," which could include strategic
+        acquisitions or further investment in the company's e-commerce and digital initiatives.</p>
 
-        <amp-img src="assets/ryan_cohen.webp" alt="GameStop CEO Ryan Cohen" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
+      <amp-img src="assets/ryan_cohen.webp" alt="GameStop CEO Ryan Cohen" class="article-image" width="1024"
+        height="683" layout="responsive"></amp-img>
 
-        <h3>A Risky Bet with High Reward Potential</h3>
-        <p>The strategy is not without significant risk. The exercise of the warrants depends entirely on the stock price staying above the $32.00 strike price. By tying the company's financial future so directly to its volatile stock, Cohen is making a high-stakes wager on continued market enthusiasm.</p>
-        <p>The big question remains: can this unconventional strategy lead to a sustainable, profitable business model? Or is this just another chapter in the wild, speculative saga of the original meme stock? For now, Wall Street and the "Ape" community are watching with bated breath.</p>
+      <h3>A Risky Bet with High Reward Potential</h3>
+      <p>The strategy is not without significant risk. The exercise of the warrants depends entirely on the stock price
+        staying above the $32.00 strike price. By tying the company's financial future so directly to its volatile
+        stock, Cohen is making a high-stakes wager on continued market enthusiasm.</p>
+      <p>The big question remains: can this unconventional strategy lead to a sustainable, profitable business model? Or
+        is this just another chapter in the wild, speculative saga of the original meme stock? For now, Wall Street and
+        the "Ape" community are watching with bated breath.</p>
     </article>
   </main>
 </body>

@@ -6,8 +6,8 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <meta name="amp-consent-blocking" content="amp-ad">
+
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="description"
     content="How to Be an Austinite: A Newbie's Guide for Students and Transplants - Minnow News">
@@ -84,20 +84,7 @@
   </noscript>
 
 <body>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
-          }
-        }
-      </script>
-    <div id="postPromptUI">
-      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
-    </div>
-  </amp-consent>
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -120,7 +107,9 @@
     data-credentials="include"></amp-analytics>
 
   <header class="header">
-    <a href="../index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="../index.html">Home</a>
       <a href="../about.html">About</a>
@@ -130,49 +119,77 @@
   </header>
   <main>
     <article>
-<h2>How to Be an Austinite: A Newbie's Guide for Students and Transplants</h2>
-<amp-img src="../assets/austin.webp" alt="Austin" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
-<p>Welcome to Austin! You've moved to a city that's famous for its live music, innovative spirit, and tacos. It's a place of incredible opportunity and growth, but it also has its own unique quirks and challenges. Whether you're here to study at the University of Texas or to start a new chapter in your career, here is some essential advice for navigating your new life in the capital of Texas.</p>
-<h2>First Thing's First: Embrace the Heat</h2>
-<p>This isn't a joke. The Texas summer is a force to be reckoned with, often lasting from May through September with temperatures regularly soaring above 100°F.</p>
-<ul>
-<li><strong>Hydrate:</strong> Carry a water bottle with you everywhere. Dehydration is a serious risk.</li>
-<li><strong>Dress Accordingly:</strong> Lightweight, breathable clothing is your friend.</li>
-<li><strong>Find Water:</strong> The best way to survive the heat is to get in the water. Discover the joys of Barton Springs Pool, take a dip at Deep Eddy, or rent a kayak on Lady Bird Lake.</li>
-</ul>
-<h2>Getting Around (or Trying To)</h2>
-<p>Austin is a sprawling city, and traffic is a significant part of daily life.</p>
-<ul>
-<li><strong>You'll Probably Need a Car:</strong> Outside of the central downtown and campus areas, Austin is very car-centric. Public transportation is improving but isn't as comprehensive as in older, denser cities.</li>
-<li><strong>Live Strategically:</strong> If you can, try to live relatively close to where you work or study. A short commute can dramatically improve your quality of life.</li>
-<li><strong>Know Your Options:</strong> Capital Metro is the local bus system. Ride-sharing services are plentiful, and electric scooters and bikes are popular for short trips.</li>
-</ul>
-<h2>Understanding the Vibe</h2>
-<p>The "Keep Austin Weird" slogan is more than just a marketing campaign; it's a reflection of the city's creative and independent spirit.</p>
-<ul>
-<li><strong>See Live Music:</strong> You're in the "Live Music Capital of the World." Make an effort to see shows, from big names at ACL Live to local bands in dive bars.</li>
-<li><strong>Get Outdoors:</strong> Austin is an active city. Walk or run the trail around Lady Bird Lake, hike the Greenbelt, and enjoy the city's many parks.</li>
-<li><strong>Be Friendly:</strong> Despite its growth, Austin has retained a friendly, welcoming atmosphere. Don't be afraid to strike up a conversation with a stranger.</li>
-</ul>
-<h2>The Cost of a Booming City</h2>
-<p>Austin is not the cheap city it once was. The boom in population and industry has led to a significant increase in the cost of living.</p>
-<ul>
-<li><strong>Housing is Expensive:</strong> As of 2025, the median home price is well over $500,000, and the average rent for a one-bedroom apartment is around $1,800. Be prepared for a competitive housing market.</li>
-<li><strong>Property Taxes are High:</strong> Texas has no state income tax, but it makes up for it with some of the highest property taxes in the country. If you're buying a home, be sure to factor this into your budget.</li>
-</ul>
-<h2>Advice Specifically for Students (Hook 'Em!)</h2>
-<ul>
-<li><strong>Leave the Bubble:</strong> The UT campus (the "40 Acres") and the surrounding West Campus area can feel like their own universe. Make a point to explore other neighborhoods like South Congress, East Austin, and Hyde Park.</li>
-<li><strong>Walk This Way:</strong> The UT campus is massive. Invest in a comfortable pair of walking shoes; you'll need them to get between classes.</li>
-<li><strong>Find Your Community:</strong> A school with over 50,000 students can feel overwhelming. Join a student organization, a club, or an intramural sports team to find your niche and make friends.</li>
-</ul>
-<h2>Advice Specifically for Transplants</h2>
-<ul>
-<li><strong>Be Patient:</strong> It takes time to adjust to a new city. Be patient with the traffic, the heat, and the process of finding your way.</li>
-<li><strong>Find Your Niche:</strong> Austin has a community for every interest, whether it's rock climbing, board games, or volunteering. Seek out groups and activities that align with your passions to meet like-minded people.</li>
-<li><strong>Explore Beyond the City Limits:</strong> The beautiful Texas Hill Country is right at your doorstep. Take a weekend trip to Fredericksburg, Wimberley, or one of the many state parks in the area. Embrace the unique culture and geography of Central Texas.</li>
-</ul>
-</article>
+      <h2>How to Be an Austinite: A Newbie's Guide for Students and Transplants</h2>
+      <amp-img src="../assets/austin.webp" alt="Austin" class="article-image" width="1024" height="683"
+        layout="responsive"></amp-img>
+      <p>Welcome to Austin! You've moved to a city that's famous for its live music, innovative spirit, and tacos. It's
+        a place of incredible opportunity and growth, but it also has its own unique quirks and challenges. Whether
+        you're here to study at the University of Texas or to start a new chapter in your career, here is some essential
+        advice for navigating your new life in the capital of Texas.</p>
+      <h2>First Thing's First: Embrace the Heat</h2>
+      <p>This isn't a joke. The Texas summer is a force to be reckoned with, often lasting from May through September
+        with temperatures regularly soaring above 100°F.</p>
+      <ul>
+        <li><strong>Hydrate:</strong> Carry a water bottle with you everywhere. Dehydration is a serious risk.</li>
+        <li><strong>Dress Accordingly:</strong> Lightweight, breathable clothing is your friend.</li>
+        <li><strong>Find Water:</strong> The best way to survive the heat is to get in the water. Discover the joys of
+          Barton Springs Pool, take a dip at Deep Eddy, or rent a kayak on Lady Bird Lake.</li>
+      </ul>
+      <h2>Getting Around (or Trying To)</h2>
+      <p>Austin is a sprawling city, and traffic is a significant part of daily life.</p>
+      <ul>
+        <li><strong>You'll Probably Need a Car:</strong> Outside of the central downtown and campus areas, Austin is
+          very car-centric. Public transportation is improving but isn't as comprehensive as in older, denser cities.
+        </li>
+        <li><strong>Live Strategically:</strong> If you can, try to live relatively close to where you work or study. A
+          short commute can dramatically improve your quality of life.</li>
+        <li><strong>Know Your Options:</strong> Capital Metro is the local bus system. Ride-sharing services are
+          plentiful, and electric scooters and bikes are popular for short trips.</li>
+      </ul>
+      <h2>Understanding the Vibe</h2>
+      <p>The "Keep Austin Weird" slogan is more than just a marketing campaign; it's a reflection of the city's creative
+        and independent spirit.</p>
+      <ul>
+        <li><strong>See Live Music:</strong> You're in the "Live Music Capital of the World." Make an effort to see
+          shows, from big names at ACL Live to local bands in dive bars.</li>
+        <li><strong>Get Outdoors:</strong> Austin is an active city. Walk or run the trail around Lady Bird Lake, hike
+          the Greenbelt, and enjoy the city's many parks.</li>
+        <li><strong>Be Friendly:</strong> Despite its growth, Austin has retained a friendly, welcoming atmosphere.
+          Don't be afraid to strike up a conversation with a stranger.</li>
+      </ul>
+      <h2>The Cost of a Booming City</h2>
+      <p>Austin is not the cheap city it once was. The boom in population and industry has led to a significant increase
+        in the cost of living.</p>
+      <ul>
+        <li><strong>Housing is Expensive:</strong> As of 2025, the median home price is well over $500,000, and the
+          average rent for a one-bedroom apartment is around $1,800. Be prepared for a competitive housing market.</li>
+        <li><strong>Property Taxes are High:</strong> Texas has no state income tax, but it makes up for it with some of
+          the highest property taxes in the country. If you're buying a home, be sure to factor this into your budget.
+        </li>
+      </ul>
+      <h2>Advice Specifically for Students (Hook 'Em!)</h2>
+      <ul>
+        <li><strong>Leave the Bubble:</strong> The UT campus (the "40 Acres") and the surrounding West Campus area can
+          feel like their own universe. Make a point to explore other neighborhoods like South Congress, East Austin,
+          and Hyde Park.</li>
+        <li><strong>Walk This Way:</strong> The UT campus is massive. Invest in a comfortable pair of walking shoes;
+          you'll need them to get between classes.</li>
+        <li><strong>Find Your Community:</strong> A school with over 50,000 students can feel overwhelming. Join a
+          student organization, a club, or an intramural sports team to find your niche and make friends.</li>
+      </ul>
+      <h2>Advice Specifically for Transplants</h2>
+      <ul>
+        <li><strong>Be Patient:</strong> It takes time to adjust to a new city. Be patient with the traffic, the heat,
+          and the process of finding your way.</li>
+        <li><strong>Find Your Niche:</strong> Austin has a community for every interest, whether it's rock climbing,
+          board games, or volunteering. Seek out groups and activities that align with your passions to meet like-minded
+          people.</li>
+        <li><strong>Explore Beyond the City Limits:</strong> The beautiful Texas Hill Country is right at your doorstep.
+          Take a weekend trip to Fredericksburg, Wimberley, or one of the many state parks in the area. Embrace the
+          unique culture and geography of Central Texas.</li>
+      </ul>
+    </article>
   </main>
 </body>
+
 </html>

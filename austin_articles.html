@@ -6,11 +6,10 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <meta name="amp-consent-blocking" content="amp-ad">
+
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
-  <meta name="description"
-    content="A collection of articles about the city of Austin.">
+  <meta name="description" content="A collection of articles about the city of Austin.">
   <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/austin_articles.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -90,6 +89,7 @@
       background-color: #f0f2f5;
       margin: 0;
     }
+
     .header {
       background-color: #ffffff;
       padding: 1rem 5%;
@@ -97,8 +97,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .header h1 {
       font-size: 1.8rem;
       color: #000;
@@ -106,9 +107,11 @@
       font-weight: 700;
       letter-spacing: -1px;
     }
+
     .header h1 span {
       color: #1877f2;
     }
+
     .nav a {
       margin: 0 10px;
       color: #1877f2;
@@ -116,54 +119,47 @@
       font-size: 1rem;
       font-weight: 500;
     }
+
     .nav a:hover {
       text-decoration: underline;
     }
+
     main {
       padding: 2rem 5%;
       max-width: 800px;
       margin: 20px auto;
       background-color: #ffffff;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .article-list {
-        list-style-type: none;
-        padding-left: 0;
+      list-style-type: none;
+      padding-left: 0;
     }
+
     .article-list li {
-        margin-bottom: 1rem;
-        padding: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #fafafa;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fafafa;
     }
+
     .article-list a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
+
     .article-list a:hover {
-        color: #1877f2;
+      color: #1877f2;
     }
   </style>
 </head>
 
 <body>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
-          }
-        }
-      </script>
-    <div id="postPromptUI">
-      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
-    </div>
-  </amp-consent>
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -185,7 +181,9 @@
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
   <header class="header">
-    <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -196,16 +194,24 @@
   <main>
     <h2>Stories from Austin</h2>
     <ul class="article-list">
-      <li><a href="austin_articles/01_real_estate_trends.html">Austin's Real Estate Market: Boom, Bust, or Both?</a></li>
-      <li><a href="austin_articles/02_bbq_restaurants.html">Is Austin BBQ Fine Dining? A Guide to the Salt Lick and 9 Alternatives</a></li>
-      <li><a href="austin_articles/03_music_venues.html">Austin's Music Venues: A Guide from Arenas to Dive Bars</a></li>
-      <li><a href="austin_articles/04_sxsw.html">SXSW Under New Ownership: What to Expect from the Future of Austin's Iconic Festival</a></li>
+      <li><a href="austin_articles/01_real_estate_trends.html">Austin's Real Estate Market: Boom, Bust, or Both?</a>
+      </li>
+      <li><a href="austin_articles/02_bbq_restaurants.html">Is Austin BBQ Fine Dining? A Guide to the Salt Lick and 9
+          Alternatives</a></li>
+      <li><a href="austin_articles/03_music_venues.html">Austin's Music Venues: A Guide from Arenas to Dive Bars</a>
+      </li>
+      <li><a href="austin_articles/04_sxsw.html">SXSW Under New Ownership: What to Expect from the Future of Austin's
+          Iconic Festival</a></li>
       <li><a href="austin_articles/05_best_bars.html">The Best Bars in Austin: A Guide for Every Vibe</a></li>
       <li><a href="austin_articles/06_record_shops.html">Austin's Best Record Shops: A Guide for Vinyl Lovers</a></li>
-      <li><a href="austin_articles/07_best_restaurants.html">The 10 Best Restaurants in Austin for a First-Timer</a></li>
-      <li><a href="austin_articles/08_advice_for_newbies.html">So You're Moving to Austin: A Newbie's Guide to Fitting In</a></li>
-      <li><a href="austin_articles/09_staying_cool.html">How to Stay Cool in Austin: A Guide to Beating the Heat</a></li>
-      <li><a href="austin_articles/10_historic_places.html">Austin's Most Historic Places: A Journey Through Time</a></li>
+      <li><a href="austin_articles/07_best_restaurants.html">The 10 Best Restaurants in Austin for a First-Timer</a>
+      </li>
+      <li><a href="austin_articles/08_advice_for_newbies.html">So You're Moving to Austin: A Newbie's Guide to Fitting
+          In</a></li>
+      <li><a href="austin_articles/09_staying_cool.html">How to Stay Cool in Austin: A Guide to Beating the Heat</a>
+      </li>
+      <li><a href="austin_articles/10_historic_places.html">Austin's Most Historic Places: A Journey Through Time</a>
+      </li>
       <li><a href="austin_articles/11_planet_k.html">The Enduring Weirdness of Planet K: An Austin Institution</a></li>
     </ul>
   </main>

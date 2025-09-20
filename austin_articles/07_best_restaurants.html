@@ -6,11 +6,10 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <meta name="amp-consent-blocking" content="amp-ad">
+
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
-  <meta name="description"
-    content="Austin's Culinary Scene: The Best Restaurants (That Aren't BBQ) - Minnow News">
+  <meta name="description" content="Austin's Culinary Scene: The Best Restaurants (That Aren't BBQ) - Minnow News">
   <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/austin_articles/07_best_restaurants.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -84,20 +83,7 @@
   </noscript>
 
 <body>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
-          }
-        }
-      </script>
-    <div id="postPromptUI">
-      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
-    </div>
-  </amp-consent>
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -120,7 +106,9 @@
     data-credentials="include"></amp-analytics>
 
   <header class="header">
-    <a href="../index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="../index.html">Home</a>
       <a href="../about.html">About</a>
@@ -130,32 +118,64 @@
   </header>
   <main>
     <article>
-<h2>Austin's Culinary Scene: The Best Restaurants (That Aren't BBQ)</h2>
-<amp-img src="../assets/austin.webp" alt="Austin" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
-<p>While Austin is famous for its world-class barbecue, the city's culinary landscape is far from one-note. From high-end tasting menus to iconic Tex-Mex institutions, Austin is a food lover's paradise. Here is a guide to 10 of the best and most essential non-BBQ restaurants in the city.</p>
-<h2>Fine Dining &amp; Special Occasions</h2>
-<ol>
-<li><strong>Pasta | Bar:</strong> For a truly special occasion, Pasta | Bar offers an intimate and exclusive experience. This tasting-menu-only restaurant serves a creative, multi-course meal centered around innovative pasta dishes, all served from a 10-seat counter. It's a tough reservation to get, but worth the effort for a memorable culinary adventure.</li>
-<li><strong>Hestia:</strong> Named for the Greek goddess of the hearth, Hestia is a modern restaurant centered around a massive, 20-foot wood-fired hearth. The menu features sophisticated, seasonal dishes with a smoky, live-fire element. The atmosphere is sleek and upscale, making it a perfect spot for an impressive dinner.</li>
-<li><strong>Arlo Grey:</strong> Located in the stylish LINE Hotel, Arlo Grey is the brainchild of "Top Chef" winner Kristen Kish. The menu is a beautiful blend of French and Italian techniques with Texas ingredients, resulting in dishes that are both comforting and elegant. The lakeside setting and chic decor add to the special-occasion feel.</li>
-</ol>
-<h2>Upscale Casual &amp; Trendy</h2>
-<ol>
-<li><strong>Aba:</strong> One of the most beautiful restaurants in Austin, Aba's stunning, tree-filled patio is a destination in itself. The menu features Mediterranean and Israeli-inspired cuisine, with a focus on shareable small plates, kebabs, and hummus. It's a vibrant, see-and-be-seen spot that's perfect for a group dinner or a romantic evening.</li>
-<li><strong>Odd Duck:</strong> If one restaurant could encapsulate the modern Austin food scene, it might be Odd Duck. With a focus on creative, locally-sourced small plates, Odd Duck has been a pioneer of the farm-to-table movement in Austin. The menu is constantly changing, the cocktails are inventive, and the atmosphere is always buzzing.</li>
-<li><strong>Loro:</strong> What do you get when you combine the talents of the chefs behind Franklin Barbecue and the acclaimed sushi restaurant Uchi? You get Loro, an Asian smokehouse. It's not a traditional BBQ joint; instead, it blends Texas smoking techniques with Japanese, Thai, and Vietnamese flavors. The result is a delicious and unique menu in a casual, counter-service beer garden setting.</li>
-</ol>
-<h2>Cuisine-Specific Standouts</h2>
-<ol>
-<li><strong>Suerte:</strong> Suerte is a modern Mexican restaurant that takes its masa (corn dough) program very seriously. They nixtamalize and grind their own corn in-house, which forms the basis for their incredible tortillas, tacos, and other dishes. The menu is creative and vibrant, and the cocktails are top-notch.</li>
-<li><strong>Uchi:</strong> Uchi is a sushi institution that helped put Austin on the national culinary map. Chef Tyson Cole's innovative approach to sushi and Japanese cuisine has earned the restaurant countless accolades. It's a high-end experience known for its pristine fish, creative flavor combinations, and impeccable service.</li>
-<li><strong>Dai Due:</strong> Dai Due is a butcher shop and restaurant with a hyper-local focus. The menu is a celebration of Texas ingredients, with a particular emphasis on wild game, heritage-breed pork, and local produce. It's a unique and rustic dining experience that is deeply connected to the land.</li>
-</ol>
-<h2>A Classic Institution</h2>
-<ol>
-<li><strong>Matt's El Rancho:</strong> Since 1952, Matt's El Rancho has been serving classic Tex-Mex to generations of Austinites. This sprawling, old-school restaurant is an institution, famous for its strong margaritas, Bob Armstrong Dip, and lively, family-friendly atmosphere. It's not trendy or innovative; it's timeless, consistent, and a beloved part of Austin's cultural fabric.</li>
-</ol>
-</article>
+      <h2>Austin's Culinary Scene: The Best Restaurants (That Aren't BBQ)</h2>
+      <amp-img src="../assets/austin.webp" alt="Austin" class="article-image" width="1024" height="683"
+        layout="responsive"></amp-img>
+      <p>While Austin is famous for its world-class barbecue, the city's culinary landscape is far from one-note. From
+        high-end tasting menus to iconic Tex-Mex institutions, Austin is a food lover's paradise. Here is a guide to 10
+        of the best and most essential non-BBQ restaurants in the city.</p>
+      <h2>Fine Dining &amp; Special Occasions</h2>
+      <ol>
+        <li><strong>Pasta | Bar:</strong> For a truly special occasion, Pasta | Bar offers an intimate and exclusive
+          experience. This tasting-menu-only restaurant serves a creative, multi-course meal centered around innovative
+          pasta dishes, all served from a 10-seat counter. It's a tough reservation to get, but worth the effort for a
+          memorable culinary adventure.</li>
+        <li><strong>Hestia:</strong> Named for the Greek goddess of the hearth, Hestia is a modern restaurant centered
+          around a massive, 20-foot wood-fired hearth. The menu features sophisticated, seasonal dishes with a smoky,
+          live-fire element. The atmosphere is sleek and upscale, making it a perfect spot for an impressive dinner.
+        </li>
+        <li><strong>Arlo Grey:</strong> Located in the stylish LINE Hotel, Arlo Grey is the brainchild of "Top Chef"
+          winner Kristen Kish. The menu is a beautiful blend of French and Italian techniques with Texas ingredients,
+          resulting in dishes that are both comforting and elegant. The lakeside setting and chic decor add to the
+          special-occasion feel.</li>
+      </ol>
+      <h2>Upscale Casual &amp; Trendy</h2>
+      <ol>
+        <li><strong>Aba:</strong> One of the most beautiful restaurants in Austin, Aba's stunning, tree-filled patio is
+          a destination in itself. The menu features Mediterranean and Israeli-inspired cuisine, with a focus on
+          shareable small plates, kebabs, and hummus. It's a vibrant, see-and-be-seen spot that's perfect for a group
+          dinner or a romantic evening.</li>
+        <li><strong>Odd Duck:</strong> If one restaurant could encapsulate the modern Austin food scene, it might be Odd
+          Duck. With a focus on creative, locally-sourced small plates, Odd Duck has been a pioneer of the farm-to-table
+          movement in Austin. The menu is constantly changing, the cocktails are inventive, and the atmosphere is always
+          buzzing.</li>
+        <li><strong>Loro:</strong> What do you get when you combine the talents of the chefs behind Franklin Barbecue
+          and the acclaimed sushi restaurant Uchi? You get Loro, an Asian smokehouse. It's not a traditional BBQ joint;
+          instead, it blends Texas smoking techniques with Japanese, Thai, and Vietnamese flavors. The result is a
+          delicious and unique menu in a casual, counter-service beer garden setting.</li>
+      </ol>
+      <h2>Cuisine-Specific Standouts</h2>
+      <ol>
+        <li><strong>Suerte:</strong> Suerte is a modern Mexican restaurant that takes its masa (corn dough) program very
+          seriously. They nixtamalize and grind their own corn in-house, which forms the basis for their incredible
+          tortillas, tacos, and other dishes. The menu is creative and vibrant, and the cocktails are top-notch.</li>
+        <li><strong>Uchi:</strong> Uchi is a sushi institution that helped put Austin on the national culinary map. Chef
+          Tyson Cole's innovative approach to sushi and Japanese cuisine has earned the restaurant countless accolades.
+          It's a high-end experience known for its pristine fish, creative flavor combinations, and impeccable service.
+        </li>
+        <li><strong>Dai Due:</strong> Dai Due is a butcher shop and restaurant with a hyper-local focus. The menu is a
+          celebration of Texas ingredients, with a particular emphasis on wild game, heritage-breed pork, and local
+          produce. It's a unique and rustic dining experience that is deeply connected to the land.</li>
+      </ol>
+      <h2>A Classic Institution</h2>
+      <ol>
+        <li><strong>Matt's El Rancho:</strong> Since 1952, Matt's El Rancho has been serving classic Tex-Mex to
+          generations of Austinites. This sprawling, old-school restaurant is an institution, famous for its strong
+          margaritas, Bob Armstrong Dip, and lively, family-friendly atmosphere. It's not trendy or innovative; it's
+          timeless, consistent, and a beloved part of Austin's cultural fabric.</li>
+      </ol>
+    </article>
   </main>
 </body>
+
 </html>

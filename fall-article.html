@@ -6,11 +6,10 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-  <meta name="amp-consent-blocking" content="amp-ad">
+
+
   <meta name="amp-google-client-id-api" content="googleanalytics" />
-  <meta name="description"
-    content="Autumn's Embrace: Simple Ways to Enjoy the Flavors of Fall - Minnow News">
+  <meta name="description" content="Autumn's Embrace: Simple Ways to Enjoy the Flavors of Fall - Minnow News">
   <meta name="author" content="MINNOWSPACE">
   <link rel="canonical" href="https://minnowspace.com/fall-article.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -90,6 +89,7 @@
       background-color: #f0f2f5;
       margin: 0;
     }
+
     .header {
       background-color: #ffffff;
       padding: 1rem 5%;
@@ -97,8 +97,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .header h1 {
       font-size: 1.8rem;
       color: #000;
@@ -106,9 +107,11 @@
       font-weight: 700;
       letter-spacing: -1px;
     }
+
     .header h1 span {
       color: #1877f2;
     }
+
     .nav a {
       margin: 0 10px;
       color: #1877f2;
@@ -116,63 +119,58 @@
       font-size: 1rem;
       font-weight: 500;
     }
+
     .nav a:hover {
       text-decoration: underline;
     }
+
     main {
       padding: 2rem 5%;
       max-width: 800px;
       margin: 20px auto;
       background-color: #ffffff;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     article h2 {
       color: #000;
       border-bottom: 2px solid #dddfe2;
       padding-bottom: 10px;
     }
+
     article p {
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
     }
+
     article h3 {
-        color: #333;
-        margin-top: 2rem;
-        border-left: 4px solid #d9534f;
-        padding-left: 1rem;
+      color: #333;
+      margin-top: 2rem;
+      border-left: 4px solid #d9534f;
+      padding-left: 1rem;
     }
+
     a {
       color: #1877f2;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .article-image {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 
 <body>
-  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-    <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
-          }
-        }
-      </script>
-    <div id="postPromptUI">
-      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
-    </div>
-  </amp-consent>
+
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
           {
@@ -194,7 +192,9 @@
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
   <header class="header">
-    <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -204,30 +204,51 @@
   </header>
   <main>
     <article>
-        <h2>Autumn's Embrace: Simple and Stress-Free Ways to Enjoy the Flavors of Fall</h2>
+      <h2>Autumn's Embrace: Simple and Stress-Free Ways to Enjoy the Flavors of Fall</h2>
 
-        <p>As the air turns crisp and the leaves begin to paint the landscape in hues of gold and crimson, it's time to welcome the cozy comforts of fall. This season is all about rich flavors and warming spices, but enjoying them doesn't have to be complicated. Here are some simple hacks to bring the taste of autumn into your life without the stress.</p>
+      <p>As the air turns crisp and the leaves begin to paint the landscape in hues of gold and crimson, it's time to
+        welcome the cozy comforts of fall. This season is all about rich flavors and warming spices, but enjoying them
+        doesn't have to be complicated. Here are some simple hacks to bring the taste of autumn into your life without
+        the stress.</p>
 
-        <amp-img src="assets/fallveg.webp" alt="A collection of fall vegetables" class="article-image" width="1024" height="768" layout="responsive"></amp-img>
+      <amp-img src="assets/fallveg.webp" alt="A collection of fall vegetables" class="article-image" width="1024"
+        height="768" layout="responsive"></amp-img>
 
-        <h3>The Magic of Pumpkin Spice</h3>
-        <p>Let's start with the undisputed king of fall flavors: pumpkin spice. This magical blend of cinnamon, nutmeg, ginger, and allspice can be sprinkled on almost anything to instantly make it feel like autumn. Add it to your morning coffee, sprinkle it over a bagel with cream cheese, or mix it into your tea. A small container of pre-mixed pumpkin spice can save you a fortune on fancy coffee shop drinks.</p>
+      <h3>The Magic of Pumpkin Spice</h3>
+      <p>Let's start with the undisputed king of fall flavors: pumpkin spice. This magical blend of cinnamon, nutmeg,
+        ginger, and allspice can be sprinkled on almost anything to instantly make it feel like autumn. Add it to your
+        morning coffee, sprinkle it over a bagel with cream cheese, or mix it into your tea. A small container of
+        pre-mixed pumpkin spice can save you a fortune on fancy coffee shop drinks.</p>
 
-        <h3>Embrace the Cranberry</h3>
-        <p>Cranberries are the unsung heroes of the fall shopping list. Their tart, vibrant flavor screams New England autumn. Use them as a beautiful garnish in drinks, or cook them down with a touch of maple syrup or honey for a simple, elegant side dish. For a creative twist on a health trend, try blending fresh cranberries with water, ice, a dash of cayenne pepper, and a sweetener for a seasonal take on the famous "lemonade cleanse."</p>
+      <h3>Embrace the Cranberry</h3>
+      <p>Cranberries are the unsung heroes of the fall shopping list. Their tart, vibrant flavor screams New England
+        autumn. Use them as a beautiful garnish in drinks, or cook them down with a touch of maple syrup or honey for a
+        simple, elegant side dish. For a creative twist on a health trend, try blending fresh cranberries with water,
+        ice, a dash of cayenne pepper, and a sweetener for a seasonal take on the famous "lemonade cleanse."</p>
 
-        <h3>Get to Know Your Root Vegetables</h3>
-        <p>Fall is the season for root vegetables like potatoes, sweet potatoes, carrots, and beets. They are inexpensive, versatile, and incredibly easy to prepare. Roast them low and slow in the oven until they are tender and caramelized. For a quick option, you can even cook them in the microwave. Mash them up with butter and a sprinkle of pumpkin spice for the ultimate comfort food.</p>
+      <h3>Get to Know Your Root Vegetables</h3>
+      <p>Fall is the season for root vegetables like potatoes, sweet potatoes, carrots, and beets. They are inexpensive,
+        versatile, and incredibly easy to prepare. Roast them low and slow in the oven until they are tender and
+        caramelized. For a quick option, you can even cook them in the microwave. Mash them up with butter and a
+        sprinkle of pumpkin spice for the ultimate comfort food.</p>
 
-        <amp-img src="assets/carrots.webp" alt="Freshly harvested carrots" class="article-image" width="1024" height="683" layout="responsive"></amp-img>
+      <amp-img src="assets/carrots.webp" alt="Freshly harvested carrots" class="article-image" width="1024" height="683"
+        layout="responsive"></amp-img>
 
-        <h3>Warm Up with Ginger</h3>
-        <p>Ginger is another fall essential. Its warming, aromatic flavor is perfect for the season. Add powdered ginger to your coffee for a gingerbread-like treat, or use fresh ginger to make a soothing tea. It's a simple ingredient that adds a major flavor impact.</p>
+      <h3>Warm Up with Ginger</h3>
+      <p>Ginger is another fall essential. Its warming, aromatic flavor is perfect for the season. Add powdered ginger
+        to your coffee for a gingerbread-like treat, or use fresh ginger to make a soothing tea. It's a simple
+        ingredient that adds a major flavor impact.</p>
 
-        <h3>Don't Forget the Apples!</h3>
-        <p>What's fall without apples? For a simple and delicious dessert, cook down a sliced apple with a pat of butter, a drizzle of maple syrup, and a generous dash of pumpkin pie spice. You can do the same with pears! For a refreshing beverage, try adding thin apple slices to your tea—it's like a grown-up, sophisticated apple juice with a built-in snack.</p>
+      <h3>Don't Forget the Apples!</h3>
+      <p>What's fall without apples? For a simple and delicious dessert, cook down a sliced apple with a pat of butter,
+        a drizzle of maple syrup, and a generous dash of pumpkin pie spice. You can do the same with pears! For a
+        refreshing beverage, try adding thin apple slices to your tea—it's like a grown-up, sophisticated apple juice
+        with a built-in snack.</p>
 
-        <p>The key to enjoying this season is to keep it simple. The holidays are just around the corner, so take this time to savor the small, cozy moments. Go for a walk, enjoy the foliage, and treat yourself to the simple, wonderful flavors of fall.</p>
+      <p>The key to enjoying this season is to keep it simple. The holidays are just around the corner, so take this
+        time to savor the small, cozy moments. Go for a walk, enjoy the foliage, and treat yourself to the simple,
+        wonderful flavors of fall.</p>
     </article>
   </main>
 </body>

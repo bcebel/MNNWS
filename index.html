@@ -7,6 +7,7 @@
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+
   <meta name="amp-consent-blocking" content="amp-ad">
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="description"
@@ -315,14 +316,14 @@
 <body>
   <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
     <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "539b9d9f016c1",
-            "params": ""
+          {
+            "postPromptUI": "postPromptUI",
+            "clientConfig": {
+              "cdid": "539b9d9f016c1",
+              "params": ""
+            }
           }
-        }
-      </script>
+        </script>
     <div id="postPromptUI">
       <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
     </div>
@@ -348,7 +349,9 @@
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
   <header class="header">
-    <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -360,8 +363,8 @@
     <div class="articles-grid">
       <a href="haam-day-2025.html" class="article-card featured">
         <div class="card-image">
-          <amp-img src="assets/Piemaster-Gibson-Flying-V.webp" width="497" height="497"
-            layout="responsive" alt="HAAM Day 2025" data-hero></amp-img>
+          <amp-img src="assets/Piemaster-Gibson-Flying-V.webp" width="497" height="497" layout="responsive"
+            alt="HAAM Day 2025" data-hero></amp-img>
         </div>
         <div class="card-content">
           <h3>The Heartbeat of Austin: A Complete Guide to HAAM Day 2025</h3>
@@ -433,8 +436,7 @@
       </a>
       <a href="zen-swing-article.html" class="article-card">
         <div class="card-image">
-          <amp-img src="assets/zen2.webp" width="891" height="895"
-            layout="responsive" alt="Zen Swing"></amp-img>
+          <amp-img src="assets/zen2.webp" width="891" height="895" layout="responsive" alt="Zen Swing"></amp-img>
         </div>
         <div class="card-content">
           <h3>The Art of the Zen Swing</h3>
@@ -481,7 +483,8 @@
     </div>
   </main>
   <footer class="footer">
-    <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy
+      Policy</a>
     <p>&copy; 2024 Minnow News. All Rights Reserved.</p>
   </footer>
 </body>
