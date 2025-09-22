@@ -64,12 +64,12 @@ text-align: center;
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
   const feedContainer = document.getElementById('feed-container');
-  const feedUrl = 'http://www.austinchronicle.com/gyrobase/rss/daily-music.xml';
+  const targetUrl = 'http://www.austinchronicle.com/gyrobase/rss/daily-music.xml';
+  const feedUrl = `https://corsproxy.io/?url=${encodeURIComponent(targetUrl)}`;
 
   try {
-    // Because of CORS policy, a direct fetch from the browser might be blocked.
-    // A production app would use a server-side proxy. For this environment,
-    // we assume it might work, but prepare for failure.
+    // Using a CORS proxy to bypass browser restrictions for development.
+    // A production app would use its own server-side proxy.
     const response = await fetch(feedUrl);
 
     if (!response.ok) {
