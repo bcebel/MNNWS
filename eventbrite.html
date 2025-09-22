@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Austin Events Calendar</title>
+<title>ATX Short Film Showcase Events</title>
 <!-- FullCalendar CSS -->
 <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
 <style>
@@ -28,25 +28,10 @@ cursor: pointer;
 color: red;
 text-align: center;
 }
-#search-container {
-margin-bottom: 20px;
-text-align: center;
-}
-#city-input {
-padding: 10px;
-width: 300px;
-}
-#search-btn {
-padding: 10px 20px;
-}
 </style>
 </head>
 <body>
-<h1>Events Calendar</h1>
-<div id="search-container">
-  <input type="text" id="city-input" placeholder="Enter city (e.g., Austin, TX)">
-  <button id="search-btn">Search</button>
-</div>
+<h1>ATX Short Film Showcase Events</h1>
 <div id="calendar"></div>
 <p class="attribution">Events sourced from <a href="https://www.eventbrite.com" target="_blank">Eventbrite</a>.</p>
 
@@ -56,49 +41,51 @@ padding: 10px 20px;
 // Initialize FullCalendar
 document.addEventListener('DOMContentLoaded', function() {
   const calendarEl = document.getElementById('calendar');
-  const cityInput = document.getElementById('city-input');
-  const searchBtn = document.getElementById('search-btn');
-  let calendar;
 
-  async function fetchEvents(info, successCallback, failureCallback) {
-    const city = cityInput.value || 'Austin, TX';
-    try {
-      // Eventbrite API call
-      // WARNING: For production environments, it is strongly recommended to use a server-side proxy
-      // to handle API requests. Exposing API keys, even public ones, on the client-side can be a security risk.
-      const response = await fetch(
-        `https://www.eventbriteapi.com/v3/events/search/?location.address=${city}&location.within=10mi&start_date.range_start=${info.startStr}&start_date.range_end=${info.endStr}&sort_by=date`,
-        {
-          headers: {
-            Authorization: 'Bearer 7HL7WDXN2HA66ZZL54E2', // Public API Key
-          },
-        }
-      );
-      if (!response.ok) throw new Error('API request failed');
-      const data = await response.json();
-
-      // Transform Eventbrite data into FullCalendar events
-      const events = data.events.map(event => ({
-        title: event.name.text,
-        start: event.start.local, // ISO8601 date (e.g., 2025-10-01T19:00:00)
-        url: event.url, // Links to Eventbrite event page
-        extendedProps: {
-          description: event.description.text?.substring(0, 100) + '...' || 'No description',
-          source: 'Eventbrite',
-        }
-      }));
-
-      successCallback(events);
-    } catch (error) {
-      console.error('Error fetching events:', error);
-      document.getElementById('calendar').innerHTML = '<p class="error">Failed to load events. Please try again later.</p>';
-      failureCallback(error);
-    }
-  }
-
-  calendar = new FullCalendar.Calendar(calendarEl, {
+  const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth', // Monthly view
-    events: fetchEvents,
+    events: async (info, successCallback, failureCallback) => {
+      try {
+        // Eventbrite API call for a specific organization
+        // The organization ID was provided by the user.
+        const organizationId = '34019997591';
+        const response = await fetch(
+          `https://www.eventbriteapi.com/v3/organizations/${organizationId}/events/`,
+          {
+            headers: {
+              // WARNING: For production environments, it is strongly recommended to use a server-side proxy
+              // to handle API requests. Exposing API keys, even public ones, on the client-side can be a security risk.
+              Authorization: 'Bearer 7HL7WDXN2HA66ZZL54E2', // Public API Key
+            },
+          }
+        );
+
+        if (!response.ok) {
+            const errorBody = await response.text();
+            console.error('API Error Body:', errorBody);
+            throw new Error(`API request failed with status ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // The response for this endpoint has an 'events' key which is a list of event objects.
+        const events = data.events.map(event => ({
+          title: event.name.text,
+          start: event.start.local,
+          url: event.url,
+          extendedProps: {
+            description: event.description.text?.substring(0, 100) + '...' || 'No description',
+            source: 'Eventbrite',
+          }
+        }));
+
+        successCallback(events);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+        document.getElementById('calendar').innerHTML = '<p class="error">Failed to load events. Please check the organization ID and your network connection.</p>';
+        failureCallback(error);
+      }
+    },
     eventClick: function(info) {
       // Open event URL in new tab
       info.jsEvent.preventDefault();
@@ -121,10 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   calendar.render();
-
-  searchBtn.addEventListener('click', () => {
-    calendar.refetchEvents();
-  });
 });
 </script>
 </body>
