@@ -7,8 +7,6 @@
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
-
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="description" content="Job listings from Indeed, embedded on an AMP page.">
   <meta name="author" content="MINNOWSPACE">
@@ -171,18 +169,18 @@
 
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-          {
-          "vars" : {
-              "gtag_id": "G-V3TNNSX3H4",
-              "config": {
-                  "G-V3TNNSX3H4": {
-                        "groups": "default" ,
-                         "allow_ad_personalization_signals": true
-                        }
-                                        }
-                }
+      {
+        "vars": {
+          "gtag_id": "G-V3TNNSX3H4",
+          "config": {
+            "G-V3TNNSX3H4": {
+              "groups": "default",
+              "allow_ad_personalization_signals": true
             }
-       </script>
+          }
+        }
+      }
+    </script>
   </amp-analytics>
 
   <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
@@ -204,11 +202,15 @@
     <article>
       <h2>Job Widget Test</h2>
       <p>This page displays a job widget from Sociablekit.</p>
-      <amp-iframe width="600" height="1000"
-        sandbox="allow-scripts allow-same-origin allow-popups"
-        layout="responsive"
-        frameborder="0"
-        src="https://widgets.sociablekit.com/indeed-jobs/iframe/25602535">
+      <amp-iframe width="600"
+            height="1000"
+            sandbox="allow-scripts allow-popups"
+            layout="responsive"
+            frameborder="0"
+            src="https://widgets.sociablekit.com/indeed-jobs/iframe/25602535">
+        <div placeholder>
+          <p>Loading job listings...</p>
+        </div>
       </amp-iframe>
     </article>
   </main>
