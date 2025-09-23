@@ -7,6 +7,9 @@
   <link rel="canonical" href="all.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
   <script async custom-element="amp-story-player" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
   <style amp-boilerplate>
     body {
@@ -78,6 +81,26 @@
 </head>
 
 <body>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <amp-story-player layout="responsive" width="360" height="600">
     <a href="austin-music-sept-18-2025.html">
       <img src="assets/Gemini_Generated_Image_h0wjz9h0wjz9h0wj.webp" width="360" height="600" loading="lazy"

@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
   <link rel="canonical" href="https://minnowspace.com/about.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>About Minnow News</title>
@@ -67,6 +70,26 @@
   </style>
 </head>
 <body>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
   <header class="header">
     <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
     <nav class="nav">
