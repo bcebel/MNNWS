@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+
+  <meta name="amp-google-client-id-api" content="googleanalytics" />
+  <meta name="description" content="Job listings from Indeed, embedded on an AMP page.">
+  <meta name="author" content="MINNOWSPACE">
+  <link rel="canonical" href="https://minnowspace.com/jobs.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Job Widget Test Page - Minnow News</title>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <style amp-custom>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f2f5;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #ffffff;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #dddfe2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      color: #000;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .header h1 span {
+      color: #1877f2;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    article h2 {
+      color: #000;
+      border-bottom: 2px solid #dddfe2;
+      padding-bottom: 10px;
+    }
+
+    article p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    article h3 {
+      color: #333;
+    }
+
+    a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .article-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
+    data-credentials="include"></amp-analytics>
+  <header class="header">
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Job Widget Test</h2>
+      <p>This page displays a job widget from Sociablekit.</p>
+      <amp-iframe width="600" height="1000"
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        layout="responsive"
+        frameborder="0"
+        src="https://widgets.sociablekit.com/indeed-jobs/iframe/25602535">
+      </amp-iframe>
+    </article>
+  </main>
+</body>
+
+</html>
