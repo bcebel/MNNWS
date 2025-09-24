@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <link rel="canonical" href="https://minnowspace.com/traffic.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <title>Austin, You're Drunk: A Survivor's Guide</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
         :root {
             --primary-dark: #354000;
             --primary-light: #f5ffc3;
@@ -78,7 +82,7 @@ h3 {  font-size: 2rem; /* text-lg */
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
         }
 
-        .media-container img {
+        .media-container amp-img {
             width: 100%;
             height: auto;
             display: block;
@@ -110,11 +114,30 @@ h3 {  font-size: 2rem; /* text-lg */
     </style>
 </head>
 <body>
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+          {
+          "vars" : {
+              "gtag_id": "G-V3TNNSX3H4",
+              "config": {
+                  "G-V3TNNSX3H4": {
+                        "groups": "default" ,
+                         "allow_ad_personalization_signals": true
+                        }
+                                        }
+                }
+            }
+       </script>
+  </amp-analytics>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
+  </amp-auto-ads>
     <div class="container">
         <div class="blog-card">
 
             <div class="media-container">
-                <img src="https://minnowspace.com/assets/traffic.png"</div>
+                <amp-img src="https://minnowspace.com/assets/traffic.png" width="800" height="420" layout="responsive"></amp-img>
+            </div>
 
             <div class="intro-section">
                 <h2>"Keep Austin Weird... and Congested?"</h2>
@@ -207,8 +230,3 @@ h3 {  font-size: 2rem; /* text-lg */
     </div>
 </body>
 </html>
-
-
-
-
-
