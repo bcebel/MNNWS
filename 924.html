@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today's Political Rollercoaster</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <meta name="amp-google-client-id-api" content="googleanalytics" />
+    <meta name="description" content="US politics today packs enough punch to keep you buzzing. Think international bombshells, domestic standoffs, and courtroom scenes that could be a rejected script from Law & Order.">
+    <meta name="author" content="MINNOWSPACE">
+    <link rel="canonical" href="https://minnowspace.com/924.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Today's Political Rollercoaster - Minnow News</title>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
         :root {
             --primary-dark: #354000;
             --primary-light: #f5ffc3;
@@ -23,7 +97,12 @@
             line-height: 1.6;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: var(--primary-dark);
             font-weight: 700;
         }
@@ -33,69 +112,162 @@
         }
 
         /* Custom Tailwind colors */
-        .bg-primary-dark { background-color: var(--primary-dark); }
-        .bg-primary-light { background-color: var(--primary-light); }
-        .bg-secondary-dark { background-color: var(--secondary-dark); }
-        .bg-secondary-light { background-color: var(--secondary-light); }
-        .bg-background-color { background-color: var(--background-color); }
-        .text-primary-dark { color: var(--primary-dark); }
-        .text-primary-light { color: var(--primary-light); }
-        .text-secondary-dark { color: var(--secondary-dark); }
-        .text-secondary-light { color: var(--secondary-light); }
-        .text-neutral-dark { color: var(--neutral-dark); }
-        .text-neutral-light { color: var(--neutral-light); }
+        .bg-primary-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        .bg-secondary-dark {
+            background-color: var(--secondary-dark);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--secondary-light);
+        }
+
+        .bg-background-color {
+            background-color: var(--background-color);
+        }
+
+        .text-primary-dark {
+            color: var(--primary-dark);
+        }
+
+        .text-primary-light {
+            color: var(--primary-light);
+        }
+
+        .text-secondary-dark {
+            color: var(--secondary-dark);
+        }
+
+        .text-secondary-light {
+            color: var(--secondary-light);
+        }
+
+        .text-neutral-dark {
+            color: var(--neutral-dark);
+        }
+
+        .text-neutral-light {
+            color: var(--neutral-light);
+        }
 
         /* Responsive image */
         .blog-image {
             width: 100%;
             height: auto;
             object-fit: cover;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
+            /* rounded-lg */
         }
 
         /* Specific styles for the blog post content */
         .blog-content h1 {
-            font-size: 2.5rem; /* text-4xl */
+            font-size: 2.5rem;
+            /* text-4xl */
             margin-bottom: 1rem;
             line-height: 1.2;
         }
+
         .blog-content h2 {
-            font-size: 1.75rem; /* text-2xl */
+            font-size: 1.75rem;
+            /* text-2xl */
             margin-top: 2rem;
             margin-bottom: 1rem;
             color: var(--secondary-dark);
         }
+
         .blog-content h3 {
-            font-size: 1.5rem; /* text-xl */
+            font-size: 1.5rem;
+            /* text-xl */
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
             color: var(--primary-dark);
         }
+
         .blog-content p {
             margin-bottom: 1.25rem;
-            font-size: 1.125rem; /* text-lg */
+            font-size: 1.125rem;
+            /* text-lg */
             color: var(--neutral-dark);
         }
 
         @media (max-width: 768px) {
             .blog-content h1 {
-                font-size: 2rem; /* text-3xl on mobile */
+                font-size: 2rem;
+                /* text-3xl on mobile */
             }
+
             .blog-content h2 {
-                font-size: 1.5rem; /* text-xl on mobile */
+                font-size: 1.5rem;
+                /* text-xl on mobile */
             }
+
             .blog-content h3 {
-                font-size: 1.25rem; /* text-lg on mobile */
+                font-size: 1.25rem;
+                /* text-lg on mobile */
             }
+
             .blog-content p {
-                font-size: 1rem; /* text-base on mobile */
+                font-size: 1rem;
+                /* text-base on mobile */
             }
+        }
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .p-10 { padding: 2.5rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .rounded-lg { border-radius: 0.5rem; }
+        .font-extrabold { font-weight: 800; }
+        .font-semibold { font-weight: 600; }
+        .font-bold { font-weight: 700; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mt-8 { margin-top: 2rem; }
+        .leading-tight { line-height: 1.25; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-5xl { font-size: 3rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-xl { font-size: 1.25rem; }
+        @media (min-width: 640px) {
+            .sm\:p-8 { padding: 2rem; }
+            .sm\:p-10 { padding: 2.5rem; }
+            .sm\:text-5xl { font-size: 3rem; }
+            .sm\:text-3xl { font-size: 1.875rem; }
+            .sm\:text-2xl { font-size: 1.5rem; }
+            .sm\:text-xl { font-size: 1.25rem; }
         }
     </style>
 </head>
 <body class="bg-background-color p-4 sm:p-8">
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+                "vars": {
+                    "gtag_id": "G-V3TNNSX3H4",
+                    "config": {
+                        "G-V3TNNSX3H4": {
+                            "groups": "default",
+                            "allow_ad_personalization_signals": true
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887"></amp-auto-ads>
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
     <div class="container mx-auto bg-neutral-light shadow-lg rounded-lg p-6 sm:p-10 blog-content">
-        <img src='assets/924.webp'>
+        <amp-img src='assets/924.webp' alt="Political events collage" width="800" height="533" layout="responsive" class="blog-image"></amp-img>
         <h1 class="text-primary-dark text-4xl sm:text-5xl font-extrabold mb-6 leading-tight">Today's Political Rollercoaster: Top 5 Headlines You Can't Miss (Unless You Live Under a Rock)</h1>
 
         <h2 class="text-secondary-dark text-2xl sm:text-3xl font-semibold mt-8 mb-4">Introduction: Another Day, Another Dollar… or Another Political Meltdown?</h2>
