@@ -1,0 +1,40 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WebTorrent on AMP</title>
+    <link rel="canonical" href="self.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>
+        /* AMP boilerplate CSS */
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+</head>
+
+<body>
+    <h1>Download files using WebTorrent via amp-script.</h1>
+
+    <form on="submit-success:webtorrent-script.submitWebTorrent(event)">
+        <label for="torrentId">Download from a magnet link: </label>
+        <div id="webtorrent-output">
+            <input name="torrentId" id="torrent-input" placeholder="magnet:"
+                value="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent">
+            <button type="submit">Download</button>
+        </div>
+    </form>
+
+    <h2>Log and Video Output</h2>
+    <div id="log-output"></div>
+
+    <amp-script id="webtorrent-script" script="webtorrent-logic" layout="container" sandbox="allow-forms">
+        <p>WebTorrent client is loading...</p>
+    </amp-script>
+
+    <script id="webtorrent-logic" type="text/plain" target="amp-script" src="/static/js/webtorrent-bundle.js"></script>
+
+</body>
+
+</html>
