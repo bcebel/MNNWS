@@ -98,7 +98,11 @@ text-align: center;
     <div class="feed-item">
       <h2><a href="{{link}}" target="_blank">{{title}}</a></h2>
       <p class="date">{{pubDate}}</p>
-      <p class="description">{{description}}</p>
+      <amp-img class="description">  alt="A view of the sea"
+  src= "{{description.img}}"
+  width="900"
+  height="675"
+  layout="responsive"</amp-img>
     </div>
   </template>
 </amp-list>
