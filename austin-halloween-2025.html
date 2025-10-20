@@ -81,94 +81,136 @@
   </noscript>
   <style amp-custom>
     body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background-color: #f0f2f5;
+      color: #fff;
+      background-color: #0d0d0d;
       margin: 0;
     }
 
     .header {
-      background-color: #ffffff;
+      background-color: #000;
       padding: 1rem 5%;
-      border-bottom: 1px solid #dddfe2;
+      border-bottom: 1px solid #ff4500;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2);
     }
 
     .header h1 {
       font-size: 1.8rem;
-      color: #000;
+      color: #fff;
       margin: 0;
       font-weight: 700;
       letter-spacing: -1px;
     }
 
     .header h1 span {
-      color: #1877f2;
+      color: #ff4500;
     }
 
     .nav a {
       margin: 0 10px;
-      color: #1877f2;
+      color: #ff4500;
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
     }
 
     .nav a:hover {
+      color: #fff;
       text-decoration: underline;
     }
 
     main {
       padding: 2rem 5%;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 20px auto;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: transparent;
     }
 
     article h2 {
-      color: #000;
-      border-bottom: 2px solid #dddfe2;
-      padding-bottom: 10px;
+        color: #ff4500;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px #000;
+        border-bottom: 2px solid #9400d3;
+        padding-bottom: 10px;
+        margin-bottom: 2rem;
     }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 1.5rem;
+    .category-card {
+        background: rgba(45, 45, 45, 0.5);
+        border: 2px solid #32cd32;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+        box-shadow: inset 0 0 10px #000;
     }
 
-    th, td {
-        padding: 8px;
+    .category-card h3 {
+        color: #ff4500;
         text-align: left;
-        border-bottom: 1px solid #ddd;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid #9400d3;
+        padding-bottom: 0.5rem;
+        margin-top: 0;
     }
 
-    th {
-        background-color: #f2f2f2;
+    article p.intro {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
     }
 
-    article p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
     }
 
-    article h3 {
-      color: #333;
+    .event-card {
+        background-color: #1a1a1a;
+        border: 2px solid #ff4500;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    a {
-      color: #1877f2;
-      text-decoration: none;
+    .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(148, 0, 211, 0.6);
+        border-color: #9400d3;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .event-card h4 {
+        color: #ff4500;
+        margin: 0 0 0.5rem 0;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #32cd32;
+        padding-bottom: 0.5rem;
+    }
+
+    .event-card p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    .event-card .label {
+        color: #32cd32;
+        font-weight: bold;
+    }
+
+    .event-card .details {
+        color: #fff;
     }
 
   </style>
@@ -186,7 +228,7 @@
                         "groups": "default" ,
                          "allow_ad_personalization_signals": true
                         }
-                                        }
+                    }
                 }
             }
        </script>
@@ -210,199 +252,175 @@
   <main>
     <article>
       <h2>Austin Halloween & Día de los Muertos Guide 2025</h2>
-      <p>Get ready for a spooktacular season in Austin! Here's your guide to the best Halloween events, haunted houses, and Día de los Muertos celebrations happening in 2025.</p>
+      <p class="intro">Get ready for a spooktacular season in Austin! Here's your guide to the best Halloween events, haunted houses, and Día de los Muertos celebrations happening in 2025.</p>
 
-      <h3>Live Music & Festivals</h3>
-      <table>
-        <tr>
-          <th>Event</th>
-          <th>Location</th>
-          <th>Date & Time</th>
-          <th>Details & Tickets</th>
-        </tr>
-        <tr>
-          <td>Levitation Halloween Freakend feat. Stereolab</td>
-          <td>The Far Out Lounge (8504 S Congress Ave, Austin)</td>
-          <td>Oct. 31, 2025 (5:00 PM – 12:00 AM)</td>
-          <td>The legendary UK band Stereolab headlines the first night of this two-day psychedelic, garage, and experimental rock mini-festival. The Friday lineup also includes Viagra Boys and The Black Lips. The festival is All Ages, but Deluxe tickets offer a 21+ private bar. Tickets are available online for single days or a 2-day pass, starting around $51.</td>
-        </tr>
-        <tr>
-          <td>Levitation Halloween Freakend (Night 2)</td>
-          <td>The Far Out Lounge (8504 S Congress Ave, Austin)</td>
-          <td>Nov. 1, 2025 (4:00 PM – 12:00 AM)</td>
-          <td>The second night features bands like Machine Girl, Clown Core, and Black Moth Super Rainbow.</td>
-        </tr>
-      </table>
+      <div class="category-card">
+        <h3>Live Music & Festivals</h3>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>Levitation Halloween Freakend feat. Stereolab</h4>
+                <p><span class="label">Location:</span> <span class="details">The Far Out Lounge (8504 S Congress Ave, Austin)</span></p>
+                <p><span class="label">Date & Time:</span> <span class="details">Oct. 31, 2025 (5:00 PM – 12:00 AM)</span></p>
+                <p><span class="label">Details:</span> <span class="details">The legendary UK band Stereolab headlines the first night of this two-day psychedelic, garage, and experimental rock mini-festival. The Friday lineup also includes Viagra Boys and The Black Lips. The festival is All Ages, but Deluxe tickets offer a 21+ private bar. Tickets are available online for single days or a 2-day pass, starting around $51.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Levitation Halloween Freakend (Night 2)</h4>
+                <p><span class="label">Location:</span> <span class="details">The Far Out Lounge (8504 S Congress Ave, Austin)</span></p>
+                <p><span class="label">Date & Time:</span> <span class="details">Nov. 1, 2025 (4:00 PM – 12:00 AM)</span></p>
+                <p><span class="label">Details:</span> <span class="details">The second night features bands like Machine Girl, Clown Core, and Black Moth Super Rainbow.</span></p>
+            </div>
+        </div>
+      </div>
 
-      <h3>Haunted Attractions</h3>
-      <table>
-        <tr>
-          <th>Attraction</th>
-          <th>Location</th>
-          <th>Dates</th>
-          <th>Details & Tickets</th>
-        </tr>
-        <tr>
-          <td>House of Torment</td>
-          <td>2632 Ridgepoint Dr, Austin, TX</td>
-          <td>Select nights through Nov. 9, 2025</td>
-          <td>A nationally recognized haunted house featuring multiple brand-new, elaborate attractions each year, including "Blood Stained" and "Cursed: Pharaoh's Tomb." Ticket prices vary, starting around $29.99-$32.99.</td>
-        </tr>
-        <tr>
-          <td>Scream Hollow Wicked Halloween Park</td>
-          <td>149 Split Rail Ln, Smithville, TX</td>
-          <td>Select nights through Nov. 2, 2025</td>
-          <td>Located on 20 acres of dense forest, this park features five distinct haunted attractions, live music, bonfires, and themed bars. Recommended for ages 12 and up. Ticket prices start around $22.95.</td>
-        </tr>
-        <tr>
-          <td>UNDEAD: Haunted House of Dances</td>
-          <td>East Side Performing Arts, 979 Springdale Rd, Austin, TX</td>
-          <td>Starts Oct. 23, 2025 (repeats daily)</td>
-          <td>An adults-only immersive dance show presented by Ventana Ballet that blends performance art with a haunted house experience.</td>
-        </tr>
-      </table>
+      <div class="category-card">
+        <h3>Haunted Attractions</h3>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>House of Torment</h4>
+                <p><span class="label">Location:</span> <span class="details">2632 Ridgepoint Dr, Austin, TX</span></p>
+                <p><span class="label">Dates:</span> <span class="details">Select nights through Nov. 9, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">A nationally recognized haunted house featuring multiple brand-new, elaborate attractions each year, including "Blood Stained" and "Cursed: Pharaoh's Tomb." Ticket prices vary, starting around $29.99-$32.99.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Scream Hollow Wicked Halloween Park</h4>
+                <p><span class="label">Location:</span> <span class="details">149 Split Rail Ln, Smithville, TX</span></p>
+                <p><span class="label">Dates:</span> <span class="details">Select nights through Nov. 2, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">Located on 20 acres of dense forest, this park features five distinct haunted attractions, live music, bonfires, and themed bars. Recommended for ages 12 and up. Ticket prices start around $22.95.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>UNDEAD: Haunted House of Dances</h4>
+                <p><span class="label">Location:</span> <span class="details">East Side Performing Arts, 979 Springdale Rd, Austin, TX</span></p>
+                <p><span class="label">Dates:</span> <span class="details">Starts Oct. 23, 2025 (repeats daily)</span></p>
+                <p><span class="label">Details:</span> <span class="details">An adults-only immersive dance show presented by Ventana Ballet that blends performance art with a haunted house experience.</span></p>
+            </div>
+        </div>
+      </div>
 
-      <h3>Movies & Performances</h3>
-        <table>
-            <tr>
-                <th>Event / Venue</th>
-                <th>Location</th>
-                <th>Dates & Times</th>
-                <th>Details & Cost</th>
-            </tr>
-            <tr>
-                <td>Panic at the Paramount</td>
-                <td>Paramount Theater (713 Congress Ave, Austin)</td>
-                <td>Select dates including Oct. 31, 2025</td>
-                <td>Catch classic Halloween and horror thrillers on the big screen in the historic Paramount Theater. This year's screenings include movies like Halloween and Pet Sematary. Tickets and full schedule available on their website.</td>
-            </tr>
-            <tr>
-                <td>Candlelight: A Haunted Evening of Halloween Classics</td>
-                <td>St. David's Episcopal Church (301 E 8th St, Austin)</td>
-                <td>Oct. 30, 2025</td>
-                <td>The Austin Camerata String Quartet performs eerie classics like Michael Jackson's “Thriller,” the Stranger Things theme, and The Exorcist theme, surrounded by flickering candlelight.</td>
-            </tr>
-            <tr>
-                <td>Halloween Children's Concert</td>
-                <td>The Long Center (701 W Riverside Dr, Austin)</td>
-                <td>Sun, Oct. 26, 2025; 3:00 PM</td>
-                <td>The Austin Symphony Orchestra's annual, all-ages concert is a themed adventure (e.g., pirate lore) with music and costumes. Tickets start around $25.</td>
-            </tr>
-        </table>
+      <div class="category-card">
+        <h3>Movies & Performances</h3>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>Panic at the Paramount</h4>
+                <p><span class="label">Location:</span> <span class="details">Paramount Theater (713 Congress Ave, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Select dates including Oct. 31, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">Catch classic Halloween and horror thrillers on the big screen in the historic Paramount Theater. This year's screenings include movies like Halloween and Pet Sematary. Tickets and full schedule available on their website.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Candlelight: A Haunted Evening of Halloween Classics</h4>
+                <p><span class="label">Location:</span> <span class="details">St. David's Episcopal Church (301 E 8th St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 30, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">The Austin Camerata String Quartet performs eerie classics like Michael Jackson's “Thriller,” the Stranger Things theme, and The Exorcist theme, surrounded by flickering candlelight.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Halloween Children's Concert</h4>
+                <p><span class="label">Location:</span> <span class="details">The Long Center (701 W Riverside Dr, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Sun, Oct. 26, 2025; 3:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">The Austin Symphony Orchestra's annual, all-ages concert is a themed adventure (e.g., pirate lore) with music and costumes. Tickets start around $25.</span></p>
+            </div>
+        </div>
+    </div>
 
+    <div class="category-card">
         <h3>Family-Friendly Fun</h3>
-        <table>
-            <tr>
-                <th>Event / Venue</th>
-                <th>Location</th>
-                <th>Dates & Times</th>
-                <th>Details & Cost</th>
-            </tr>
-            <tr>
-                <td>Pumpkin Nights</td>
-                <td>Pioneer Farms (10621 Pioneer Farms Dr, Austin)</td>
-                <td>Sep. 18 – Oct. 31, 2025</td>
-                <td>Walk through a half-mile trail featuring over 7,500 hand-carved and custom-designed pumpkins in themed "Lands" like Spider Alley. Tickets range from free to $36, and often sell out.</td>
-            </tr>
-            <tr>
-                <td>Disney Tim Burton's 'The Nightmare Before Christmas' Light Trail</td>
-                <td>Lady Bird Johnson Wildflower Center (4801 La Crosse Ave, Austin)</td>
-                <td>Sep. 25 – Nov. 30, 2025</td>
-                <td>An immersive, 8,300+ sq ft light trail experience based on the classic movie. A unique nighttime spectacle.</td>
-            </tr>
-            <tr>
-                <td>Spooktacular at the Bullock Museum</td>
-                <td>Bullock Texas State History Museum (1800 Congress Ave, Austin)</td>
-                <td>Fri, Oct. 24, 2025; 5:00 PM – 8:00 PM</td>
-                <td>A free, family-friendly event featuring slimy, spooky science and STEM activities in partnership with Girlstart, live music, and a scavenger hunt.</td>
-            </tr>
-            <tr>
-                <td>Boo at the Zoo</td>
-                <td>Austin Zoo (10808 Rawhide Trail, Austin)</td>
-                <td>Select nights, including Oct. 24 & 25, 2025; 5:45 PM – 9:00 PM</td>
-                <td>The zoo transforms with festive lights and decorations, including a Haunted Train ride and a Haunted House. Admission is $24.</td>
-            </tr>
-            <tr>
-                <td>Halloween Carnival</td>
-                <td>Neill-Cochran House Museum (2310 San Gabriel St, Austin)</td>
-                <td>Sun, Oct. 26, 2025; 11:00 AM – 3:00 PM</td>
-                <td>A free Halloween carnival featuring a bouncy castle, Trunk-or-Treat, scavenger hunts, and games.</td>
-            </tr>
-            <tr>
-                <td>Sweet Eats Adventure Farm Fall Festival</td>
-                <td>14400 E State Hwy 29, Georgetown, TX</td>
-                <td>Sep. 20 - Nov. 7, 2025</td>
-                <td>A large-scale fall festival with a 4.5-acre corn maze, massive pumpkin patch, petting zoo, pig races, and pony rides. General admission is $14.50-$18.50 online.</td>
-            </tr>
-        </table>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>Pumpkin Nights</h4>
+                <p><span class="label">Location:</span> <span class="details">Pioneer Farms (10621 Pioneer Farms Dr, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Sep. 18 – Oct. 31, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">Walk through a half-mile trail featuring over 7,500 hand-carved and custom-designed pumpkins in themed "Lands" like Spider Alley. Tickets range from free to $36, and often sell out.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Disney Tim Burton's 'The Nightmare Before Christmas' Light Trail</h4>
+                <p><span class="label">Location:</span> <span class="details">Lady Bird Johnson Wildflower Center (4801 La Crosse Ave, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Sep. 25 – Nov. 30, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">An immersive, 8,300+ sq ft light trail experience based on the classic movie. A unique nighttime spectacle.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Spooktacular at the Bullock Museum</h4>
+                <p><span class="label">Location:</span> <span class="details">Bullock Texas State History Museum (1800 Congress Ave, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Fri, Oct. 24, 2025; 5:00 PM – 8:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">A free, family-friendly event featuring slimy, spooky science and STEM activities in partnership with Girlstart, live music, and a scavenger hunt.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Boo at the Zoo</h4>
+                <p><span class="label">Location:</span> <span class="details">Austin Zoo (10808 Rawhide Trail, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Select nights, including Oct. 24 & 25, 2025; 5:45 PM – 9:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">The zoo transforms with festive lights and decorations, including a Haunted Train ride and a Haunted House. Admission is $24.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Halloween Carnival</h4>
+                <p><span class="label">Location:</span> <span class="details">Neill-Cochran House Museum (2310 San Gabriel St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Sun, Oct. 26, 2025; 11:00 AM – 3:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">A free Halloween carnival featuring a bouncy castle, Trunk-or-Treat, scavenger hunts, and games.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Sweet Eats Adventure Farm Fall Festival</h4>
+                <p><span class="label">Location:</span> <span class="details">14400 E State Hwy 29, Georgetown, TX</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Sep. 20 - Nov. 7, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">A large-scale fall festival with a 4.5-acre corn maze, massive pumpkin patch, petting zoo, pig races, and pony rides. General admission is $14.50-$18.50 online.</span></p>
+            </div>
+        </div>
+    </div>
 
+    <div class="category-card">
         <h3>Bars & Pop-Ups</h3>
-        <table>
-            <tr>
-                <th>Event</th>
-                <th>Location</th>
-                <th>Dates & Times</th>
-                <th>Details & Tickets</th>
-            </tr>
-            <tr>
-                <td>Black Lagoon Pop-Up Bar</td>
-                <td>King Bee Lounge (1900 E 12th St, Austin)</td>
-                <td>Oct. 1 – Oct. 31, 2025</td>
-                <td>An international, goth, and horror-inspired pop-up bar returning to Austin for the season. Features themed cocktails like "Book of Blood" and "Night Crawler."</td>
-            </tr>
-            <tr>
-                <td>Twisted Carnival Pop-Up Bar</td>
-                <td>Gibson Street Bar (1109 S Lamar Blvd, Austin)</td>
-                <td>Oct. 1 – Nov. 2, 2025</td>
-                <td>Gibson Street Bar’s annual Halloween pop-up, featuring carnival-inspired decor, sinister DJs, and wickedly twisted cocktails.</td>
-            </tr>
-            <tr>
-                <td>Moe's Tavern Pop-Up</td>
-                <td>Nickel City (1133 E 11th St, Austin)</td>
-                <td>Oct. 9 – Oct. 31, 2025</td>
-                <td>Nickel City transforms into the famous bar from The Simpsons, complete with themed cocktails, decor, and a food truck serving Krusty Burgers.</td>
-            </tr>
-            <tr>
-                <td>Halloween Bar Crawl</td>
-                <td>Starts at Parlor & Yard (601 W 6th St, Austin)</td>
-                <td>Oct. 31, 2025; starting at 4:00 PM</td>
-                <td>A costumed bar crawl where participants move between various bars, enjoying themed cocktails. Tickets start around $5.</td>
-            </tr>
-            <tr>
-                <td>Upstairs at Scareoline</td>
-                <td>Upstairs at Caroline (109 E 7th St, Austin)</td>
-                <td>Oct. 31, 2025; starting at 8:00 PM</td>
-                <td>A Halloween-themed pop-up bar takeover featuring themed cocktails, a live DJ, and a costume contest.</td>
-            </tr>
-        </table>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>Black Lagoon Pop-Up Bar</h4>
+                <p><span class="label">Location:</span> <span class="details">King Bee Lounge (1900 E 12th St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 1 – Oct. 31, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">An international, goth, and horror-inspired pop-up bar returning to Austin for the season. Features themed cocktails like "Book of Blood" and "Night Crawler."</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Twisted Carnival Pop-Up Bar</h4>
+                <p><span class="label">Location:</span> <span class="details">Gibson Street Bar (1109 S Lamar Blvd, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 1 – Nov. 2, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">Gibson Street Bar’s annual Halloween pop-up, featuring carnival-inspired decor, sinister DJs, and wickedly twisted cocktails.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Moe's Tavern Pop-Up</h4>
+                <p><span class="label">Location:</span> <span class="details">Nickel City (1133 E 11th St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 9 – Oct. 31, 2025</span></p>
+                <p><span class="label">Details:</span> <span class="details">Nickel City transforms into the famous bar from The Simpsons, complete with themed cocktails, decor, and a food truck serving Krusty Burgers.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Halloween Bar Crawl</h4>
+                <p><span class="label">Location:</span> <span class="details">Starts at Parlor & Yard (601 W 6th St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 31, 2025; starting at 4:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">A costumed bar crawl where participants move between various bars, enjoying themed cocktails. Tickets start around $5.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Upstairs at Scareoline</h4>
+                <p><span class="label">Location:</span> <span class="details">Upstairs at Caroline (109 E 7th St, Austin)</span></p>
+                <p><span class="label">Dates & Times:</span> <span class="details">Oct. 31, 2025; starting at 8:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">A Halloween-themed pop-up bar takeover featuring themed cocktails, a live DJ, and a costume contest.</span></p>
+            </div>
+        </div>
+    </div>
 
+    <div class="category-card">
         <h3>Día de los Muertos</h3>
-        <table>
-            <tr>
-                <th>Event</th>
-                <th>Location</th>
-                <th>Date & Time</th>
-                <th>Details & Cost</th>
-            </tr>
-            <tr>
-                <td>Viva La Vida Festival & Parade</td>
-                <td>Downtown Austin (Parade starts at 4th St & Congress Ave)</td>
-                <td>Sat, Oct. 25, 2025; 12:00 PM - 6:00 PM</td>
-                <td>Austin's largest and longest-running Día de los Muertos event, presented by the Mexic-Arte Museum. Features a grand procession, hands-on art activities, traditional food, an artisan market, a low-rider exhibition, and live music. The event is free and family-friendly.</td>
-            </tr>
-            <tr>
-                <td>Día de los Muertos at Waterloo Park</td>
-                <td>Moody Amphitheater at Waterloo Park</td>
-                <td>Nov. 1 & 2, 2025; 6:00 PM – 10:00 PM</td>
-                <td>An expanded, two-night celebration featuring a community ofrenda (altar) open to public contributions, music and dance performances, an artisan marketplace, and family-friendly crafts and face-painting in the Familia y Niños zone.</td>
-            </tr>
-            <tr>
-                <td>Dia de los Muertos Celebration</td>
-                <td>Pan American Neighborhood Park (2100 E 3rd St, Austin)</td>
-                <td>Sat, Nov. 1, 2025; starting at 2:00 PM</td>
-                <td>A family-friendly outdoor event hosted by the ESB Mexican American Cultural Center. Features community altars, face painting, sugar skull making, food trucks, and live music.</td>
-            </tr>
-        </table>
+        <div class="card-grid">
+            <div class="event-card">
+                <h4>Viva La Vida Festival & Parade</h4>
+                <p><span class="label">Location:</span> <span class="details">Downtown Austin (Parade starts at 4th St & Congress Ave)</span></p>
+                <p><span class="label">Date & Time:</span> <span class="details">Sat, Oct. 25, 2025; 12:00 PM - 6:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">Austin's largest and longest-running Día de los Muertos event, presented by the Mexic-Arte Museum. Features a grand procession, hands-on art activities, traditional food, an artisan market, a low-rider exhibition, and live music. The event is free and family-friendly.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Día de los Muertos at Waterloo Park</h4>
+                <p><span class="label">Location:</span> <span class="details">Moody Amphitheater at Waterloo Park</span></p>
+                <p><span class="label">Date & Time:</span> <span class="details">Nov. 1 & 2, 2025; 6:00 PM – 10:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">An expanded, two-night celebration featuring a community ofrenda (altar) open to public contributions, music and dance performances, an artisan marketplace, and family-friendly crafts and face-painting in the Familia y Niños zone.</span></p>
+            </div>
+            <div class="event-card">
+                <h4>Dia de los Muertos Celebration</h4>
+                <p><span class="label">Location:</span> <span class="details">Pan American Neighborhood Park (2100 E 3rd St, Austin)</span></p>
+                <p><span class="label">Date & Time:</span> <span class="details">Sat, Nov. 1, 2025; starting at 2:00 PM</span></p>
+                <p><span class="label">Details:</span> <span class="details">A family-friendly outdoor event hosted by the ESB Mexican American Cultural Center. Features community altars, face painting, sugar skull making, food trucks, and live music.</span></p>
+            </div>
+        </div>
+    </div>
     </article>
   </main>
 </body>
