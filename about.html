@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html ⚡ lang="en">
+
 <head>
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -8,7 +9,7 @@
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <link rel="canonical" href="https://minnowspace.com/about.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <title>About Minnow News</title>
+  <title>About Baustin | Minnow News</title>
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -66,7 +67,8 @@
         visibility: visible
       }
     }
-  </style><noscript>
+  </style>
+  <noscript>
     <style amp-boilerplate>
       body {
         -webkit-animation: none;
@@ -79,14 +81,26 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Minnow News",
+    "@type": "Person",
+    "name": "Baustin",
+    "jobTitle": "Music Blogger, Guitarist, Former DJ",
+    "affiliation": [
+      {"@type": "Organization", "name": "Berklee College of Music"},
+      {"@type": "Organization", "name": "WWLR 91.5 FM"},
+      {"@type": "Organization", "name": "HMV Records"},
+      {"@type": "Organization", "name": "The Wall"},
+      {"@type": "Organization", "name": "The Vinyl Community"}
+    ],
+    "description": "Berklee-trained guitarist, former WWLR 'Sketch Pad' DJ, and HMV veteran covering Austin's music scene, from Stereolab gigs to local psych-rock.",
     "url": "https://minnowspace.com/about.html",
-    "logo": "https://minnowspace.com/assets/Minnow-News-Logo.png",
+    "sameAs": [
+      "https://x.com/minnowspace",
+      "https://open.spotify.com/user/123753906"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "contact@minnowspace.com"
+      "email": "zineithzine@gmail.com"
     }
   }
   </script>
@@ -95,84 +109,106 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.6;
       color: #333;
-      background-color: #f0f2f5;
+      background-color: #1a1a1a;
+      /* Darker, music-venue vibe */
       margin: 0;
     }
+
     .header {
-      background-color: #ffffff;
+      background-color: #000;
       padding: 1rem 5%;
-      border-bottom: 1px solid #dddfe2;
+      border-bottom: 1px solid #444;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
+
     .header h1 {
       font-size: 1.8rem;
-      color: #000;
+      color: #fff;
       margin: 0;
       font-weight: 700;
       letter-spacing: -1px;
     }
+
     .header h1 span {
-      color: #1877f2;
+      color: #ff4d4d;
+      /* Vibrant red for music energy */
     }
+
     .nav a {
       margin: 0 10px;
-      color: #1877f2;
+      color: #ff4d4d;
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
     }
+
     .nav a:hover {
       text-decoration: underline;
     }
+
     main {
       padding: 2rem 5%;
       max-width: 800px;
       margin: 20px auto;
-      background-color: #ffffff;
+      background-color: #222;
+      /* Dark, gritty stage feel */
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      color: #fff;
     }
+
+    h1,
     h2 {
-      color: #000;
+      color: #fff;
     }
+
     p {
       font-size: 1.1rem;
     }
+
     a {
-      color: #1877f2;
+      color: #ff4d4d;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #ccc;
+    }
   </style>
 </head>
+
 <body>
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-          {
-          "vars" : {
-              "gtag_id": "G-V3TNNSX3H4",
-              "config": {
-                  "G-V3TNNSX3H4": {
-                        "groups": "default" ,
-                         "allow_ad_personalization_signals": true
-                        }
-                                        }
-                }
+      {
+        "vars": {
+          "gtag_id": "G-V3TNNSX3H4",
+          "config": {
+            "G-V3TNNSX3H4": {
+              "groups": "default",
+              "allow_ad_personalization_signals": true
             }
-       </script>
+          }
+        }
+      }
+    </script>
   </amp-analytics>
-
-  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-  </amp-auto-ads>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887"></amp-auto-ads>
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
   <header class="header">
-    <a href="index.html" style="text-decoration: none;"><h1>Minnow<span>News</span></h1></a>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -181,21 +217,41 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h2>About Minnow News</h2>
-      <p>
-        Welcome to Minnow News, your number one source for the latest trending stories and viral headlines. We're dedicated to giving you the very best of what's happening in the world, with a focus on dependability, customer service and uniqueness.
-      </p>
-      <p>
-        Founded in 2024, Minnow News has come a long way from its beginnings. When we first started out, our passion for providing top-tier, easily digestible news drove us to do intense research, and gave us the impetus to turn hard work and inspiration into to a booming online news source. We now serve readers all over the world, and are thrilled to be a part of the quirky, eco-friendly, fair trade wing of the news industry.
-      </p>
-      <p>
-        We hope you enjoy our articles as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to <a href="contact.html">contact us</a>.
-      </p>
-    </section>
+    <article>
+      <h1>About Baustin</h1>
+      <p>I’m <strong>Baustin</strong>, a guitarist, ex-DJ, and music obsessive who traded Vermont’s snowy dives for
+        Austin’s sweaty stages—New England grit meets ATX weird, hence the name (a nod to my Boston-area roots). My
+        life’s a genre-hopping mixtape: Shredding metal with <strong>Invein</strong>, grinding grunge with <strong>Full
+          Frontal Nudity</strong>, rocking <strong>Exit 13</strong>, and jangling 60s Beatles vibes with <strong>The
+          Anomies</strong>. I’ve belted “Sweet Caroline” at karaoke, worked musical theater stages, and chased gigs that
+        defined me—from Phish’s <em>Lemonwheel</em> bliss to Pearl Jam at Boston Garden the week Kurt Cobain died.</p>
+      <p>I honed my guitar chops at <strong>Berklee’s Five-Week Summer Performance Program</strong>, a metalhead lost
+        among jazz cats, dodging theory while my Chicago blues sax roommate blasted <em>All Blues</em> (I was Team
+        Breeders’ <em>Cannonball</em>). Those weeks taught me to find soul in any riff, now fueling my takes on Austin’s
+        scene—Mohawk’s psych-rock to Antone’s blues.</p>
+      <p>At <strong>WWLR 91.5 FM “The Impulse”</strong> (Lyndon State College, Vermont), I spent four years spinning
+        chaos: 6am Sunday jazz slots (no parties, just Medeski Martin & Wood, Diana Krall, United Future Organization
+        vinyl) to my freeform <em>Sketch Pad</em> show with Faith No More, Orbital, and Smashing Pumpkins. Before that,
+        I slung CDs at <strong>HMV Records</strong> and <strong>The Wall</strong> in Natick Mall during <em>OK
+          Computer</em>’s drop, swimming in promo swag like <em>Dots and Loops</em> and Dido mugs (pre-fame flops). My
+        CD collection? A sprawl from Pavement promos to Stereolab’s 18-minute <em>Jenny Ondioline</em>.</p>
+      <p>My gig log’s a novel: Survived the Green Day riot, caught Nine Inch Nails with Marilyn Manson at Boston
+        Garden’s last days, banged my head at Metallica/Guns N’ Roses/Faith No More, and vibed at Elton John/Billy Joel
+        and Lady Gaga. Stereolab’s Halloween 2025 show in Austin? A full-circle moment, their <em>Electrons and
+          Particles</em> album (heard first on a London flight) channeling <em>Stranger Things</em> synths and
+        Khruangbin’s Texas groove—a 4.0 era of joy post-Mary Hansen’s loss. Oh, and learning Schema.org for this blog?
+        Blew my mind when I realized Hansen’s side project was called <em>Schema</em>—cosmic, right?</p>
+      <p>Now, <strong>Minnow News</strong> is my stage to cover Austin’s sonic pulse: Reviews of Stubb’s shredders, SXSW
+        spotlights, and gig tales from a fan who’s seen it all. Follow me on <a href="https://x.com/[YourHandle]">X</a>
+        for live takes, check my <a href="[Your Spotify/SoundCloud Link]">Spotify “Baustin’s ATX Picks”</a> for
+        Stereolab and local psych, or hit <a href="mailto:contact@minnowspace.com">contact@minnowspace.com</a> with band
+        tips. Let’s keep Austin loud and weird.</p>
+      <p><em>—Baustin, your metal-to-jazz, gig-to-radio storyteller.</em></p>
+    </article>
   </main>
   <footer>
-    <p>&copy; 2024 Minnow News. All Rights Reserved.</p>
+    <p>&copy; 2025 Minnow News. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
