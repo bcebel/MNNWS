@@ -7,7 +7,10 @@
   <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
-
+  <script async custom-element="amp-fx-collection"
+    src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+  <!-- Optional: Uncomment for flying carpet effect (e.g., floating banner) -->
+  <!-- <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script> -->
   <meta name="amp-consent-blocking" content="amp-ad">
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <meta name="description"
@@ -17,6 +20,8 @@
   <link rel="preload" href="assets/Piemaster-Gibson-Flying-V.webp" as="image">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Minnow News - Trending Stories and Viral Headlines</title>
+
+  <!-- AMP Boilerplate -->
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -84,6 +89,8 @@
       }
     </style>
   </noscript>
+
+  <!-- JSON-LD for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -97,211 +104,180 @@
     }
   }
   </script>
+
+  <!-- Custom CSS -->
   <style amp-custom>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=EB+Garamond&display=swap');
+
     :root {
-      --background: #000000;
-      --card-background: #ffffff;
-      --text-color: #333;
-      --heading-color: #000;
-      --accent-color: #0053B3;
-      --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      --border-radius: 8px;
+      --background: #3d656499;
+      /* Aged paper off-white */
+      --card-background: #f5f5f1;
+      /* Soft gray paper */
+      --text-color: #333333;
+      /* Charcoal */
+      --heading-color: #2b2b2b;
+      /* Darker charcoal */
+      --accent-color: #6B2D2D;
+      /* Muted burgundy */
+      --hover-color: #4A5E4A;
+      /* Muted olive green */
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      --border-radius: 4px;
     }
 
     body {
       background-color: var(--background);
-
+      background-image: url('https://your-cdn.com/paper-texture.jpg');
+      /* Replace with your hosted paper texture */
+      background-size: cover;
+      background-attachment: fixed;
       color: var(--text-color);
-      /* FIXED: Native/System Font Stack for zero CLS */
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      line-height: 1.5;
+      font-family: 'EB Garamond', serif;
+      line-height: 1.6;
       margin: 0;
     }
 
     .header {
       background-color: var(--card-background);
-      padding: 1rem 5%;
-      border-bottom: 1px solid #dddfe2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-image: url('https://your-cdn.com/paper-texture.jpg');
+      /* Replace with your hosted paper texture */
+      padding: 1.5rem 5%;
+      border-bottom: 2px solid #ccc;
       box-shadow: var(--shadow);
+      position: relative;
+      text-align: center;
     }
 
-    .nav a {
-      margin: 0 10px;
-      color: var(--accent-color);
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
+    .header amp-img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      filter: opacity(0.3);
     }
 
     .header h1 {
-      font-size: 1.8rem;
+      font-family: 'Special Elite', monospace;
+      font-size: 2.2rem;
       color: var(--heading-color);
       margin: 0;
-      font-weight: 700;
-      letter-spacing: -1px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .header h1 span {
       color: var(--accent-color);
     }
 
+    .nav a {
+      margin: 0 15px;
+      color: var(--accent-color);
+      font-family: 'Special Elite', monospace;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .nav a:hover {
+      color: var(--hover-color);
+      text-decoration: underline;
+    }
+
     main {
       padding: 2rem 5%;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
     .articles-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+      column-count: 3;
+      column-gap: 1.5rem;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      .articles-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .articles-grid {
+        column-count: 1;
+      }
     }
 
     .article-card {
-      display: flex;
-      flex-direction: column;
+      display: inline-block;
+      width: 100%;
       background-color: var(--card-background);
+      background-image: url('https://your-cdn.com/paper-texture.jpg');
+      /* Replace with your hosted paper texture */
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
       text-decoration: none;
       color: var(--text-color);
-      transition: transform 0.2s ease-in-out;
-      animation: popIn 0.4s ease-out forwards;
-      opacity: 0;
-    }
-
-    .article-card:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-
-    .article-card:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .article-card:nth-child(3) {
-      animation-delay: 0.3s;
-    }
-
-    .article-card:nth-child(4) {
-      animation-delay: 0.4s;
-    }
-
-    .article-card:nth-child(5) {
-      animation-delay: 0.5s;
+      transition: transform 0.3s ease-in-out;
+      break-inside: avoid;
     }
 
     .article-card:hover {
-      transform: scale(1.03);
+      transform: translateY(-5px);
     }
 
     .article-card a {
       text-decoration: none;
       color: inherit;
+      display: block;
+    }
+
+    .article-card.featured {
+      column-span: all;
+      margin-bottom: 2rem;
+    }
+
+    .article-card.featured .card-content h3 {
+      font-size: 1.8rem;
+    }
+
+    .article-card.featured .card-content p {
+      font-size: 1.1rem;
     }
 
     .card-image amp-img {
       border-radius: var(--border-radius) var(--border-radius) 0 0;
+      filter: sepia(20%) brightness(90%);
+      filter:grayscale(80%);
+      object-fit: cover;
+      width: 100%;
+
     }
 
     .card-content {
-      padding: 1rem;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
     }
 
     .card-content h3 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.15rem;
+      font-family: 'Special Elite', monospace;
+      margin: 0 0 0.75rem 0;
+      font-size: 1.2rem;
       color: var(--heading-color);
+      line-height: 1.3;
     }
 
     .card-content p {
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      opacity: 0.85;
       flex-grow: 1;
-      opacity: 0.9;
-    }
-
-    .featured {
-      grid-column: 1 / -1;
-    }
-
-    .featured .card-content h3 {
-      font-size: 1.75rem;
-    }
-
-    .featured .card-content p {
-      font-size: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .articles-grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-          "featured featured article2 article3"
-          "featured featured article4 article5";
-      }
-
-      .article-card:nth-child(1) {
-        grid-area: featured;
-      }
-
-      .article-card:nth-child(2) {
-        grid-area: article2;
-      }
-
-      .article-card:nth-child(3) {
-        grid-area: article3;
-      }
-
-      .article-card:nth-child(4) {
-        grid-area: article4;
-      }
-
-      .article-card:nth-child(5) {
-        grid-area: article5;
-      }
-
-      .featured {
-        flex-direction: column;
-      }
-
-      .featured .card-image {}
-
-      .featured .card-image amp-img {
-        border-radius: var(--border-radius) var(--border-radius) 0 0;
-        object-fit: cover;
-      }
-    }
-
-    @media (min-width: 500px) and (max-width: 767px) {
-      .articles-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .featured {
-        grid-column: 1 / -1;
-      }
-    }
-
-    @keyframes popIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
     }
 
     .footer {
@@ -309,7 +285,10 @@
       padding: 2rem 5%;
       margin-top: 2rem;
       background-color: var(--card-background);
-      border-top: 1px solid #dddfe2;
+      background-image: url('https://your-cdn.com/paper-texture.jpg');
+      /* Replace with your hosted paper texture */
+      border-top: 2px solid #ccc;
+      font-family: 'EB Garamond', serif;
       font-size: 0.9rem;
     }
 
@@ -321,8 +300,8 @@
     }
 
     .footer a:hover {
-      text-decoration: none;
-      color: #003366;
+      color: var(--hover-color);
+      border-bottom-color: var(--hover-color);
     }
 
     .footer p {
@@ -333,311 +312,384 @@
 </head>
 
 <body>
+  <!-- Consent and Analytics -->
   <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
     <script type="application/json">
-          {
-            
-            "postPromptUI": "postPromptUI",
-            "clientConfig": {
-              "cdid": "539b9d9f016c1",
-              "params": ""
-            }
-          }
-        </script>
+      {
+        "postPromptUI": "postPromptUI",
+        "clientConfig": {
+          "cdid": "539b9d9f016c1",
+          "params": ""
+        }
+      }
+    </script>
     <div id="postPromptUI">
       <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
     </div>
   </amp-consent>
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-          {
-          "vars" : {
-              "gtag_id": "G-V3TNNSX3H4",
-              "config": {
-                  "G-V3TNNSX3H4": {
-                        "groups": "default" ,
-                         "allow_ad_personalization_signals": true
-                        }
-                                        }
-                }
+      {
+        "vars": {
+          "gtag_id": "G-V3TNNSX3H4",
+          "config": {
+            "G-V3TNNSX3H4": {
+              "groups": "default",
+              "allow_ad_personalization_signals": true
             }
-       </script>
+          }
+        }
+      }
+    </script>
   </amp-analytics>
-
-  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887">
-  </amp-auto-ads>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3239465181490887"></amp-auto-ads>
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5VTXDGGN&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
+
+  <!-- Header with Parallax -->
   <header class="header">
+    <amp-img src="https://your-cdn.com/header-bg.jpg" layout="fixed-height" height="100" alt="Header Background"
+      amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
     <a href="index.html" style="text-decoration: none;">
       <h1>Minnow<span>News</span></h1>
     </a>
-
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy</a>
+    </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
     <div class="articles-grid">
-      <article class="article-card featured"><a href="sxsw-2026-article.html">
-        <div class="card-image">
-          <amp-img src="assets/bills.jpg" width="497" height="497" layout="responsive"
-            alt="SXSW 2026" data-hero></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>SXSW 2026: The Good, The Bad, and The \$1,295 Question</h3>
-          <p>As SXSW prepares for its 40th-anniversary event in March 2026, the initial speaker lineup has been revealed, promising a potent mix of technology, culture, and social commentary.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="stereolab-halloween-show.html">
-        <div class="card-image">
-          <amp-img src="assets/halloween.jpg" width="600" height="400" layout="responsive" alt="Stereolab Halloween Show"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Avant-Pop Event: Why Stereolab’s Sold-Out Halloween Show is a Landmark for Austin</h3>
-          <p>For a city that prides itself on being the Live Music Capital of the World, Austin’s bar for a truly "big deal" concert is set notoriously high.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="milano-cortina-2026-article.html">
-        <div class="card-image">
-          <amp-img src="assets/pizza.png" width="600" height="400" layout="responsive" alt="Milano Cortina 2026"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Milano Cortina 2026: A Capitol Affair!</h3>
-          <p>Less dreary philosophy, more dazzling spectacle, wrapped up in the fabulous, slightly unhinged glamour of the Capitol!</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="austin-halloween-2025.html">
-        <div class="card-image">
-          <amp-img src="assets/fallveg.webp" width="600" height="400" layout="responsive" alt="Austin Halloween"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin Halloween & Día de los Muertos Guide 2025</h3>
-          <p>Your guide to the best Halloween events, haunted houses, and Día de los Muertos celebrations happening in Austin for 2025.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="antimusicfestival.html">
-        <div class="card-image">
-          <amp-img src="assets/Piemaster-Gibson-Flying-V.webp" width="497" height="497" layout="responsive"
-            alt="The Cooler Than Me Paradox" data-hero></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Cooler Than Me Paradox: How and Why Kneecap Beat SXSW</h3>
-          <p>The annual pilgrimage to Austin, Texas, is supposed to be a collision of culture, film, and music—the legendary proving ground for independent art. Instead, for many, it’s become a seven-day anxiety attack set to the tune of Mike Posner's "Cooler Than Me."</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="taylor-swift-necklace-controversy-article.html">
-        <div class="card-image">
-          <amp-img src="assets/IMG_1437.png" width="600" height="400" layout="responsive" alt="Taylor Swift Necklace"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Double-Edged Bolt: Deconstructing the Taylor Swift Imagery Controversy</h3>
-          <p>The release of Taylor Swift's latest album has ignited an unexpected and highly inflammatory controversy centering on visual symbolism.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="taylor-swift-article.html">
-        <div class="card-image">
-          <amp-img src="assets/ts.webp" width="600" height="400" layout="responsive" alt="Taylor Swift on stage"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Billionaire's Ballad: Does Taylor Swift's New Album Hit the Right Note?</h3>
-          <p>As the glittering pop spectacle unfolds, a dissonant hum permeates the air, a critical murmur rising above the roar of adoration.</p>
-        </div>
-      </a></article>
-                  <article class="article-card"><a href="924.html">
-        <div class="card-image">
-          <amp-img src="assets/924.webp" width="885" height="885" layout="responsive"
-            alt="Austin Traffic"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>News of the World</h3>
-          <p>for 9/24/2025.</p>
-        </div>
-      </a></article>
-            <article class="article-card"><a href="traffic.html">
-        <div class="card-image">
-          <amp-img src="assets/traffic.png" width="885" height="885" layout="responsive"
-            alt="Austin Traffic"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin Traffic & Parking</h3>
-          <p>Thoughts on the madness.</p>
-        </div>
-      </a></article>
-            <article class="article-card"><a href="brunch_parking.html">
-        <div class="card-image">
-          <amp-img src="assets/brunch.png" width="885" height="885" layout="responsive"
-            alt="Brunch & Parking Austin"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Brunch & Parking in ATX</h3>
-          <p>If you're going to battle Saturday AM traffic for breakfast you should at least get decent parking.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="eater.html">
-        <div class="card-image">
-          <amp-img src="assets/pexels-ash-craig-122861-376464.jpg" width="885" height="540" layout="responsive"
-            alt="Food Feed"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin Eater News Feed</h3>
-          <p>The latest news and updates from Austin's food scene, via Eater.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="austin-music.html">
-        <div class="card-image">
-          <amp-img src="assets/austin-music.webp" width="885" height="540" layout="responsive"
-            alt="Austin Music Feed"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin Music News Feed</h3>
-          <p>The latest music news and updates from the Austin Chronicle.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="park.html">
-        <div class="card-image">
-          <amp-img src="assets/parks.webp" width="2000" height="1333" layout="responsive"
-            alt="Park with dogs and people"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin Parks</h3>
-          <p>Your daily source for music news and happenings from Austin Parks.org.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="downton.html">
-        <div class="card-image">
-          <amp-img src="assets/Highclere_Castle.webp" width="1015" height="764" layout="responsive"
-            alt="Highclere Castle" data-hero></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Downton Abbey The Grand Finale</h3>
-          <p>I won't spill all of the tea.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="nyfw-article.html">
-        <div class="card-image">
-          <amp-img src="assets/Gemini_Generated_Image_arp917arp917arp9.webp" width="895" height="895"
-            layout="responsive" alt="New York Fashion Week" data-hero></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Future of Fashion: The Biggest Trends from NYFW Spring/Summer 2026</h3>
-          <p>A look at the top moments and trends from the runways at New York Fashion Week.</p>
-        </div>
-      </a></article>
-
-      <article class="article-card"><a href="coachella-article.html">
-        <div class="card-image">
-          <amp-img src="assets/Justin_Bieber_in_2015 (1).webp" width="626" height="895" layout="responsive"
-            alt="Coachella 2026"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Coachella 2026 Lineup Announced!</h3>
-          <p>The full lineup for the 2026 Coachella Valley Music and Arts Festival is here. Check out the headliners and
-            more.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="robert-redford-article.html">
-        <div class="card-image">
-          <amp-img src="assets/Robert_Redford_1973-2.webp" width="897" height="895" layout="responsive"
-            alt="Robert Redford"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Robert Redford: A Hollywood Legend</h3>
-          <p>A look at the life and career of the iconic actor and director.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="ben-and-jerrys-article.html">
-        <div class="card-image">
-          <amp-img src="assets/Ben_&_Jerry's_Cookie_Dough_Ice_Cream_465_ml,_May_2025.webp" width="1127" height="844"
-            layout="responsive" alt="Ben & Jerry's"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Ben & Jerry's Co-Founder Quits</h3>
-          <p>Jerry Greenfield leaves the iconic ice cream company, citing conflict with parent company Unilever over its
-            social mission.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="biochar-article.html">
-        <div class="card-image">
-          <amp-img src="assets/biochar.webp" width="600" height="400" layout="responsive" alt="Biochar"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Biochar: The Black Gold for Your Garden</h3>
-          <p>An in-depth look at how this ancient soil amendment can revolutionize modern farming and help fight climate
-            change.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="zen-swing-article.html">
-        <div class="card-image">
-          <amp-img src="assets/zen2.webp" width="891" height="895" layout="responsive" alt="Zen Swing"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>The Art of the Zen Swing</h3>
-          <p>Finding focus and flow in simple movements.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="gamestop-article.html">
-        <div class="card-image">
-          <amp-img src="assets/gamestop_store.webp" width="1127" height="751" layout="responsive"
-            alt="Gamestop"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>GameStop Saga</h3>
-          <p>When Reddit traders took on Wall Street.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="banksy-article.html">
-        <div class="card-image">
-          <amp-img src="assets/banksy1.webp" width="1047" height="895" layout="responsive" alt="Banksy"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Who is Banksy?</h3>
-          <p>Unmasking the world's most elusive artist.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="fall-article.html">
-        <div class="card-image">
-          <amp-img src="assets/fallveg.webp" width="1127" height="805" layout="responsive" alt="Fall"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Autumn's Embrace</h3>
-          <p>The changing colors and cozy comforts of fall.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="austin_articles.html">
-        <div class="card-image">
-          <amp-img src="assets/austin.webp" width="1127" height="805" layout="responsive" alt="Austin"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Stories from Austin</h3>
-          <p>A collection of articles about the city of Austin.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="google-cse.html">
-        <div class="card-content">
-          <h3>Austin Texas Events Search</h3>
-          <p>Find concerts, festivals, and more in Austin, TX.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="job-search.html">
-        <div class="card-content">
-          <h3>Job Search</h3>
-          <p>Find your dream job.</p>
-        </div>
-      </a></article>
-      <article class="article-card"><a href="AustinTXSearch.html">
-        <div class="card-image">
-          <amp-img src="assets/search.jpg" width="600" height="400" layout="responsive" alt="Austin TX Search"></amp-img>
-        </div>
-        <div class="card-content">
-          <h3>Austin TX Search</h3>
-          <p>Search for meetups, real estate, jobs, and music in Austin, TX.</p>
-        </div>
-      </a></article>
-
+      <article class="article-card featured" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="sxsw-2026-article.html">
+          <div class="card-image">
+            <amp-img src="assets/bills.jpg" width="497" height="497" layout="responsive" alt="SXSW 2026"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>SXSW 2026: The Good, The Bad, and The $1,295 Question</h3>
+            <p>As SXSW prepares for its 40th-anniversary event in March 2026, the initial speaker lineup has been
+              revealed, promising a potent mix of technology, culture, and social commentary.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="stereolab-halloween-show.html">
+          <div class="card-image">
+            <amp-img src="assets/halloween.jpg" width="400" height="400" layout="responsive"
+              alt="Stereolab Halloween Show"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Avant-Pop Event: Why Stereolab’s Sold-Out Halloween Show is a Landmark for Austin</h3>
+            <p>For a city that prides itself on being the Live Music Capital of the World, Austin’s bar for a truly "big
+              deal" concert is set notoriously high.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="milano-cortina-2026-article.html">
+          <div class="card-image">
+            <amp-img src="assets/pizza.png" width="400" height="400" layout="responsive"
+              alt="Milano Cortina 2026"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Milano Cortina 2026: A Capitol Affair!</h3>
+            <p>Less dreary philosophy, more dazzling spectacle, wrapped up in the fabulous, slightly unhinged glamour of
+              the Capitol!</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="austin-halloween-2025.html">
+          <div class="card-image">
+            <amp-img src="assets/fallveg.webp" width="600" height="400" layout="responsive"
+              alt="Austin Halloween"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin Halloween & Día de los Muertos Guide 2025</h3>
+            <p>Your guide to the best Halloween events, haunted houses, and Día de los Muertos celebrations happening in
+              Austin for 2025.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="antimusicfestival.html">
+          <div class="card-image">
+            <amp-img src="assets/Piemaster-Gibson-Flying-V.webp" width="497" height="497" layout="responsive"
+              alt="The Cooler Than Me Paradox"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Cooler Than Me Paradox: How and Why Kneecap Beat SXSW</h3>
+            <p>The annual pilgrimage to Austin, Texas, is supposed to be a collision of culture, film, and music—the
+              legendary proving ground for independent art.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="taylor-swift-necklace-controversy-article.html">
+          <div class="card-image">
+            <amp-img src="assets/IMG_1437.png" width="600" height="400" layout="responsive"
+              alt="Taylor Swift Necklace"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Double-Edged Bolt: Deconstructing the Taylor Swift Imagery Controversy</h3>
+            <p>The release of Taylor Swift's latest album has ignited an unexpected and highly inflammatory controversy
+              centering on visual symbolism.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="taylor-swift-article.html">
+          <div class="card-image">
+            <amp-img src="assets/ts copy.jpg" width="600" height="600" layout="responsive"
+              alt="Taylor Swift on stage"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Billionaire's Ballad: Does Taylor Swift's New Album Hit the Right Note?</h3>
+            <p>As the glittering pop spectacle unfolds, a dissonant hum permeates the air, a critical murmur rising
+              above the roar of adoration.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="924.html">
+          <div class="card-image">
+            <amp-img src="assets/924.webp" width="885" height="885" layout="responsive" alt="Austin Traffic"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>News of the World</h3>
+            <p>for 9/24/2025.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="traffic.html">
+          <div class="card-image">
+            <amp-img src="assets/traffic.png" width="885" height="885" layout="responsive"
+              alt="Austin Traffic"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin Traffic & Parking</h3>
+            <p>Thoughts on the madness.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="brunch_parking.html">
+          <div class="card-image">
+            <amp-img src="assets/brunch.png" width="885" height="885" layout="responsive"
+              alt="Brunch & Parking Austin"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Brunch & Parking in ATX</h3>
+            <p>If you're going to battle Saturday AM traffic for breakfast you should at least get decent parking.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="eater.html">
+          <div class="card-image">
+            <amp-img src="assets/pexels-ash-craig-122861-376464.jpg" width="885" height="540" layout="responsive"
+              alt="Food Feed"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin Eater News Feed</h3>
+            <p>The latest news and updates from Austin's food scene, via Eater.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="austin-music.html">
+          <div class="card-image">
+            <amp-img src="assets/austinrecords3.webp" width="885" height="540" layout="responsive"
+              alt="Austin Music Feed"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin Music News Feed</h3>
+            <p>The latest music news and updates from the Austin Chronicle.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="park.html">
+          <div class="card-image">
+            <amp-img src="assets/parks.webp" width="2000" height="1333" layout="responsive"
+              alt="Park with dogs and people"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin Parks</h3>
+            <p>Your daily source for music news and happenings from Austin Parks.org.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="downton.html">
+          <div class="card-image">
+            <amp-img src="assets/Highclere_Castle.webp" width="1015" height="764" layout="responsive"
+              alt="Highclere Castle"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Downton Abbey The Grand Finale</h3>
+            <p>I won't spill all of the tea.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="nyfw-article.html">
+          <div class="card-image">
+            <amp-img src="assets/Gemini_Generated_Image_arp917arp917arp9.webp" width="895" height="895"
+              layout="responsive" alt="New York Fashion Week"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Future of Fashion: The Biggest Trends from NYFW Spring/Summer 2026</h3>
+            <p>A look at the top moments and trends from the runways at New York Fashion Week.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="coachella-article.html">
+          <div class="card-image">
+            <amp-img src="assets/Justin_Bieber_in_2015 (1).webp" width="626" height="895" layout="responsive"
+              alt="Coachella 2026"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Coachella 2026 Lineup Announced!</h3>
+            <p>The full lineup for the 2026 Coachella Valley Music and Arts Festival is here. Check out the headliners
+              and more.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="robert-redford-article.html">
+          <div class="card-image">
+            <amp-img src="assets/Robert_Redford_1973-2.webp" width="897" height="895" layout="responsive"
+              alt="Robert Redford"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Robert Redford: A Hollywood Legend</h3>
+            <p>A look at the life and career of the iconic actor and director.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="ben-and-jerrys-article.html">
+          <div class="card-image">
+            <amp-img src="assets/Ben_&_Jerry's_Cookie_Dough_Ice_Cream_465_ml,_May_2025.webp" width="1127" height="844"
+              layout="responsive" alt="Ben & Jerry's"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Ben & Jerry's Co-Founder Quits</h3>
+            <p>Jerry Greenfield leaves the iconic ice cream company, citing conflict with parent company Unilever over
+              its social mission.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="biochar-article.html">
+          <div class="card-image">
+            <amp-img src="assets/biochar.webp" width="600" height="400" layout="responsive" alt="Biochar"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Biochar: The Black Gold for Your Garden</h3>
+            <p>An in-depth look at how this ancient soil amendment can revolutionize modern farming and help fight
+              climate change.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="zen-swing-article.html">
+          <div class="card-image">
+            <amp-img src="assets/zen2.webp" width="891" height="895" layout="responsive" alt="Zen Swing"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>The Art of the Zen Swing</h3>
+            <p>Finding focus and flow in simple movements.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="gamestop-article.html">
+          <div class="card-image">
+            <amp-img src="assets/gamestop_store.webp" width="1127" height="751" layout="responsive"
+              alt="Gamestop"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>GameStop Saga</h3>
+            <p>When Reddit traders took on Wall Street.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="banksy-article.html">
+          <div class="card-image">
+            <amp-img src="assets/banksy1.webp" width="1047" height="895" layout="responsive" alt="Banksy"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Who is Banksy?</h3>
+            <p>Unmasking the world's most elusive artist.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="fall-article.html">
+          <div class="card-image">
+            <amp-img src="assets/fallveg.webp" width="1127" height="805" layout="responsive" alt="Fall"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Autumn's Embrace</h3>
+            <p>The changing colors and cozy comforts of fall.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="austin_articles.html">
+          <div class="card-image">
+            <amp-img src="assets/austin.webp" width="1127" height="805" layout="responsive" alt="Austin"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Stories from Austin</h3>
+            <p>A collection of articles about the city of Austin.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="google-cse.html">
+          <div class="card-content">
+            <h3>Austin Texas Events Search</h3>
+            <p>Find concerts, festivals, and more in Austin, TX.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="job-search.html">
+          <div class="card-content">
+            <h3>Job Search</h3>
+            <p>Find your dream job.</p>
+          </div>
+        </a>
+      </article>
+      <article class="article-card" amp-fx="fade-in fly-in-bottom" data-fly-in-distance="20">
+        <a href="AustinTXSearch.html">
+          <div class="card-image">
+            <amp-img src="assets/search.jpg" width="600" height="600" layout="responsive"
+              alt="Austin TX Search"></amp-img>
+          </div>
+          <div class="card-content">
+            <h3>Austin TX Search</h3>
+            <p>Search for meetups, real estate, jobs, and music in Austin, TX.</p>
+          </div>
+        </a>
+      </article>
     </div>
   </main>
+
+  <!-- Footer -->
   <footer class="footer">
     <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy
       Policy</a>
-    <p>&copy; 2024 Minnow News. All Rights Reserved.</p>
+    <p>&copy; 2025 Minnow News. All Rights Reserved.</p>
   </footer>
 </body>
 
