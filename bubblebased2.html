@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-tiktok" src="https://cdn.ampproject.org/v0/amp-tiktok-0.1.js"></script>
+
+  <meta name="description"
+    content="A deeper look at BubbleBased: decentralized livestreaming, P2P galleries, WebTorrent caching, and why context-based privacy is a different kind of social network.">
+  <meta name="author" content="MINNOWSPACE">
+  <link rel="canonical" href="https://minnowspace.com/bubblebased-deep-dive.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Inside BubbleBased: Decentralized Livestreams, P2P Galleries, and the Future of Privacy-First Social</title>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Inside BubbleBased: Decentralized Livestreams, P2P Galleries, and the Future of Privacy-First Social",
+    "image": ["https://minnowspace.com/assets/IMG_3572.jpeg"],
+    "datePublished": "2026-09-13T10:00:00Z",
+    "dateModified": "2026-09-13T10:00:00Z",
+    "author": [{
+      "@type": "Person",
+      "name": "MINNOWSPACE",
+      "url": "https://minnowspace.com/about.html"
+    }],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Minnow News",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://minnowspace.com/assets/Minnow-News-Logo.png"
+      }
+    },
+    "description": "A deeper look at BubbleBased: decentralized livestreaming, P2P galleries, WebTorrent caching, and why context-based privacy is a different kind of social network."
+  }
+  </script>
+
+  <style amp-custom>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f2f5;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #ffffff;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #dddfe2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      color: #000;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .header h1 span {
+      color: #1877f2;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    article h2 {
+      color: #000;
+      border-bottom: 2px solid #dddfe2;
+      padding-bottom: 10px;
+    }
+
+    article p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    article h3 {
+      color: #333;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: block;
+      background-color: #FF0081;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    .pull-quote {
+      border-left: 4px solid #FF0081;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #555;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+        "vars": {
+          "gtag_id": "G-V3TNNSX3H4",
+          "config": { "G-V3TNNSX3H4": { "groups": "default" } }
+        }
+      }
+    </script>
+  </amp-analytics>
+
+  <header class="header">
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Inside BubbleBased: Decentralized Livestreams, P2P Galleries, and the Quiet Revolution of Context-Based
+          Social</h2>
+        <p style="color:#666; font-size:0.95rem;">Follow-up to <a href="bubblebased.html">our first look at
+            BubbleBased</a>.</p>
+      </header>
+
+      <p>When we first wrote about <a href="https://bubblebased.com" target="_blank" rel="noopener">BubbleBased</a>, the
+        pitch was simple: a social network where your "Bubbles" (private neighborhoods) are the unit of privacy, and
+        WebTorrent is the engine under the hood. That article covered the <em>why</em>. This one is about the
+        <em>how</em> — the parts of the app that make it different in practice, not just on the homepage.</p>
+
+      <h3>🌊 Livestreams Without a Media Giant</h3>
+      <p>Most livestreaming platforms route every second of video through a corporate CDN. BubbleBased does something
+        stranger: it treats a livestream like a torrent. Video is chopped into small chunks, each chunk becomes its own
+        little P2P swarm, and viewers help carry the load by seeding the pieces they've already downloaded. The server
+        acts as a fallback — a permanent "always-on peer" — but the goal is to need it as little as possible.</p>
+      <p>The technical reality is messier than the marketing version, as anyone who has fought with browser video APIs
+        can tell you. Safari in particular has made this hard on purpose — its media stack is stricter, and the "Managed
+        Media Source" API it rolled out in 2023 is genuinely different from the Media Source Extensions the rest of the
+        web uses. Getting a smooth livestream to play in a Safari tab is, in the words of one developer, "refusing to
+        let Apple win."</p>
+
+      <p class="pull-quote">"The idea is that a small group of viewers is enough to make a WebTorrent stable. So the
+        server volunteers as tribute."</p>
+
+      <p>That's the philosophy in a sentence: instead of scaling by buying more bandwidth, scale by getting more peers.
+        It's slower to bootstrap, but the ceiling is much higher.</p>
+
+        <amp-tiktok width="325" height="575" data-src="7684824626844765453"></amp-tiktok>
+
+      <h3>🖼️ Galleries That Remember What You've Seen</h3>
+      <p>BubbleBased's galleries work differently than a typical feed. When you swipe through media, the app quietly
+        caches what you view — both in your browser and in the broader swarm — so the next person who sees the same
+        image or video pulls it from you, not from a server.</p>
+      <p>This is genuinely unusual. Most social apps treat caching as an afterthought. BubbleBased treats it as the
+        entire point. The result is a gallery that gets <em>faster</em> the more people use it, which is the opposite of
+        how centralized platforms behave under load.</p>
+
+      <h3>💬 Chat, Posts, and the Blurred Line Between Them</h3>
+      <p>The app doesn't draw a hard line between chat messages, posts, and shared media. A video you drop into a
+        Bubble's chat can also appear as a gallery item. A livestream is, structurally, a very fast series of chat
+        messages carrying video chunks.</p>
+      <p>That fluidity is a feature — it means the app feels less like five separate tools and more like one space. It's
+        also a reminder that "social network" is not a single thing. It's a shape that can bend.</p>
+
+      <h3>💸 Affiliate Links That Actually Belong to You</h3>
+      <p>Many platforms monetize by inserting their own ads between you and your audience. BubbleBased does the
+        opposite: it lets users attach their own affiliate links to their profile, and rewards engagement (viewing,
+        sharing, keeping the swarm alive) with more visibility for those links. The platform doesn't take a cut. You do
+        the work, you keep the reward.</p>
+      <p>It's a small design choice with a large implication: the app's incentives and the user's incentives are pointed
+        in the same direction.</p>
+
+      <h3>🧭 What BubbleBased Gets Right (and What It Doesn't)</h3>
+      <p>No decentralized app is frictionless yet, and BubbleBased isn't an exception. Media sharing via P2P is faster
+        when more people are online; when you're the first person to view something, you're often the slowest. Some
+        browsers handle the video pipeline better than others. And "decentralized" doesn't mean "free" — someone is
+        still paying for the fallback infrastructure that keeps things reliable.</p>
+      <p>But that's the honest trade. Centralized platforms hide their costs in ads and data. BubbleBased puts them in
+        the open and asks users to share them voluntarily. Whether that model wins is an open question, but it's a
+        different question than the ones Facebook and Twitter are answering.</p>
+
+      <h3>🔍 Why It Matters</h3>
+      <p>There's a lot of talk about "decentralized social" that turns out to mean "a different company owns your data."
+        BubbleBased is one of the few attempts to actually change the shape of the thing — to make the network depend on
+        its users instead of on a server farm. It's not finished, and it's not simple. But it's trying something real,
+        and that's rare enough to be worth watching.</p>
+
+      <a class="cta-button" href="https://bubblebased.com" target="_blank" rel="noopener">Visit BubbleBased →</a>
+        <a class="cta-button" href="https://bubblebased.com/join/F549AA73867955BC" target="_blank" rel="noopener">And feel free tojoin this BubbleBased bubble to try it out!→</a>
+      
+
+      <footer>
+        <p>&copy; 2024 Minnow News. All Rights Reserved. See <a href="bubblebased.html">our first article on
+            BubbleBased</a> for the origin story.</p>
+      </footer>
+    </article>
+  </main>
+
+</body>
+
+</html>
