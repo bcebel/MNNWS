@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+  <meta name="description"
+    content="Why a 'chill' social network works: Using WebTorrent, local caching, and SRI's N=ABC value framework to build social media without server overload or eyeball algorithms.">
+  <meta name="author" content="MINNOWSPACE">
+  <link rel="canonical" href="https://minnowspace.com/bubblebased3.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>The Math of a Chill Social Network: Why P2P, WebTorrent, and Small Bubbles Win</title>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "The Math of a Chill Social Network: Why P2P, WebTorrent, and Small Bubbles Win",
+    "image": ["https://minnowspace.com/assets/IMG_3572.jpeg"],
+    "datePublished": "2026-09-13T10:00:00Z",
+    "dateModified": "2026-09-13T10:00:00Z",
+    "author": [{
+      "@type": "Person",
+      "name": "MINNOWSPACE",
+      "url": "https://minnowspace.com/about.html"
+    }],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Minnow News",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://minnowspace.com/assets/Minnow-News-Logo.png"
+      }
+    },
+    "description": "Why a 'chill' social network works: Using WebTorrent, local caching, and SRI's N=ABC value framework to build social media without server overload or eyeball algorithms."
+  }
+  </script>
+
+  <style amp-custom>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f2f5;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #ffffff;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #dddfe2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      color: #000;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .header h1 span {
+      color: #1877f2;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    article h2 {
+      color: #000;
+      border-bottom: 2px solid #dddfe2;
+      padding-bottom: 10px;
+    }
+
+    article p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    article h3 {
+      color: #333;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: block;
+      background-color: #FF0081;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    .pull-quote {
+      border-left: 4px solid #20B2AA;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #444;
+      margin: 2rem 0;
+      background-color: #f9f9f9;
+      padding: 10px 15px;
+    }
+
+    ul {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+        "vars": {
+          "gtag_id": "G-V3TNNSX3H4",
+          "config": { "G-V3TNNSX3H4": { "groups": "default" } }
+        }
+      }
+    </script>
+  </amp-analytics>
+
+  <header class="header">
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Minnow<span>News</span></h1>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>The Math of a "Chill" Social Network: How BubbleBased Uses P2P to Flip the Creator Economy</h2>
+        <p style="color:#666; font-size:0.95rem;">Part 3 of our ongoing exploration of <a
+            href="bubblebased.html">BubbleBased</a> and <a href="bubblebased2.html">decentralized social networks</a>.
+        </p>
+      </header>
+
+      <p>Can a social network win simply by being... <em>chill</em>?</p>
+
+      <p>Every major web platform today operates on an aggressive value model: serve heavy media via multi-million
+        dollar AWS CDNs, extract your behavioral data to pay off those server bills, and deploy hyper-optimized
+        algorithms designed to trap your eyeballs in comment wars. You aren't just the user—you become the product.</p>
+
+      <p>To understand why <a href="https://bubblebased.com" target="_blank" rel="noopener">BubbleBased</a> is taking a
+        different path, it helps to look through the lens of Curt Carlson's famous SRI value creation model: <strong>N =
+          A x B/C x Comp</strong> (Need = Approach x Benefit/Cost x Competition).</p>
+
+      <amp-youtube data-videoid="S8ggT_GbLoU" layout="responsive" width="480" height="270"></amp-youtube>
+
+      <h3>1. The Need: Escaping the Attention Trap</h3>
+      <p>The core <strong>Need</strong> isn't just "another app." It’s a refuge from hyper-monetized rage-bait feeds.
+        Everyone already pays monthly for high-speed Wi-Fi, 5G cellular plans, and powerful mobile hardware. Yet,
+        despite having incredible infrastructure and AI tools at our fingertips, we are forced into digital panopticons
+        where randos derail conversations in public comment sections.</p>
+
+      <p>What if social media wasn't an aggressive algorithm designed to outrage you, but simply a place where friends
+        and family hang out? What if privacy was built into digital "Bubbles" where context matters?</p>
+
+      <h3>2. The Approach: WebTorrent, Local Caching, and Peer Swarms</h3>
+      <p>To serve media without turning users into data products, the <strong>Approach</strong> must bypass centralized
+        cloud servers. Serving video and high-res imagery costs an arm and a leg. BubbleBased solves this by pairing
+        social groups directly with <strong>WebTorrent and local peer caching</strong>.</p>
+
+      <div class="pull-quote">
+        "You already need peers for a social network—so why not use those same peers to seed the media?"
+      </div>
+
+      <p>When you view a video or image gallery in a Bubble, your browser temporarily holds those chunks and helps seed
+        them to the next active member. The platform leverages infrastructure users already pay for, drastically bending
+        cloud egress costs down to near zero.</p>
+
+      <h3>3. Benefit / Cost & Competition: 1-on-1 Moderated Invites</h3>
+      <p>The <strong>Benefit</strong> is clear: zero ads harvesting your profile, complete ownership over your content,
+        and a private room where you can actually be yourself. The <strong>Competition</strong> is stuck trying to
+        maximize screen time to pay off server bills.</p>
+
+      <p>To test this model safely, BubbleBased is rolling out a 1-on-1 trusted invitation model: moderators invite
+        trusted moderators, who in turn invite chill people. The goal isn't 10 million random users shouting into the
+        void tomorrow—it's creating the coolest, most reliable digital spaces possible, one room at a time. (Pro-tip:
+        Don't get in a Bubble with randos!)</p>
+
+      <h3>🔮 What's Next on the Roadmap</h3>
+      <p>The current stack (Expo, React Native Web, GraphQL WebSockets, and WebTorrent) is just the baseline layer.
+        Longer-term plans on the development roadmap focus on pushing peer-to-peer limits even further:</p>
+
+      <ul>
+        <li><strong>IPFS Ephemeral Hosting:</strong> Integrating IPFS as an additional fallback data layer for ephemeral
+          file availability when swarm peer counts are low.</li>
+        <li><strong>Advanced Swarm Caching:</strong> Intelligently pre-fetching media chunks across local Wi-Fi networks
+          to make gallery swiping instant.</li>
+        <li><strong>Community Revenue Sharing:</strong> Letting creators attach their own affiliate links directly to
+          profiles rather than the platform taking a cut.</li>
+      </ul>
+
+      <p>A "chill" social media app works because it respects both your bandwidth and your mental health. By changing
+        the underlying network topology from centralized servers to peer swarms, BubbleBased proves that social media
+        doesn't have to be noisy to be effective.</p>
+
+      <a class="cta-button" href="https://bubblebased.com/join/6DA65DC2C7552A43" target="_blank" rel="noopener">Join an
+        Active Test Bubble as a Moderator →</a>
+
+      <footer>
+        <p>&copy; 2026 Minnow News. All Rights Reserved. Read <a href="bubblebased.html">Part 1</a> and <a
+            href="bubblebased2.html">Part 2</a> of our BubbleBased series.</p>
+      </footer>
+    </article>
+  </main>
+
+</body>
+
+</html>
