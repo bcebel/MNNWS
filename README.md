@@ -20,4 +20,4 @@ We're just getting started, and we're thrilled to have you swim along with us.
 
 This tutorial is licensed under the [Apache License, Version 2.0](https://github.com/ampproject/docs/blob/master/LICENSE).
 
-Copyright 2024 Minnow News Network
+Copyright 2026 Minnow News Network
